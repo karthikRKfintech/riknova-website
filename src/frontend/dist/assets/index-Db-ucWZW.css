@@ -2083,6 +2083,9 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-\[0\.625rem\] {
+  font-size: 0.625rem;
+}
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
 }
@@ -2139,6 +2142,9 @@ video {
 }
 .leading-tight {
   line-height: 1.25;
+}
+.tracking-\[0\.2em\] {
+  letter-spacing: 0.2em;
 }
 .tracking-tight {
   letter-spacing: -0.025em;

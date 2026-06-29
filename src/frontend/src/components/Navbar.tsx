@@ -1,3 +1,4 @@
+import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { useBookDemoModal } from "@/hooks/useBookDemoModal";
 import { useScrollDirection } from "@/hooks/useScrollReveal";
@@ -86,11 +87,7 @@ export default function Navbar() {
               className="flex items-center gap-2 group"
               data-ocid="navbar.logo_link"
             >
-              <img
-                src="/assets/images/logo/riknova-logo-dark.png"
-                alt="RIKNOVA Fintech Solutions"
-                className="h-8 w-auto"
-              />
+              <Logo size={36} />
             </button>
 
             {/* Desktop Nav Links */}

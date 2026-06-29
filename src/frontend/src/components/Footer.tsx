@@ -1,3 +1,4 @@
+import Logo from "@/components/Logo";
 import { Link } from "@tanstack/react-router";
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
@@ -95,11 +96,7 @@ export default function Footer() {
               className="flex items-center gap-2 mb-6"
               data-ocid="footer.logo_link"
             >
-              <img
-                src="/assets/images/logo/riknova-logo-dark.png"
-                alt="RIKNOVA Fintech Solutions"
-                className="h-8 w-auto"
-              />
+              <Logo size={36} />
             </button>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs mb-6">
               Building intelligent financial infrastructure for modern

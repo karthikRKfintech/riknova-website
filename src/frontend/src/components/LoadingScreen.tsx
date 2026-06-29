@@ -1,3 +1,4 @@
+import Logo from "@/components/Logo";
 import { useEffect, useState } from "react";
 
 export interface LoadingScreenProps {
@@ -31,11 +32,7 @@ export default function LoadingScreen({ isVisible }: LoadingScreenProps) {
         }
       }}
     >
-      <img
-        src="/assets/images/logo/riknova-symbol.png"
-        alt="RIKNOVA"
-        className="h-16 w-16 animate-fade-in-up"
-      />
+      <Logo size={40} className="animate-fade-in-up" />
     </div>
   );
 }

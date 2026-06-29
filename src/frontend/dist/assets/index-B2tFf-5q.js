@@ -45640,6 +45640,42 @@ function BookDemoModal() {
     }
   ) });
 }
+function Logo({
+  size = 36,
+  showText = true,
+  className = "",
+  textClassName = ""
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "span",
+    {
+      className: `flex items-center gap-2.5 ${className}`,
+      "aria-label": "RIKNOVA Fintech Solutions",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "img",
+          {
+            src: "/assets/images/logo/riknova-symbol-dark.png",
+            alt: "",
+            "aria-hidden": "true",
+            className: "w-auto",
+            style: {
+              height: size,
+              // The icon ships with a solid near-black background that matches the
+              // site theme. mix-blend-mode: lighten drops that near-black bg
+              // against the near-black site bg while keeping the colorful glyph.
+              mixBlendMode: "lighten"
+            }
+          }
+        ),
+        showText && /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: `flex flex-col leading-none ${textClassName}`, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display font-bold text-foreground tracking-tight", children: "RIKNOVA" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[0.625rem] font-medium uppercase tracking-[0.2em] text-muted-foreground", children: "FINTECH SOLUTIONS" })
+        ] })
+      ]
+    }
+  );
+}
 const footerLinks = {
   product: [
     { label: "Finance Pro", href: "#products" },
@@ -45722,14 +45758,7 @@ function Footer() {
             onClick: handleLogoClick,
             className: "flex items-center gap-2 mb-6",
             "data-ocid": "footer.logo_link",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "img",
-              {
-                src: "/assets/images/logo/riknova-logo-dark.png",
-                alt: "RIKNOVA Fintech Solutions",
-                className: "h-8 w-auto"
-              }
-            )
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { size: 36 })
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed max-w-xs mb-6", children: "Building intelligent financial infrastructure for modern enterprises. Secure, scalable, and future-ready fintech solutions." }),
@@ -45807,14 +45836,7 @@ function LoadingScreen({ isVisible }) {
           setRender(false);
         }
       },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "img",
-        {
-          src: "/assets/images/logo/riknova-symbol.png",
-          alt: "RIKNOVA",
-          className: "h-16 w-16 animate-fade-in-up"
-        }
-      )
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { size: 40, className: "animate-fade-in-up" })
     }
   );
 }
@@ -45938,14 +45960,7 @@ function Navbar() {
               onClick: handleLogoClick,
               className: "flex items-center gap-2 group",
               "data-ocid": "navbar.logo_link",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "img",
-                {
-                  src: "/assets/images/logo/riknova-logo-dark.png",
-                  alt: "RIKNOVA Fintech Solutions",
-                  className: "h-8 w-auto"
-                }
-              )
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { size: 36 })
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden md:flex items-center gap-1", children: navLinks.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx(
