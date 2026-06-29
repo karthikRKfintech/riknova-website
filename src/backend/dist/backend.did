@@ -1,0 +1,22 @@
+type DemoRequest = 
+ record {
+   company: text;
+   email: text;
+   message: text;
+   name: text;
+ };
+type DemoRecord = 
+ record {
+   company: text;
+   createdAt: nat;
+   email: text;
+   id: nat;
+   message: text;
+   name: text;
+ };
+service : {
+  __demoRequests: (io: opt nat, count: opt nat) -> (vec DemoRecord) query;
+  __nextDemoId: () -> (reserved) query;
+  listDemoRequests: () -> (vec DemoRecord) query;
+  submitDemoRequest: (req: DemoRequest) -> (DemoRecord);
+}

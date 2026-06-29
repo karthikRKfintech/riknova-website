@@ -1,0 +1,45 @@
+// Version: 4.0.0
+type DemoRecord__634417091 =
+  {
+    company : Text;
+    createdAt : Nat;
+    email : Text;
+    id : Nat;
+    message : Text;
+    name : Text
+  };
+type List__529703492<T> =
+  {
+    var blockIndex : Nat__1040412405;
+    var blocks : [var [var ?T]];
+    var elementIndex : Nat__1040412405
+  };
+type List__560604548<T> = List__529703492<T>;
+type Nat__1040412405 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NewActor__110445132 =
+  {
+    demoRequests :
+      List__560604548<{
+                        company : Text;
+                        createdAt : Nat;
+                        email : Text;
+                        id : Nat;
+                        message : Text;
+                        name : Text
+                      }>;
+    nextDemoId : {var value : Nat}
+  };
+type OldActor__444969515 = {};
+{
+  "20250628_000000" : (_old : OldActor__444969515) -> NewActor__110445132
+}
+actor  {
+  stable var demoRequests :
+    {
+      var blockIndex : Nat__1040412405;
+      var blocks : [var [var ?DemoRecord__634417091]];
+      var elementIndex : Nat__1040412405
+    };
+  stable var nextDemoId : {var value : Nat}
+};
