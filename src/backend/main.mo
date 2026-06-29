@@ -6,8 +6,8 @@ import LandingMixin "mixins/landing-api";
 actor {
   include MixinViews();
 
-  stable var demoRequests : List.List<Types.DemoRecord>;
-  stable var nextDemoId : { var value : Nat };
+   var demoRequests : List.List<Types.DemoRecord>;
+   var nextDemoId : { var value : Nat };
 
   include LandingMixin(demoRequests, nextDemoId);
 };
