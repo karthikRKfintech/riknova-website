@@ -1,8 +1,6 @@
-import BookDemoModal from "@/components/BookDemoModal";
 import Footer from "@/components/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
-import { BookDemoModalProvider } from "@/hooks/useBookDemoModal";
 import AboutSection from "@/sections/AboutSection";
 import ContactSection from "@/sections/ContactSection";
 import FAQSection from "@/sections/FAQSection";
@@ -24,25 +22,22 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <BookDemoModalProvider>
-      <div className="relative min-h-screen bg-background">
-        <LoadingScreen isVisible={isLoading} />
-        <Navbar />
-        <main>
-          <HeroSection />
-          <TrustedSection />
-          <AboutSection />
-          <ProductsSection />
-          <FinanceProSection />
-          <WhyChooseUsSection />
-          <IndustriesSection />
-          <TestimonialsSection />
-          <FAQSection />
-          <ContactSection />
-        </main>
-        <Footer />
-        <BookDemoModal />
-      </div>
-    </BookDemoModalProvider>
+    <div className="relative min-h-screen bg-background">
+      <LoadingScreen isVisible={isLoading} />
+      <Navbar />
+      <main>
+        <HeroSection />
+        <TrustedSection />
+        <AboutSection />
+        <ProductsSection />
+        <FinanceProSection />
+        <WhyChooseUsSection />
+        <IndustriesSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   );
 }

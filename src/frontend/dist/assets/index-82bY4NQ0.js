@@ -47817,7 +47817,7 @@ function LandingPage() {
     const timer = setTimeout(() => setIsLoading(false), 1200);
     return () => clearTimeout(timer);
   }, []);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(BookDemoModalProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative min-h-screen bg-background", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative min-h-screen bg-background", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(LoadingScreen, { isVisible: isLoading }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { children: [
@@ -47832,9 +47832,8 @@ function LandingPage() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(FAQSection, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(ContactSection, {})
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(BookDemoModal, {})
-  ] }) });
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
+  ] });
 }
 const privacySections = [
   {
@@ -48638,5 +48637,8 @@ BigInt.prototype.toJSON = function() {
 };
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
-  /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsxRuntimeExports.jsx(InternetIdentityProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(RouterProvider, { router }) }) })
+  /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsxRuntimeExports.jsx(InternetIdentityProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(BookDemoModalProvider, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(RouterProvider, { router }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(BookDemoModal, {})
+  ] }) }) })
 );
