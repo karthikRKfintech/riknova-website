@@ -1,90 +1,9 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Link } from "@tanstack/react-router";
-import {
-  ArrowLeft,
-  Eye,
-  FileText,
-  Globe,
-  Lock,
-  Mail,
-  Shield,
-  Users,
-} from "lucide-react";
-import { motion } from "motion/react";
-
-const privacySections = [
-  {
-    icon: FileText,
-    title: "Information We Collect",
-    content: `We collect information that you provide directly to us, including:
-
-• Account information (name, email, phone number, company details)
-• Payment and billing information
-• Communication preferences and support inquiries
-• Usage data and analytics from our platform
-• Device and browser information for security purposes`,
-  },
-  {
-    icon: Eye,
-    title: "How We Use Your Information",
-    content: `We use the information we collect to:
-
-• Provide, maintain, and improve our fintech services
-• Process transactions and send related information
-• Send technical notices, updates, and security alerts
-• Respond to your comments, questions, and customer service requests
-• Communicate about products, services, offers, and events
-• Monitor and analyze trends, usage, and activities in connection with our services`,
-  },
-  {
-    icon: Lock,
-    title: "Data Security",
-    content: `We implement appropriate technical and organizational measures to protect your personal information:
-
-• Encryption of data in transit and at rest using industry-standard protocols
-• Regular security assessments and vulnerability testing
-• Access controls and authentication mechanisms
-• Employee training on data protection practices
-• Incident response procedures for security breaches
-
-While we strive to protect your information, no method of transmission over the Internet or electronic storage is 100% secure.`,
-  },
-  {
-    icon: Users,
-    title: "Information Sharing",
-    content: `We do not sell your personal information. We may share information in the following circumstances:
-
-• With service providers who perform services on our behalf
-• In response to legal process or government requests
-• To protect our rights, privacy, safety, or property
-• In connection with a merger, acquisition, or sale of assets
-• With your consent or at your direction`,
-  },
-  {
-    icon: Globe,
-    title: "International Data Transfers",
-    content: `Your information may be transferred to and processed in countries other than the country in which you reside. These countries may have data protection laws that are different from those in your country.
-
-We take appropriate safeguards to ensure that your personal information remains protected in accordance with this Privacy Policy, including implementing Standard Contractual Clauses approved by relevant authorities.`,
-  },
-  {
-    icon: Shield,
-    title: "Your Rights",
-    content: `Depending on your location, you may have the following rights regarding your personal information:
-
-• Access: Request a copy of the personal information we hold about you
-• Correction: Request that we correct inaccurate or incomplete information
-• Deletion: Request that we delete your personal information
-• Restriction: Request that we restrict the processing of your information
-• Portability: Request a copy of your information in a structured, machine-readable format
-• Objection: Object to our processing of your information
-
-To exercise these rights, please contact us using the information provided below.`,
-  },
-];
-
 import { useLocation } from "@tanstack/react-router";
+import { ArrowLeft, Mail, Shield } from "lucide-react";
+import { motion } from "motion/react";
 import { useEffect } from "react";
 
 export default function PrivacyPolicyPage() {
@@ -130,12 +49,7 @@ export default function PrivacyPolicyPage() {
               information.
             </p>
             <p className="text-sm text-muted-foreground mt-4">
-              Last updated:{" "}
-              {new Date().toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+              Last updated: 19 March 2026
             </p>
           </motion.div>
         </div>
@@ -145,36 +59,383 @@ export default function PrivacyPolicyPage() {
       <section className="relative pb-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
-            {privacySections.map((section, index) => (
-              <motion.div
-                key={section.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glass rounded-2xl p-6 md:p-8"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                    <section.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <h2 className="font-display text-xl font-semibold text-foreground">
-                    {section.title}
-                  </h2>
-                </div>
-                <div className="text-muted-foreground leading-relaxed whitespace-pre-line pl-13">
-                  {section.content}
-                </div>
-              </motion.div>
-            ))}
-
-            {/* Contact Section */}
+            {/* Section 1 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.5,
-                delay: privacySections.length * 0.1,
-              }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                1. Information We Collect
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Depending on the product or service you use, we may collect
+                  information including:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Name</li>
+                  <li>Business Name</li>
+                  <li>Mobile Number</li>
+                  <li>Email Address</li>
+                  <li>Address</li>
+                  <li>Login Credentials</li>
+                  <li>Customer Information entered by you</li>
+                  <li>Loan Records</li>
+                  <li>Collection Records</li>
+                  <li>Financial Transactions</li>
+                  <li>Reports</li>
+                  <li>Analytics</li>
+                  <li>Device Information</li>
+                  <li>Browser Information</li>
+                  <li>IP Address</li>
+                  <li>Log Information</li>
+                  <li>Usage Statistics</li>
+                </ul>
+                <p>
+                  Some products may collect additional information necessary to
+                  provide requested features.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 2 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                2. Customer Data
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Our software allows businesses to securely maintain and manage
+                  their operational records.
+                </p>
+                <p>Examples include:</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Customer records</li>
+                  <li>Loan details</li>
+                  <li>Collection entries</li>
+                  <li>Payment history</li>
+                  <li>Expenses</li>
+                  <li>Reports</li>
+                  <li>Uploaded documents</li>
+                  <li>Images</li>
+                  <li>Business settings</li>
+                </ul>
+                <p>
+                  All customer data entered into our software remains the
+                  property of the respective customer or business using our
+                  services.
+                </p>
+                <p>RIKNOVA acts solely as the software service provider.</p>
+              </div>
+            </motion.div>
+
+            {/* Section 3 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                3. How We Use Information
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>Information collected may be used to:</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Provide software functionality</li>
+                  <li>Authenticate users</li>
+                  <li>Synchronize information across devices</li>
+                  <li>Generate reports and analytics</li>
+                  <li>Improve product performance</li>
+                  <li>Provide customer support</li>
+                  <li>Send service-related notifications</li>
+                  <li>Maintain platform security</li>
+                  <li>Prevent fraud and misuse</li>
+                  <li>Comply with applicable laws</li>
+                </ul>
+                <p>We never sell your personal information.</p>
+              </div>
+            </motion.div>
+
+            {/* Section 4 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                4. Cloud Storage
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Your information may be securely stored using trusted cloud
+                  infrastructure providers and secure database services.
+                </p>
+                <p>
+                  These services are used solely for delivering the requested
+                  software functionality.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 5 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                5. Data Security
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>Protecting customer information is a high priority.</p>
+                <p>We implement appropriate security measures including:</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Secure HTTPS communication</li>
+                  <li>Authentication controls</li>
+                  <li>Role-based access permissions</li>
+                  <li>Password protection</li>
+                  <li>Secure cloud infrastructure</li>
+                  <li>Regular software updates</li>
+                  <li>Backup procedures</li>
+                </ul>
+                <p>
+                  While we take reasonable precautions, no internet-based
+                  service can guarantee absolute security.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 6 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                6. Third-Party Services
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Our software may integrate with trusted third-party providers
+                  for services such as:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Authentication</li>
+                  <li>Email delivery</li>
+                  <li>SMS delivery</li>
+                  <li>Payment processing</li>
+                  <li>Cloud hosting</li>
+                  <li>Analytics</li>
+                  <li>File storage</li>
+                </ul>
+                <p>
+                  These providers process information only as necessary to
+                  provide the requested functionality.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 7 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                7. Data Sharing
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  RIKNOVA does <strong className="text-foreground">NOT</strong>:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Sell personal information</li>
+                  <li>Rent customer information</li>
+                  <li>Share customer databases for advertising</li>
+                  <li>Share business data for marketing purposes</li>
+                </ul>
+                <p>Information may only be disclosed:</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>When required by applicable law</li>
+                  <li>To comply with legal obligations</li>
+                  <li>To protect our legal rights</li>
+                  <li>To investigate fraud or security incidents</li>
+                </ul>
+              </div>
+            </motion.div>
+
+            {/* Section 8 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                8. Data Retention
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Information is retained only as long as necessary to provide
+                  our services or comply with applicable legal obligations.
+                </p>
+                <p>
+                  Certain information may remain in secure backups for disaster
+                  recovery purposes.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 9 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                9. Data Deletion
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Users may delete business records directly from supported
+                  products.
+                </p>
+                <p>Examples include:</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Customers</li>
+                  <li>Loans</li>
+                  <li>Collections</li>
+                  <li>Expenses</li>
+                  <li>Transactions</li>
+                  <li>Reports</li>
+                </ul>
+                <p>
+                  Deleted information may remain in encrypted backup systems for
+                  a limited period before permanent removal.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 10 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                10. Account Deletion
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Users may permanently delete their account from supported
+                  applications.
+                </p>
+                <p>For Finance Pro:</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Open the application</li>
+                  <li>
+                    Navigate to{" "}
+                    <strong className="text-foreground">Settings</strong>
+                  </li>
+                  <li>
+                    Select{" "}
+                    <strong className="text-foreground">Delete Account</strong>
+                  </li>
+                  <li>Confirm deletion</li>
+                </ul>
+                <p>
+                  After confirmation, account deletion will proceed according to
+                  our retention policy.
+                </p>
+                <p>
+                  If assistance is required, contact us using the details below.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 11 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.1 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                11. Cookies &amp; Website Analytics
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>Our websites may use cookies and similar technologies to:</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Improve website functionality</li>
+                  <li>Remember user preferences</li>
+                  <li>Analyze website traffic</li>
+                  <li>Enhance user experience</li>
+                </ul>
+                <p>Users may disable cookies through their browser settings.</p>
+              </div>
+            </motion.div>
+
+            {/* Section 12 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                12. Children&apos;s Privacy
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>Our products are intended for business users.</p>
+                <p>
+                  We do not knowingly collect personal information from children
+                  under 18 years of age.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 13 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.3 }}
+              className="glass rounded-2xl p-6 md:p-8"
+            >
+              <h2 className="font-display text-xl font-semibold text-foreground mb-4">
+                13. Changes to this Privacy Policy
+              </h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>We may revise this Privacy Policy periodically.</p>
+                <p>
+                  The latest version will always be available on our official
+                  website.
+                </p>
+                <p>
+                  Continued use of our products after updates constitutes
+                  acceptance of the revised Privacy Policy.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Section 14 - Contact */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.4 }}
               className="glass rounded-2xl p-6 md:p-8"
             >
               <div className="flex items-center gap-3 mb-4">
@@ -182,38 +443,51 @@ export default function PrivacyPolicyPage() {
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <h2 className="font-display text-xl font-semibold text-foreground">
-                  Contact Us
+                  14. Contact Information
                 </h2>
               </div>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                If you have any questions about this Privacy Policy or our data
-                practices, please contact us:
-              </p>
-              <div className="space-y-2 text-muted-foreground">
-                <p>
-                  <span className="text-foreground font-medium">Email:</span>{" "}
-                  <a
-                    href="mailto:financeprofintech@gmail.com"
-                    className="text-primary hover:underline"
-                  >
-                    financeprofintech@gmail.com
-                  </a>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p className="text-foreground font-semibold">
+                  RIKNOVA FINTECH SOLUTIONS
                 </p>
-                <p>
-                  <span className="text-foreground font-medium">Phone:</span>{" "}
-                  <a
-                    href="tel:+919363770295"
-                    className="text-primary hover:underline"
-                  >
-                    +91 9363770295
-                  </a>
-                </p>
-                <p>
-                  <span className="text-foreground font-medium">Address:</span>{" "}
-                  50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam,
-                  Chennai, Tamilnadu, India.
-                </p>
+                <div className="space-y-2">
+                  <p>
+                    <span className="text-foreground font-medium">Email:</span>{" "}
+                    <a
+                      href="mailto:financeprofintech@gmail.com"
+                      className="text-primary hover:underline"
+                    >
+                      financeprofintech@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    <span className="text-foreground font-medium">Phone:</span>{" "}
+                    <a
+                      href="tel:+919363770295"
+                      className="text-primary hover:underline"
+                    >
+                      +91 93637 70295
+                    </a>
+                  </p>
+                  <p>
+                    <span className="text-foreground font-medium">
+                      Address:
+                    </span>{" "}
+                    50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam,
+                    Chennai, Tamil Nadu, India.
+                  </p>
+                </div>
               </div>
+            </motion.div>
+
+            {/* Copyright */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.5 }}
+              className="text-center text-sm text-muted-foreground pt-8"
+            >
+              &copy; 2026 RIKNOVA FINTECH SOLUTIONS. All Rights Reserved.
             </motion.div>
           </div>
         </div>

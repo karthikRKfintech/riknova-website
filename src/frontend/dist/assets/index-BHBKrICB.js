@@ -36399,7 +36399,7 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$P = [
+const __iconNode$M = [
   [
     "path",
     {
@@ -36408,40 +36408,7 @@ const __iconNode$P = [
     }
   ]
 ];
-const Activity = createLucideIcon("activity", __iconNode$P);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$O = [
-  ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
-  ["path", { d: "M19 12H5", key: "x3x0zl" }]
-];
-const ArrowLeft = createLucideIcon("arrow-left", __iconNode$O);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$N = [
-  ["path", { d: "M5 12h14", key: "1ays0h" }],
-  ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
-];
-const ArrowRight = createLucideIcon("arrow-right", __iconNode$N);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$M = [
-  ["path", { d: "M7 7h10v10", key: "1tivn9" }],
-  ["path", { d: "M7 17 17 7", key: "1vkiza" }]
-];
-const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$M);
+const Activity = createLucideIcon("activity", __iconNode$M);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36449,11 +36416,10 @@ const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$M);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$L = [
-  ["rect", { width: "20", height: "12", x: "2", y: "6", rx: "2", key: "9lu3g6" }],
-  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }],
-  ["path", { d: "M6 12h.01M18 12h.01", key: "113zkx" }]
+  ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
+  ["path", { d: "M19 12H5", key: "x3x0zl" }]
 ];
-const Banknote = createLucideIcon("banknote", __iconNode$L);
+const ArrowLeft = createLucideIcon("arrow-left", __iconNode$L);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36461,6 +36427,40 @@ const Banknote = createLucideIcon("banknote", __iconNode$L);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$K = [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
+];
+const ArrowRight = createLucideIcon("arrow-right", __iconNode$K);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$J = [
+  ["path", { d: "M7 7h10v10", key: "1tivn9" }],
+  ["path", { d: "M7 17 17 7", key: "1vkiza" }]
+];
+const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$J);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$I = [
+  ["rect", { width: "20", height: "12", x: "2", y: "6", rx: "2", key: "9lu3g6" }],
+  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }],
+  ["path", { d: "M6 12h.01M18 12h.01", key: "113zkx" }]
+];
+const Banknote = createLucideIcon("banknote", __iconNode$I);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$H = [
   [
     "path",
     {
@@ -36483,25 +36483,25 @@ const __iconNode$K = [
   ["path", { d: "M6 18a4 4 0 0 1-1.967-.516", key: "2e4loj" }],
   ["path", { d: "M19.967 17.484A4 4 0 0 1 18 18", key: "159ez6" }]
 ];
-const Brain = createLucideIcon("brain", __iconNode$K);
+const Brain = createLucideIcon("brain", __iconNode$H);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$J = [
+const __iconNode$G = [
   ["path", { d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16", key: "jecpp" }],
   ["rect", { width: "20", height: "14", x: "2", y: "6", rx: "2", key: "i6l2r4" }]
 ];
-const Briefcase = createLucideIcon("briefcase", __iconNode$J);
+const Briefcase = createLucideIcon("briefcase", __iconNode$G);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$I = [
+const __iconNode$F = [
   ["path", { d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z", key: "1b4qmf" }],
   ["path", { d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2", key: "i71pzd" }],
   ["path", { d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2", key: "10jefs" }],
@@ -36510,14 +36510,14 @@ const __iconNode$I = [
   ["path", { d: "M10 14h4", key: "kelpxr" }],
   ["path", { d: "M10 18h4", key: "1ulq68" }]
 ];
-const Building2 = createLucideIcon("building-2", __iconNode$I);
+const Building2 = createLucideIcon("building-2", __iconNode$F);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$H = [
+const __iconNode$E = [
   ["rect", { width: "16", height: "20", x: "4", y: "2", rx: "2", ry: "2", key: "76otgf" }],
   ["path", { d: "M9 22v-4h6v4", key: "r93iot" }],
   ["path", { d: "M8 6h.01", key: "1dz90k" }],
@@ -36530,27 +36530,27 @@ const __iconNode$H = [
   ["path", { d: "M8 10h.01", key: "19clt8" }],
   ["path", { d: "M8 14h.01", key: "6423bh" }]
 ];
-const Building = createLucideIcon("building", __iconNode$H);
+const Building = createLucideIcon("building", __iconNode$E);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$G = [
+const __iconNode$D = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
   ["path", { d: "M3 10h18", key: "8toen8" }]
 ];
-const Calendar = createLucideIcon("calendar", __iconNode$G);
+const Calendar = createLucideIcon("calendar", __iconNode$D);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$F = [
+const __iconNode$C = [
   [
     "path",
     {
@@ -36562,36 +36562,7 @@ const __iconNode$F = [
   ["path", { d: "M9 17h6", key: "r8uit2" }],
   ["circle", { cx: "17", cy: "17", r: "2", key: "axvx0g" }]
 ];
-const Car = createLucideIcon("car", __iconNode$F);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$E = [
-  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
-  ["path", { d: "M18 17V9", key: "2bz60n" }],
-  ["path", { d: "M13 17V5", key: "1frdt8" }],
-  ["path", { d: "M8 17v-3", key: "17ska0" }]
-];
-const ChartColumn = createLucideIcon("chart-column", __iconNode$E);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$D = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$D);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$C = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$C);
+const Car = createLucideIcon("car", __iconNode$C);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36599,33 +36570,28 @@ const ChevronRight = createLucideIcon("chevron-right", __iconNode$C);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$B = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
-  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
+  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
+  ["path", { d: "M18 17V9", key: "2bz60n" }],
+  ["path", { d: "M13 17V5", key: "1frdt8" }],
+  ["path", { d: "M8 17v-3", key: "17ska0" }]
 ];
-const CircleAlert = createLucideIcon("circle-alert", __iconNode$B);
+const ChartColumn = createLucideIcon("chart-column", __iconNode$B);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$A = [
-  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
-  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
-];
-const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$A);
+const __iconNode$A = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$A);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$z = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
-];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$z);
+const __iconNode$z = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$z);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36633,9 +36599,11 @@ const CircleCheck = createLucideIcon("circle-check", __iconNode$z);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$y = [
-  ["path", { d: "M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z", key: "p7xjir" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
+  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
 ];
-const Cloud = createLucideIcon("cloud", __iconNode$y);
+const CircleAlert = createLucideIcon("circle-alert", __iconNode$y);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36643,6 +36611,38 @@ const Cloud = createLucideIcon("cloud", __iconNode$y);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$x = [
+  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
+];
+const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$x);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$w = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+];
+const CircleCheck = createLucideIcon("circle-check", __iconNode$w);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$v = [
+  ["path", { d: "M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z", key: "p7xjir" }]
+];
+const Cloud = createLucideIcon("cloud", __iconNode$v);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$u = [
   ["path", { d: "M12 20v2", key: "1lh1kg" }],
   ["path", { d: "M12 2v2", key: "tus03m" }],
   ["path", { d: "M17 20v2", key: "1rnc9c" }],
@@ -36658,49 +36658,7 @@ const __iconNode$x = [
   ["rect", { x: "4", y: "4", width: "16", height: "16", rx: "2", key: "1vbyd7" }],
   ["rect", { x: "8", y: "8", width: "8", height: "8", rx: "1", key: "z9xiuo" }]
 ];
-const Cpu = createLucideIcon("cpu", __iconNode$x);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$w = [
-  ["line", { x1: "12", x2: "12", y1: "2", y2: "22", key: "7eqyqh" }],
-  ["path", { d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6", key: "1b0p4s" }]
-];
-const DollarSign = createLucideIcon("dollar-sign", __iconNode$w);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$v = [
-  [
-    "path",
-    {
-      d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0",
-      key: "1nclc0"
-    }
-  ],
-  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
-];
-const Eye = createLucideIcon("eye", __iconNode$v);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$u = [
-  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
-  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
-  ["path", { d: "M10 9H8", key: "b1mrlr" }],
-  ["path", { d: "M16 13H8", key: "t4e002" }],
-  ["path", { d: "M16 17H8", key: "z1uh3a" }]
-];
-const FileText = createLucideIcon("file-text", __iconNode$u);
+const Cpu = createLucideIcon("cpu", __iconNode$u);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36708,11 +36666,10 @@ const FileText = createLucideIcon("file-text", __iconNode$u);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$t = [
-  ["path", { d: "M6 3h12l4 6-10 13L2 9Z", key: "1pcd5k" }],
-  ["path", { d: "M11 3 8 9l4 13 4-13-3-6", key: "1fcu3u" }],
-  ["path", { d: "M2 9h20", key: "16fsjt" }]
+  ["line", { x1: "12", x2: "12", y1: "2", y2: "22", key: "7eqyqh" }],
+  ["path", { d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6", key: "1b0p4s" }]
 ];
-const Gem = createLucideIcon("gem", __iconNode$t);
+const DollarSign = createLucideIcon("dollar-sign", __iconNode$t);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36720,6 +36677,32 @@ const Gem = createLucideIcon("gem", __iconNode$t);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$s = [
+  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
+  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
+  ["path", { d: "M10 9H8", key: "b1mrlr" }],
+  ["path", { d: "M16 13H8", key: "t4e002" }],
+  ["path", { d: "M16 17H8", key: "z1uh3a" }]
+];
+const FileText = createLucideIcon("file-text", __iconNode$s);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$r = [
+  ["path", { d: "M6 3h12l4 6-10 13L2 9Z", key: "1pcd5k" }],
+  ["path", { d: "M11 3 8 9l4 13 4-13-3-6", key: "1fcu3u" }],
+  ["path", { d: "M2 9h20", key: "16fsjt" }]
+];
+const Gem = createLucideIcon("gem", __iconNode$r);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$q = [
   [
     "path",
     {
@@ -36729,26 +36712,14 @@ const __iconNode$s = [
   ],
   ["path", { d: "M9 18c-4.51 2-5-2-7-2", key: "9comsn" }]
 ];
-const Github = createLucideIcon("github", __iconNode$s);
+const Github = createLucideIcon("github", __iconNode$q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$r = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
-  ["path", { d: "M2 12h20", key: "9i4pu4" }]
-];
-const Globe = createLucideIcon("globe", __iconNode$r);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$q = [
+const __iconNode$p = [
   ["path", { d: "M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17", key: "geh8rc" }],
   [
     "path",
@@ -36761,14 +36732,14 @@ const __iconNode$q = [
   ["circle", { cx: "16", cy: "9", r: "2.9", key: "1n0dlu" }],
   ["circle", { cx: "6", cy: "5", r: "3", key: "151irh" }]
 ];
-const HandCoins = createLucideIcon("hand-coins", __iconNode$q);
+const HandCoins = createLucideIcon("hand-coins", __iconNode$p);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$p = [
+const __iconNode$o = [
   ["path", { d: "M10 18v-7", key: "wt116b" }],
   [
     "path",
@@ -36782,14 +36753,14 @@ const __iconNode$p = [
   ["path", { d: "M3 22h18", key: "8prr45" }],
   ["path", { d: "M6 18v-7", key: "1ivflk" }]
 ];
-const Landmark = createLucideIcon("landmark", __iconNode$p);
+const Landmark = createLucideIcon("landmark", __iconNode$o);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$o = [
+const __iconNode$n = [
   [
     "path",
     {
@@ -36800,26 +36771,15 @@ const __iconNode$o = [
   ["rect", { width: "4", height: "12", x: "2", y: "9", key: "mk3on5" }],
   ["circle", { cx: "4", cy: "4", r: "2", key: "bt5ra8" }]
 ];
-const Linkedin = createLucideIcon("linkedin", __iconNode$o);
+const Linkedin = createLucideIcon("linkedin", __iconNode$n);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$n = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
-const LoaderCircle = createLucideIcon("loader-circle", __iconNode$n);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$m = [
-  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
-  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
-];
-const Lock = createLucideIcon("lock", __iconNode$m);
+const __iconNode$m = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
+const LoaderCircle = createLucideIcon("loader-circle", __iconNode$m);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -47835,76 +47795,6 @@ function LandingPage() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
   ] });
 }
-const privacySections = [
-  {
-    icon: FileText,
-    title: "Information We Collect",
-    content: `We collect information that you provide directly to us, including:
-
-• Account information (name, email, phone number, company details)
-• Payment and billing information
-• Communication preferences and support inquiries
-• Usage data and analytics from our platform
-• Device and browser information for security purposes`
-  },
-  {
-    icon: Eye,
-    title: "How We Use Your Information",
-    content: `We use the information we collect to:
-
-• Provide, maintain, and improve our fintech services
-• Process transactions and send related information
-• Send technical notices, updates, and security alerts
-• Respond to your comments, questions, and customer service requests
-• Communicate about products, services, offers, and events
-• Monitor and analyze trends, usage, and activities in connection with our services`
-  },
-  {
-    icon: Lock,
-    title: "Data Security",
-    content: `We implement appropriate technical and organizational measures to protect your personal information:
-
-• Encryption of data in transit and at rest using industry-standard protocols
-• Regular security assessments and vulnerability testing
-• Access controls and authentication mechanisms
-• Employee training on data protection practices
-• Incident response procedures for security breaches
-
-While we strive to protect your information, no method of transmission over the Internet or electronic storage is 100% secure.`
-  },
-  {
-    icon: Users,
-    title: "Information Sharing",
-    content: `We do not sell your personal information. We may share information in the following circumstances:
-
-• With service providers who perform services on our behalf
-• In response to legal process or government requests
-• To protect our rights, privacy, safety, or property
-• In connection with a merger, acquisition, or sale of assets
-• With your consent or at your direction`
-  },
-  {
-    icon: Globe,
-    title: "International Data Transfers",
-    content: `Your information may be transferred to and processed in countries other than the country in which you reside. These countries may have data protection laws that are different from those in your country.
-
-We take appropriate safeguards to ensure that your personal information remains protected in accordance with this Privacy Policy, including implementing Standard Contractual Clauses approved by relevant authorities.`
-  },
-  {
-    icon: Shield,
-    title: "Your Rights",
-    content: `Depending on your location, you may have the following rights regarding your personal information:
-
-• Access: Request a copy of the personal information we hold about you
-• Correction: Request that we correct inaccurate or incomplete information
-• Deletion: Request that we delete your personal information
-• Restriction: Request that we restrict the processing of your information
-• Portability: Request a copy of your information in a structured, machine-readable format
-• Objection: Object to our processing of your information
-
-To exercise these rights, please contact us using the information provided below.`
-  }
-];
 function PrivacyPolicyPage() {
   const location2 = useLocation();
   reactExports.useEffect(() => {
@@ -47938,85 +47828,388 @@ function PrivacyPolicyPage() {
               /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "font-display text-4xl md:text-5xl font-bold text-foreground", children: "Privacy Policy" })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg text-muted-foreground max-w-2xl", children: "At RIKNOVA, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information." }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-muted-foreground mt-4", children: [
-              "Last updated:",
-              " ",
-              (/* @__PURE__ */ new Date()).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric"
-              })
-            ] })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-4", children: "Last updated: 19 March 2026" })
           ]
         }
       ) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "relative pb-24", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-auto max-w-4xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-12", children: [
-      privacySections.map((section, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        motion.div,
-        {
-          initial: { opacity: 0, y: 20 },
-          animate: { opacity: 1, y: 0 },
-          transition: { duration: 0.5, delay: index2 * 0.1 },
-          className: "glass rounded-2xl p-6 md:p-8",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-4", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(section.icon, { className: "h-5 w-5 text-primary" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground", children: section.title })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-muted-foreground leading-relaxed whitespace-pre-line pl-13", children: section.content })
-          ]
-        },
-        section.title
-      )),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(
         motion.div,
         {
           initial: { opacity: 0, y: 20 },
           animate: { opacity: 1, y: 0 },
-          transition: {
-            duration: 0.5,
-            delay: privacySections.length * 0.1
-          },
+          transition: { duration: 0.5, delay: 0.1 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "1. Information We Collect" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Depending on the product or service you use, we may collect information including:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Name" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Business Name" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Mobile Number" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Email Address" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Address" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Login Credentials" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Customer Information entered by you" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Loan Records" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Collection Records" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Financial Transactions" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Reports" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Analytics" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Device Information" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Browser Information" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "IP Address" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Log Information" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Usage Statistics" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Some products may collect additional information necessary to provide requested features." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "2. Customer Data" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Our software allows businesses to securely maintain and manage their operational records." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Examples include:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Customer records" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Loan details" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Collection entries" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Payment history" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Expenses" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Reports" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Uploaded documents" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Images" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Business settings" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "All customer data entered into our software remains the property of the respective customer or business using our services." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "RIKNOVA acts solely as the software service provider." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.3 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "3. How We Use Information" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Information collected may be used to:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Provide software functionality" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Authenticate users" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Synchronize information across devices" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Generate reports and analytics" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Improve product performance" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Provide customer support" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Send service-related notifications" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Maintain platform security" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Prevent fraud and misuse" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Comply with applicable laws" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "We never sell your personal information." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.4 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "4. Cloud Storage" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Your information may be securely stored using trusted cloud infrastructure providers and secure database services." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "These services are used solely for delivering the requested software functionality." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.5 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "5. Data Security" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Protecting customer information is a high priority." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "We implement appropriate security measures including:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Secure HTTPS communication" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Authentication controls" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Role-based access permissions" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Password protection" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Secure cloud infrastructure" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Regular software updates" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Backup procedures" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "While we take reasonable precautions, no internet-based service can guarantee absolute security." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.6 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "6. Third-Party Services" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Our software may integrate with trusted third-party providers for services such as:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Authentication" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Email delivery" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "SMS delivery" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Payment processing" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Cloud hosting" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Analytics" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "File storage" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "These providers process information only as necessary to provide the requested functionality." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.7 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "7. Data Sharing" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                "RIKNOVA does ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground", children: "NOT" }),
+                ":"
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Sell personal information" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Rent customer information" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Share customer databases for advertising" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Share business data for marketing purposes" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Information may only be disclosed:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "When required by applicable law" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "To comply with legal obligations" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "To protect our legal rights" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "To investigate fraud or security incidents" })
+              ] })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.8 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "8. Data Retention" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Information is retained only as long as necessary to provide our services or comply with applicable legal obligations." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Certain information may remain in secure backups for disaster recovery purposes." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.9 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "9. Data Deletion" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Users may delete business records directly from supported products." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Examples include:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Customers" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Loans" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Collections" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Expenses" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Transactions" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Reports" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Deleted information may remain in encrypted backup systems for a limited period before permanent removal." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 1 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "10. Account Deletion" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Users may permanently delete their account from supported applications." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "For Finance Pro:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Open the application" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { children: [
+                  "Navigate to",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground", children: "Settings" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { children: [
+                  "Select",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground", children: "Delete Account" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Confirm deletion" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "After confirmation, account deletion will proceed according to our retention policy." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "If assistance is required, contact us using the details below." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 1.1 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "11. Cookies & Website Analytics" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Our websites may use cookies and similar technologies to:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "list-disc pl-5 space-y-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Improve website functionality" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Remember user preferences" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Analyze website traffic" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Enhance user experience" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Users may disable cookies through their browser settings." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 1.2 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "12. Children's Privacy" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Our products are intended for business users." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "We do not knowingly collect personal information from children under 18 years of age." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 1.3 },
+          className: "glass rounded-2xl p-6 md:p-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground mb-4", children: "13. Changes to this Privacy Policy" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "We may revise this Privacy Policy periodically." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "The latest version will always be available on our official website." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Continued use of our products after updates constitutes acceptance of the revised Privacy Policy." })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 1.4 },
           className: "glass rounded-2xl p-6 md:p-8",
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-4", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "h-5 w-5 text-primary" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground", children: "Contact Us" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-xl font-semibold text-foreground", children: "14. Contact Information" })
             ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed mb-4", children: "If you have any questions about this Privacy Policy or our data practices, please contact us:" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2 text-muted-foreground", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "Email:" }),
-                " ",
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "a",
-                  {
-                    href: "mailto:financeprofintech@gmail.com",
-                    className: "text-primary hover:underline",
-                    children: "financeprofintech@gmail.com"
-                  }
-                )
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "Phone:" }),
-                " ",
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "a",
-                  {
-                    href: "tel:+919363770295",
-                    className: "text-primary hover:underline",
-                    children: "+91 9363770295"
-                  }
-                )
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "Address:" }),
-                " ",
-                "50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam, Chennai, Tamilnadu, India."
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground leading-relaxed space-y-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground font-semibold", children: "RIKNOVA FINTECH SOLUTIONS" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "Email:" }),
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "a",
+                    {
+                      href: "mailto:financeprofintech@gmail.com",
+                      className: "text-primary hover:underline",
+                      children: "financeprofintech@gmail.com"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "Phone:" }),
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "a",
+                    {
+                      href: "tel:+919363770295",
+                      className: "text-primary hover:underline",
+                      children: "+91 93637 70295"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: "Address:" }),
+                  " ",
+                  "50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam, Chennai, Tamil Nadu, India."
+                ] })
               ] })
             ] })
           ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 1.5 },
+          className: "text-center text-sm text-muted-foreground pt-8",
+          children: "© 2026 RIKNOVA FINTECH SOLUTIONS. All Rights Reserved."
         }
       )
     ] }) }) }),
