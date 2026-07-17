@@ -454,10 +454,10 @@ export default function PrivacyPolicyPage() {
                   <p>
                     <span className="text-foreground font-medium">Email:</span>{" "}
                     <a
-                      href="mailto:financeprofintech@gmail.com"
+                      href="mailto:hello@riknova.com"
                       className="text-primary hover:underline"
                     >
-                      financeprofintech@gmail.com
+                      hello@riknova.com
                     </a>
                   </p>
                   <p>

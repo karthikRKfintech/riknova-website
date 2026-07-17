@@ -351,8 +351,7 @@ export default function BookDemoModal() {
                           <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
                           <p className="text-xs leading-relaxed text-destructive-foreground/90">
                             Something went wrong while submitting your request.
-                            Please try again or contact us at
-                            financeprofintech@gmail.com.
+                            Please try again or contact us at hello@riknova.com.
                           </p>
                         </motion.div>
                       )}
@@ -384,11 +383,11 @@ export default function BookDemoModal() {
                       <span>
                         Or email us at{" "}
                         <a
-                          href="mailto:financeprofintech@gmail.com"
+                          href="mailto:hello@riknova.com"
                           className="text-accent hover:underline"
                           data-ocid="book_demo.email_link"
                         >
-                          financeprofintech@gmail.com
+                          hello@riknova.com
                         </a>
                       </span>
                     </div>
