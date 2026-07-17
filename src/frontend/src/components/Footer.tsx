@@ -22,7 +22,7 @@ const socialLinks = [
   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
   { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Mail, href: "mailto:financeprofintech@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:hello@riknova.com", label: "Email" },
 ];
 
 export default function Footer() {
@@ -107,7 +107,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-accent" />
-                <span>financeprofintech@gmail.com</span>
+                <span>hello@riknova.com</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-accent" />

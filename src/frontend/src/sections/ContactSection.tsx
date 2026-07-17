@@ -8,8 +8,8 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email Us",
-    value: "financeprofintech@gmail.com",
-    href: "mailto:financeprofintech@gmail.com",
+    value: "hello@riknova.com",
+    href: "mailto:hello@riknova.com",
     color: "primary",
   },
   {
