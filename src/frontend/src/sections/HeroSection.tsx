@@ -172,12 +172,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-      {/* bottom fade into the next (still-dark) section */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"
-      />
     </section>
   );
 }

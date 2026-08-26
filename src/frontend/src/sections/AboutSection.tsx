@@ -1,206 +1,175 @@
+import InfrastructureDiagram from "@/components/brand/InfrastructureDiagram";
+import SectionEyebrow from "@/components/brand/SectionEyebrow";
 import { Brain, Shield, TrendingUp, Zap } from "lucide-react";
 import { motion } from "motion/react";
 
-const stats = [
+const metrics = [
   {
     icon: Shield,
-    label: "99.9% Uptime",
+    value: "99.9%",
+    label: "Uptime",
     description: "Enterprise-grade reliability",
   },
   {
     icon: Zap,
-    label: "Enterprise Grade",
+    value: "Enterprise",
+    label: "Grade",
     description: "Built for scale and security",
   },
   {
     icon: Brain,
-    label: "AI Ready",
+    value: "AI",
+    label: "Ready",
     description: "Intelligent automation built-in",
   },
   {
     icon: TrendingUp,
-    label: "Future Proof",
+    value: "Future",
+    label: "Proof",
     description: "Continuous innovation pipeline",
   },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.2,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut" as const,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut" as const,
-    },
-  },
+const fade = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
 };
 
 export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative w-full overflow-hidden bg-muted/30 py-24 md:py-32"
+      className="relative overflow-hidden border-t border-[color:var(--rk-line-l)] bg-[color:var(--rk-canvas-2)] py-24 md:py-32"
     >
-      {/* Subtle aurora background */}
-      <div className="pointer-events-none absolute inset-0 gradient-aurora opacity-40" />
+      {/* faint ledger structure, anchored right */}
+      <div
+        aria-hidden="true"
+        className="rk-ledger-l pointer-events-none absolute inset-y-0 right-0 w-2/3 opacity-60"
+        style={{
+          maskImage:
+            "radial-gradient(80% 90% at 100% 30%, #000, transparent 75%)",
+          WebkitMaskImage:
+            "radial-gradient(80% 90% at 100% 30%, #000, transparent 75%)",
+        }}
+      />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div
-          variants={containerVariants}
+          variants={fade}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid gap-12 lg:grid-cols-2 lg:gap-16"
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
+          className="max-w-4xl"
         >
-          {/* Left: Text Content */}
-          <div className="flex flex-col justify-center space-y-8">
-            <motion.div variants={itemVariants}>
-              <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                About RIKNOVA
-              </span>
-            </motion.div>
-
-            <motion.h2
-              variants={itemVariants}
-              className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl"
-            >
-              Transforming Traditional Finance Through{" "}
-              <span className="text-gradient">Intelligent Software</span>
-            </motion.h2>
-
-            <motion.div variants={itemVariants} className="space-y-6">
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                We exist because traditional financial software has failed to
-                keep pace with the speed of modern business. Legacy systems are
-                rigid, expensive, and ill-equipped for the demands of
-                digital-first finance.
-              </p>
-
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                RIKNOVA fills this critical gap by building intelligent,
-                adaptive financial infrastructure that empowers microfinance
-                institutions, NBFCs, and lending platforms to operate with the
-                agility of a tech company and the trust of a bank.
-              </p>
-
-              <div className="rounded-xl border border-border/50 bg-card/50 p-6 backdrop-blur-sm">
-                <h3 className="mb-3 font-display text-xl font-semibold text-foreground">
-                  Our Vision
-                </h3>
-                <p className="text-muted-foreground">
-                  To become the leading fintech platform provider, enabling
-                  every financial institution to deliver seamless, intelligent,
-                  and inclusive services to their customers.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Right: Stats Grid + Abstract Visual */}
-          <div className="flex flex-col justify-center space-y-8">
-            {/* Abstract visual element */}
-            <motion.div
-              variants={itemVariants}
-              className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border/50 bg-card/30"
-            >
-              <div className="absolute inset-0 gradient-aurora opacity-60" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  {/* Orbiting circles */}
-                  <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{
-                      duration: 20,
-                      repeat: Number.POSITIVE_INFINITY,
-                      ease: "linear",
-                    }}
-                    className="h-48 w-48 rounded-full border border-primary/20 md:h-64 md:w-64"
-                  >
-                    <div className="absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-primary/60 shadow-lg shadow-primary/30" />
-                  </motion.div>
-                  <motion.div
-                    animate={{ rotate: -360 }}
-                    transition={{
-                      duration: 15,
-                      repeat: Number.POSITIVE_INFINITY,
-                      ease: "linear",
-                    }}
-                    className="absolute inset-0 m-auto h-32 w-32 rounded-full border border-accent/20 md:h-44 md:w-44"
-                  >
-                    <div className="absolute -bottom-2 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-accent/60 shadow-lg shadow-accent/30" />
-                  </motion.div>
-                  <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{
-                      duration: 10,
-                      repeat: Number.POSITIVE_INFINITY,
-                      ease: "linear",
-                    }}
-                    className="absolute inset-0 m-auto h-16 w-16 rounded-full border border-secondary/20 md:h-24 md:w-24"
-                  >
-                    <div className="absolute -right-1.5 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-secondary/60 shadow-lg shadow-secondary/30" />
-                  </motion.div>
-                  {/* Center glow */}
-                  <div className="absolute inset-0 m-auto h-8 w-8 rounded-full bg-primary/20 blur-xl md:h-12 md:w-12" />
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Stats Grid */}
-            <motion.div
-              variants={containerVariants}
-              className="grid grid-cols-2 gap-4"
-            >
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <motion.div
-                    key={stat.label}
-                    variants={cardVariants}
-                    custom={index}
-                    whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                    className="glass group rounded-xl p-5 transition-smooth"
-                  >
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
-                      <Icon className="h-5 w-5" />
-                    </div>
-                    <h4 className="mb-1 font-display text-lg font-semibold text-foreground">
-                      {stat.label}
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      {stat.description}
-                    </p>
-                  </motion.div>
-                );
-              })}
-            </motion.div>
-          </div>
+          <SectionEyebrow>About RIKNOVA</SectionEyebrow>
+          <h2 className="mt-5 font-display text-3xl font-medium leading-[1.08] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-4xl lg:text-5xl lg:leading-[1.05]">
+            Transforming Traditional Finance Through{" "}
+            <span className="font-bold">Intelligent Software</span>
+          </h2>
         </motion.div>
+
+        {/* Story + anchored diagram */}
+        <div className="mt-12 grid items-start gap-12 lg:mt-14 lg:grid-cols-12 lg:gap-16">
+          <motion.div
+            variants={fade}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{
+              duration: 0.6,
+              delay: 0.1,
+              ease: [0.22, 1, 0.36, 1] as const,
+            }}
+            className="space-y-6 lg:col-span-6"
+          >
+            <p className="text-lg leading-relaxed text-[color:var(--rk-ink-body)]">
+              We exist because traditional financial software has failed to keep
+              pace with the speed of modern business. Legacy systems are rigid,
+              expensive, and ill-equipped for the demands of digital-first
+              finance.
+            </p>
+            <p className="text-lg leading-relaxed text-[color:var(--rk-ink-body)]">
+              RIKNOVA fills this critical gap by building intelligent, adaptive
+              financial infrastructure that empowers microfinance institutions,
+              NBFCs, and lending platforms to operate with the agility of a tech
+              company and the trust of a bank.
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={fade}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{
+              duration: 0.7,
+              delay: 0.2,
+              ease: [0.22, 1, 0.36, 1] as const,
+            }}
+            className="lg:col-span-6"
+          >
+            <InfrastructureDiagram />
+          </motion.div>
+        </div>
+
+        {/* Vision — a distinct pulled callout, not another paragraph or card */}
+        <motion.div
+          variants={fade}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
+          className="mt-16 max-w-4xl border-l-2 pl-6 md:mt-20 md:pl-8"
+          style={{ borderImage: "var(--rk-grad-leg) 1" }}
+        >
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[color:var(--rk-violet-ink)]">
+            Our Vision
+          </span>
+          <p className="mt-3 font-display text-xl font-medium leading-snug text-[color:var(--rk-ink-strong)] sm:text-2xl">
+            To become the leading fintech platform provider, enabling every
+            financial institution to deliver seamless, intelligent, and
+            inclusive services to their customers.
+          </p>
+        </motion.div>
+
+        {/* Metric band — horizontal, rule-separated, not a card grid */}
+        <div className="mt-16 grid grid-cols-2 gap-y-8 border-t border-[color:var(--rk-line-l)] pt-10 md:mt-20 md:grid-cols-4 md:gap-y-0">
+          {metrics.map((m, i) => {
+            const Icon = m.icon;
+            return (
+              <motion.div
+                key={m.description}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{
+                  duration: 0.45,
+                  delay: i * 0.08,
+                  ease: [0.22, 1, 0.36, 1] as const,
+                }}
+                className={`px-1 md:px-6 ${i > 0 ? "md:border-l md:border-[color:var(--rk-line-l)]" : ""}`}
+                data-ocid={`about.metric.${i + 1}`}
+              >
+                <Icon
+                  className="mb-3 h-5 w-5 text-[color:var(--rk-cyan-ink)]"
+                  strokeWidth={1.6}
+                  aria-hidden="true"
+                />
+                <div className="rk-tnum font-display text-2xl font-bold leading-none text-[color:var(--rk-ink-strong)] sm:text-[1.7rem]">
+                  {m.value}{" "}
+                  <span className="font-medium text-[color:var(--rk-ink-body)]">
+                    {m.label}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--rk-ink-mute)]">
+                  {m.description}
+                </p>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

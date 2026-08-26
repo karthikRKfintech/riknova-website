@@ -343,3 +343,53 @@
     transition: none;
   }
 }
+
+/* =====================================================================
+   RIKNOVA light canvas (Phase 2B) — additive. The light side of the
+   system: a cool, blue-biased financial canvas, not generic SaaS white.
+   Text-safe accent "ink" variants are provided for small text/links so
+   accents stay AA-legible on the pale ground.
+   ===================================================================== */
+@layer base {
+  :root {
+    --rk-canvas: #edf2f9; /* cool off-white / very pale blue ground */
+    --rk-canvas-2: #f6f9fd; /* lighter pale surface */
+    --rk-surface: #ffffff; /* crisp white inset */
+    --rk-surface-cool: #e6edf7; /* cool grey-blue surface */
+    --rk-ink-strong: #0e1b32; /* headings on light (brand navy) */
+    --rk-ink-body: #313f58; /* body copy on light */
+    --rk-ink-mute: #536381; /* muted labels on light (AA) */
+    --rk-line-l: #d5dfed; /* hairline on light */
+    --rk-line-l-strong: #c1cfe2; /* stronger rule on light */
+    --rk-hair-l: rgba(16, 34, 66, 0.06); /* ledger grid on light */
+    --rk-hair-l-2: rgba(16, 34, 66, 0.09);
+    /* text-safe accent inks (AA on the canvas) */
+    --rk-blue-ink: #0c61c0;
+    --rk-cyan-ink: #0a6e7a;
+    --rk-emerald-ink: #0a7357;
+    --rk-violet-ink: #5a24c4;
+  }
+}
+
+@layer utilities {
+  .rk-ledger-l {
+    background-image: linear-gradient(var(--rk-hair-l) 1px, transparent 1px),
+      linear-gradient(90deg, var(--rk-hair-l) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .rk-ledger-l-fine {
+    background-image: linear-gradient(var(--rk-hair-l) 1px, transparent 1px),
+      linear-gradient(90deg, var(--rk-hair-l) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+  /* leader rule that draws in on reveal (financial "table" rhythm) */
+  .rk-leader {
+    background: repeating-linear-gradient(
+      90deg,
+      var(--rk-line-l-strong) 0,
+      var(--rk-line-l-strong) 4px,
+      transparent 4px,
+      transparent 9px
+    );
+  }
+}
