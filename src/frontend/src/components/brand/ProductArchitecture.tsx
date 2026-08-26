@@ -236,41 +236,29 @@ export default function ProductArchitecture() {
                   rx="1.5"
                   fill="#7C4DFF"
                 />
-                {/* ascending-bars motif (abstract, not the logo) */}
-                <rect
-                  x="216"
-                  y="176"
-                  width="10"
-                  height="16"
-                  rx="2"
-                  fill="#0FD6A6"
-                />
-                <rect
-                  x="230"
-                  y="168"
-                  width="10"
-                  height="24"
-                  rx="2"
-                  fill="#12B9C9"
-                />
-                <rect
-                  x="244"
-                  y="158"
-                  width="10"
-                  height="34"
-                  rx="2"
-                  fill="#1C82E8"
-                />
-                <rect
-                  x="204"
-                  y="126"
-                  width="34"
-                  height="3"
-                  rx="1.5"
-                  fill="rgba(147,179,224,.34)"
-                />
+                {/* the official RIKNOVA icon sits here — rendered as a real
+                    <img> overlay below, not as SVG paths */}
               </motion.g>
             </svg>
+
+            {/* Official RIKNOVA icon — the supplied asset, used directly and
+                never redrawn. mix-blend-mode: lighten drops the asset's
+                near-black background against the navy core node while
+                preserving the glyph's gradients and proportions (the same
+                technique the site's Logo component uses on dark surfaces). */}
+            <img
+              src="/assets/images/logo/riknova-symbol-dark.png"
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none absolute"
+              style={{
+                left: "50%",
+                top: "50.3%",
+                width: "14.5%",
+                transform: "translate(-50%, -50%)",
+                mixBlendMode: "lighten",
+              }}
+            />
           </div>
         </div>
       </motion.div>
