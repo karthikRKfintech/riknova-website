@@ -42,35 +42,35 @@ const collections: Capability = {
   icon: Users,
   title: "Collections",
   description:
-    "Automated debtor tracking, payment reminders, and collection workflows.",
+    "Track collections, record customer payments, and manage due and payment follow-up.",
   ocid: 2,
 };
 const loans: Capability = {
   icon: Banknote,
   title: "Loans",
   description:
-    "End-to-end loan origination, amortization schedules, and risk scoring.",
+    "Enter, create, and manage borrower loan records with the required loan details.",
   ocid: 3,
 };
 const reports: Capability = {
   icon: FileText,
   title: "Reports",
   description:
-    "Generate regulatory, tax, and management reports with one click.",
+    "View daily and monthly reports, profit analysis, and cumulative collection, lending, and expense values.",
   ocid: 4,
 };
 const receipts: Capability = {
   icon: Receipt,
   title: "Receipts",
   description:
-    "Digital receipt capture, OCR extraction, and automated bookkeeping.",
+    "Generate and access a receipt for each recorded customer payment.",
   ocid: 5,
 };
 const qrPayments: Capability = {
   icon: QrCode,
   title: "QR Payments",
   description:
-    "Instant QR-code generation for fast, contactless customer payments.",
+    "Upload a company payment QR code that authorized collection agents can show customers when receiving payments.",
   ocid: 6,
 };
 const whatsapp: Capability = {
@@ -84,7 +84,7 @@ const roles: Capability = {
   icon: UserCog,
   title: "Role Management",
   description:
-    "Granular RBAC with audit trails for every action in your organization.",
+    "Manage access for Admin and Collection Agent users based on their operational roles.",
   ocid: 8,
 };
 const backup: Capability = {
