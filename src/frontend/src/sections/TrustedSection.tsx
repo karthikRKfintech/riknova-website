@@ -94,12 +94,12 @@ export default function TrustedSection() {
 
         {/* Capability register — structured rows with leader rules, not cards */}
         <div className="mt-16 md:mt-20">
-          <div className="mb-2 flex items-center gap-4">
-            <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[color:var(--rk-ink-mute)]">
+          <div className="mb-3 flex items-center gap-4 lg:mb-4">
+            <span className="font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[color:var(--rk-ink-mute)] lg:text-xs">
               Platform Capabilities
             </span>
             <span className="h-px flex-1 bg-[color:var(--rk-line-l)]" />
-            <span className="font-mono text-[11px] tracking-[0.14em] text-[color:var(--rk-ink-mute)]">
+            <span className="rk-tnum font-mono text-sm font-semibold tracking-[0.12em] text-[color:var(--rk-ink-strong)]">
               07
             </span>
           </div>
@@ -115,23 +115,26 @@ export default function TrustedSection() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: "-60px" }}
-                  className="group flex items-center gap-4 border-t border-[color:var(--rk-line-l)] py-5"
+                  className="group flex items-center gap-4 border-t border-[color:var(--rk-line-l)] py-5 lg:gap-5 lg:py-7"
                   data-ocid={`trusted.item.${i + 1}`}
                 >
                   <Icon
-                    className="h-5 w-5 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5"
+                    className="h-5 w-5 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5 lg:h-[26px] lg:w-[26px]"
                     style={{ color: cap.color }}
-                    strokeWidth={1.6}
+                    strokeWidth={1.75}
                     aria-hidden="true"
                   />
-                  <span className="font-display text-lg font-semibold text-[color:var(--rk-ink-strong)]">
+                  <span className="font-display text-lg font-semibold tracking-tight text-[color:var(--rk-ink-strong)] lg:text-[1.35rem]">
                     {cap.label}
                   </span>
-                  <span className="rk-leader h-px flex-1 opacity-50" />
+                  <span className="rk-leader h-px flex-1 opacity-70" />
                   <span
                     aria-hidden="true"
-                    className="h-1.5 w-1.5 rounded-full"
-                    style={{ background: dotColors[i % dotColors.length] }}
+                    className="h-2 w-2 rounded-full"
+                    style={{
+                      background: dotColors[i % dotColors.length],
+                      boxShadow: `0 0 0 3px ${dotColors[i % dotColors.length]}26`,
+                    }}
                   />
                 </motion.div>
               );
@@ -145,13 +148,19 @@ export default function TrustedSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
-          className="mt-16 flex flex-wrap items-baseline gap-x-4 gap-y-1 border-t-2 border-[color:var(--rk-ink-strong)]/10 pt-6"
+          className="mt-14 flex flex-wrap items-center gap-x-4 gap-y-1 border-t-2 border-[color:var(--rk-ink-strong)]/[0.12] pt-7 lg:mt-16"
         >
-          <span className="rk-tnum font-display text-3xl font-bold text-[color:var(--rk-ink-strong)]">
+          <span
+            aria-hidden="true"
+            className="h-8 w-[4px] rounded-full lg:h-9"
+            style={{ background: "var(--rk-grad-bars)" }}
+          />
+          <span className="rk-tnum font-display text-4xl font-bold leading-none text-[color:var(--rk-ink-strong)] lg:text-5xl">
             500+
           </span>
-          <span className="font-mono text-[12px] uppercase tracking-[0.16em] text-[color:var(--rk-ink-mute)]">
-            enterprise teams worldwide
+          <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-[color:var(--rk-ink-mute)] lg:text-[13px]">
+            enterprise teams
+            <br className="hidden sm:block" /> worldwide
           </span>
         </motion.div>
       </div>

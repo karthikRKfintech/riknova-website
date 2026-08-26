@@ -71,7 +71,7 @@ export default function AboutSection() {
         </motion.div>
 
         {/* Story + anchored diagram */}
-        <div className="mt-12 grid items-start gap-12 lg:mt-14 lg:grid-cols-12 lg:gap-16">
+        <div className="mt-12 grid items-start gap-12 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.14fr)] lg:gap-16">
           <motion.div
             variants={fade}
             initial="hidden"
@@ -82,7 +82,7 @@ export default function AboutSection() {
               delay: 0.1,
               ease: [0.22, 1, 0.36, 1] as const,
             }}
-            className="space-y-6 lg:col-span-6"
+            className="space-y-6"
           >
             <p className="text-lg leading-relaxed text-[color:var(--rk-ink-body)]">
               We exist because traditional financial software has failed to keep
@@ -108,7 +108,7 @@ export default function AboutSection() {
               delay: 0.2,
               ease: [0.22, 1, 0.36, 1] as const,
             }}
-            className="lg:col-span-6"
+            className="w-full"
           >
             <InfrastructureDiagram />
           </motion.div>
@@ -135,7 +135,7 @@ export default function AboutSection() {
         </motion.div>
 
         {/* Metric band — horizontal, rule-separated, not a card grid */}
-        <div className="mt-16 grid grid-cols-2 gap-y-8 border-t border-[color:var(--rk-line-l)] pt-10 md:mt-20 md:grid-cols-4 md:gap-y-0">
+        <div className="mt-16 grid grid-cols-2 gap-y-9 border-t-2 border-[color:var(--rk-ink-strong)]/[0.12] pt-10 md:mt-20 md:grid-cols-4 md:gap-y-0 md:pt-12">
           {metrics.map((m, i) => {
             const Icon = m.icon;
             return (
@@ -149,21 +149,21 @@ export default function AboutSection() {
                   delay: i * 0.08,
                   ease: [0.22, 1, 0.36, 1] as const,
                 }}
-                className={`px-1 md:px-6 ${i > 0 ? "md:border-l md:border-[color:var(--rk-line-l)]" : ""}`}
+                className={`px-1 md:px-7 lg:px-8 ${i > 0 ? "md:border-l md:border-[color:var(--rk-line-l-strong)]" : ""}`}
                 data-ocid={`about.metric.${i + 1}`}
               >
                 <Icon
-                  className="mb-3 h-5 w-5 text-[color:var(--rk-cyan-ink)]"
-                  strokeWidth={1.6}
+                  className="mb-3 h-5 w-5 text-[color:var(--rk-cyan-ink)] md:mb-4 md:h-[26px] md:w-[26px]"
+                  strokeWidth={1.75}
                   aria-hidden="true"
                 />
-                <div className="rk-tnum font-display text-2xl font-bold leading-none text-[color:var(--rk-ink-strong)] sm:text-[1.7rem]">
+                <div className="rk-tnum font-display text-2xl font-bold leading-none tracking-tight text-[color:var(--rk-ink-strong)] sm:text-3xl lg:text-[2.15rem]">
                   {m.value}{" "}
                   <span className="font-medium text-[color:var(--rk-ink-body)]">
                     {m.label}
                   </span>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-[color:var(--rk-ink-mute)]">
+                <p className="mt-2.5 text-sm leading-relaxed text-[color:var(--rk-ink-mute)]">
                   {m.description}
                 </p>
               </motion.div>
