@@ -189,3 +189,157 @@
     background-clip: text;
   }
 }
+
+/* =====================================================================
+   RIKNOVA brand foundation (Phase 2A) — additive.
+   Deliberately scoped to new `--rk-*` tokens and `.rk-*` utilities so it
+   powers the redesigned Navbar + Hero WITHOUT altering the existing
+   semantic tokens the not-yet-redesigned sections still consume.
+   Palette values are sampled from the official RIKNOVA logo assets.
+   ===================================================================== */
+@layer base {
+  :root {
+    --rk-navy: #080d1a; /* deep RIKNOVA midnight — primary ground */
+    --rk-navy-2: #0e1a30; /* raised surface / panels */
+    --rk-navy-3: #132542; /* higher surface / rows */
+    --rk-ink: #eaf1fc; /* primary text on navy */
+    --rk-slate: #93a6c6; /* muted text on navy (from wordmark tagline) */
+    --rk-hair: rgba(147, 179, 224, 0.14); /* ledger grid / hairlines */
+    --rk-hair-2: rgba(147, 179, 224, 0.22);
+
+    /* structural / data colours */
+    --rk-blue: #1c82e8;
+    --rk-cyan: #12b9c9;
+    --rk-emerald: #0fd6a6;
+    /* structural accent */
+    --rk-violet: #6a2ce0;
+    --rk-indigo: #3a12b4;
+    /* signature accent (rare, high value) */
+    --rk-orange: #ff7a18;
+    --rk-red: #f5391c;
+    --rk-magenta: #e4145a;
+
+    --rk-grad-bars: linear-gradient(
+      120deg,
+      var(--rk-emerald),
+      var(--rk-cyan) 50%,
+      var(--rk-blue)
+    );
+    --rk-grad-arc: linear-gradient(
+      120deg,
+      var(--rk-orange),
+      var(--rk-red) 55%,
+      var(--rk-magenta)
+    );
+    --rk-grad-leg: linear-gradient(150deg, var(--rk-violet), var(--rk-indigo));
+    --rk-grad-spectrum: linear-gradient(
+      90deg,
+      var(--rk-emerald),
+      var(--rk-cyan),
+      var(--rk-blue),
+      var(--rk-violet),
+      var(--rk-magenta),
+      var(--rk-red),
+      var(--rk-orange)
+    );
+
+    --rk-shadow-panel: 0 30px 70px -28px rgba(3, 8, 20, 0.85),
+      0 2px 8px -2px rgba(3, 8, 20, 0.5);
+    --rk-glow-arc: 0 14px 40px -14px rgba(245, 57, 28, 0.5);
+    --rk-glow-blue: 0 14px 40px -16px rgba(28, 130, 232, 0.5);
+  }
+}
+
+@layer utilities {
+  /* thin spectrum divider — the full-mark hairline motif */
+  .rk-spectrum {
+    background: var(--rk-grad-spectrum);
+  }
+  .rk-text-arc {
+    background: var(--rk-grad-arc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .rk-text-data {
+    background: var(--rk-grad-bars);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  /* tabular figures for all financial data */
+  .rk-tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+  /* faint ledger grid texture (decorative, masked by caller) */
+  .rk-ledger {
+    background-image: linear-gradient(var(--rk-hair) 1px, transparent 1px),
+      linear-gradient(90deg, var(--rk-hair) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .rk-ledger-fine {
+    background-image: linear-gradient(var(--rk-hair) 1px, transparent 1px),
+      linear-gradient(90deg, var(--rk-hair) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+  /* nav link underline-wipe (arc-coloured) */
+  .rk-underline {
+    position: relative;
+  }
+  .rk-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--rk-grad-bars);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .rk-underline:hover::after,
+  .rk-underline[data-active="true"]::after {
+    transform: scaleX(1);
+  }
+  /* the signature primary button */
+  .rk-btn-arc {
+    background: var(--rk-grad-arc);
+    color: #fff;
+    box-shadow: var(--rk-glow-arc);
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.2s ease, filter 0.2s ease;
+  }
+  .rk-btn-arc:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+    box-shadow: 0 18px 46px -14px rgba(245, 57, 28, 0.6);
+  }
+  .rk-btn-arc:active {
+    transform: translateY(0);
+  }
+  /* subtle spectrum drift for the top rail (respects reduced motion below) */
+  .rk-spectrum-drift {
+    background: var(--rk-grad-spectrum);
+    background-size: 220% 100%;
+    animation: rk-drift 18s linear infinite;
+  }
+  @keyframes rk-drift {
+    to {
+      background-position: 220% 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rk-spectrum-drift {
+    animation: none;
+  }
+  .rk-underline::after {
+    transition: none;
+  }
+}
