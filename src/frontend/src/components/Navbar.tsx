@@ -112,7 +112,7 @@ export default function Navbar() {
               data-ocid="navbar.logo_link"
               aria-label="RIKNOVA — back to top"
             >
-              <Logo size={34} />
+              <Logo size={39} />
             </button>
 
             {/* Desktop Nav Links */}

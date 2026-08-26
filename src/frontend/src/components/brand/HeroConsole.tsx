@@ -70,7 +70,19 @@ export default function HeroConsole() {
         className="relative rounded-2xl p-[1.5px]"
         style={{ background: "var(--rk-grad-leg)" }}
       >
-        <div className="relative overflow-hidden rounded-2xl bg-[var(--rk-navy-2)]">
+        <div
+          className="relative overflow-hidden rounded-2xl bg-[var(--rk-navy-2)]"
+          style={{ boxShadow: "var(--rk-shadow-panel)" }}
+        >
+          {/* top inner highlight — subtle top-lighting, no glow */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 top-0 h-px"
+            style={{
+              background:
+                "linear-gradient(90deg, transparent, rgba(147,179,224,.35), transparent)",
+            }}
+          />
           {/* ledger grid texture */}
           <div
             aria-hidden="true"
@@ -149,19 +161,26 @@ export default function HeroConsole() {
               ].map((k) => (
                 <div
                   key={k.label}
-                  className="rounded-xl border border-[var(--rk-hair)] bg-[var(--rk-navy-3)]/60 p-3"
+                  className="relative overflow-hidden rounded-xl border border-[var(--rk-hair)] bg-[var(--rk-navy)]/45 p-3 pt-3.5"
+                  style={{ boxShadow: "inset 0 1px 0 rgba(147,179,224,.08)" }}
                 >
-                  <div className="mb-1.5 font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--rk-slate)]">
+                  {/* accent tick — ties each KPI to its data colour */}
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-0 h-[2px] w-8 rounded-r-full"
+                    style={{ background: k.accent }}
+                  />
+                  <div className="mb-2 font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--rk-slate)]">
                     {k.label}
                   </div>
                   <div
-                    className="font-display text-lg font-bold leading-none text-[var(--rk-ink)]"
+                    className="font-display text-[1.35rem] font-bold leading-none tracking-tight"
                     style={{ color: k.accent }}
                   >
                     {k.node}
                   </div>
-                  <div className="mt-1.5 flex items-center gap-0.5 text-[10px] text-[var(--rk-emerald)]">
-                    <ArrowUpRight className="h-3 w-3" />
+                  <div className="mt-1.5 flex items-center gap-0.5 text-[10px] text-[var(--rk-slate)]">
+                    <ArrowUpRight className="h-3 w-3 text-[var(--rk-emerald)]" />
                     {k.trend}
                   </div>
                 </div>
@@ -169,16 +188,28 @@ export default function HeroConsole() {
             </div>
 
             {/* chart: ascending bars behind a drawn line + area */}
-            <div className="mb-4 rounded-xl border border-[var(--rk-hair)] bg-[var(--rk-navy)]/50 p-4">
+            <div
+              className="mb-4 rounded-xl border border-[var(--rk-hair)] bg-[var(--rk-navy)]/80 p-4"
+              style={{ boxShadow: "inset 0 2px 10px rgba(3,8,20,.5)" }}
+            >
               <div className="mb-3 flex items-center justify-between">
                 <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--rk-slate)]">
                   Disbursements · 8w
                 </span>
-                <span className="font-display text-xs font-semibold text-[var(--rk-ink)]">
+                <span className="rk-tnum font-display text-xs font-semibold text-[var(--rk-ink)]">
                   ₹18.6M
                 </span>
               </div>
               <div className="relative h-28">
+                {/* faint baseline gridlines — chart surface structure */}
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0"
+                  style={{
+                    backgroundImage:
+                      "repeating-linear-gradient(to top, transparent 0, transparent 27px, var(--rk-hair) 27px, var(--rk-hair) 28px)",
+                  }}
+                />
                 {/* bars */}
                 <div className="absolute inset-0 flex items-end gap-1.5">
                   {bars.map((h, i) => (
@@ -242,6 +273,22 @@ export default function HeroConsole() {
                     }}
                   />
                 </svg>
+                {/* emphasized current-value endpoint */}
+                <motion.span
+                  aria-hidden="true"
+                  className="absolute left-[98.75%] top-[16.67%] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full"
+                  style={{
+                    background: "#1C82E8",
+                    boxShadow: "0 0 0 3px rgba(28,130,232,.22)",
+                  }}
+                  initial={reduce ? false : { scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{
+                    duration: 0.35,
+                    delay: reduce ? 0 : 1.65,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                />
               </div>
             </div>
 
@@ -261,8 +308,19 @@ export default function HeroConsole() {
                           ease: [0.22, 1, 0.36, 1] as const,
                         },
                       })}
-                  className="flex items-center justify-between rounded-lg border border-[var(--rk-hair)] bg-[var(--rk-navy-3)]/40 px-3 py-2"
+                  className="relative flex items-center justify-between overflow-hidden rounded-lg border border-[var(--rk-hair)] bg-[var(--rk-navy)]/40 py-2 pl-3.5 pr-3"
                 >
+                  {/* left status accent — quiet data emphasis */}
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-0 h-full w-[2.5px]"
+                    style={{
+                      background: row.ok
+                        ? "var(--rk-emerald)"
+                        : "var(--rk-orange)",
+                      opacity: 0.7,
+                    }}
+                  />
                   <div className="flex items-center gap-2.5 min-w-0">
                     <span className="shrink-0 whitespace-nowrap font-mono text-[10px] text-[var(--rk-slate)]">
                       {row.id}

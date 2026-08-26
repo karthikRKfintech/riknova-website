@@ -1,3 +1,4 @@
+import ArcSweep from "@/components/brand/ArcSweep";
 import HeroConsole from "@/components/brand/HeroConsole";
 import { useBookDemoModal } from "@/hooks/useBookDemoModal";
 import {
@@ -40,7 +41,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden bg-[var(--rk-navy)] pb-16 pt-28 lg:pt-24"
+      className="relative flex min-h-screen items-center overflow-hidden bg-[var(--rk-navy)] pb-20 pt-28 sm:pb-24 lg:py-24"
     >
       {/* ledger-grid architecture, masked to a soft vignette (structure, not fog) */}
       <div
@@ -95,27 +96,13 @@ export default function HeroSection() {
 
             <motion.h1
               {...stage(1)}
-              className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-[var(--rk-ink)] sm:text-5xl lg:text-6xl xl:text-[4rem]"
+              className="font-display text-4xl font-medium leading-[1.08] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl sm:leading-[1.06] lg:text-[3.75rem] lg:leading-[1.02] lg:tracking-[-0.03em] xl:text-[4.25rem]"
             >
               Transform Your{" "}
-              <span className="relative inline-block">
+              <span className="relative inline-block font-bold">
                 Finance Business
-                {/* warm arc-sweep — the single signature warm moment in the headline */}
-                <motion.span
-                  aria-hidden="true"
-                  className="absolute -bottom-1.5 left-0 h-[4px] w-full rounded-full"
-                  style={{
-                    background: "var(--rk-grad-arc)",
-                    transformOrigin: "left",
-                  }}
-                  initial={reduce ? false : { scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{
-                    duration: 0.7,
-                    delay: reduce ? 0 : 0.75,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                />
+                {/* abstract rising sweep — the single warm signature moment */}
+                <ArcSweep delay={0.8} />
               </span>{" "}
               with Intelligent Software
             </motion.h1>
