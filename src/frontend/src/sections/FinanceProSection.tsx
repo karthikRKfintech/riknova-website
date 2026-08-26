@@ -35,7 +35,7 @@ const analytics: Capability = {
   icon: BarChart3,
   title: "Analytics",
   description:
-    "Real-time financial dashboards with predictive insights and custom reporting.",
+    "View key financial and operational insights through clear business dashboards.",
   ocid: 1,
 };
 const collections: Capability = {
@@ -76,8 +76,7 @@ const qrPayments: Capability = {
 const whatsapp: Capability = {
   icon: MessageCircle,
   title: "WhatsApp Integration",
-  description:
-    "Send invoices, reminders, and support messages directly via WhatsApp.",
+  description: "Share customer payment receipts directly through WhatsApp.",
   ocid: 7,
 };
 const roles: Capability = {
@@ -91,7 +90,7 @@ const backup: Capability = {
   icon: Cloud,
   title: "Cloud Backup",
   description:
-    "Encrypted daily backups with point-in-time recovery and geo-redundancy.",
+    "Keep your business data securely stored in the cloud with regular backups.",
   ocid: 9,
 };
 
