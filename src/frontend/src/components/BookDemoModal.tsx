@@ -131,8 +131,8 @@ export default function BookDemoModal() {
                     Demo Request Received
                   </h2>
                   <p className="text-muted-foreground leading-relaxed max-w-sm mb-8">
-                    Thank you for your interest! Our team will contact you
-                    within 24 hours to schedule your personalized demo.
+                    Your demo request has been received. Our team will contact
+                    you to discuss your requirements and schedule the demo.
                   </p>
                   <Button
                     onClick={handleDone}
