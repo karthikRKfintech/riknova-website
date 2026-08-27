@@ -243,8 +243,8 @@
       var(--rk-orange)
     );
 
-    --rk-shadow-panel: 0 30px 70px -28px rgba(3, 8, 20, 0.85),
-      0 2px 8px -2px rgba(3, 8, 20, 0.5);
+    --rk-shadow-panel: 0 30px 70px -28px rgba(3, 8, 20, 0.85), 0 2px 8px -2px
+      rgba(3, 8, 20, 0.5);
     --rk-glow-arc: 0 14px 40px -14px rgba(245, 57, 28, 0.5);
     --rk-glow-blue: 0 14px 40px -16px rgba(28, 130, 232, 0.5);
   }
@@ -311,8 +311,8 @@
     background: var(--rk-grad-arc);
     color: #fff;
     box-shadow: var(--rk-glow-arc);
-    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
-      box-shadow 0.2s ease, filter 0.2s ease;
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s
+      ease, filter 0.2s ease;
   }
   .rk-btn-arc:hover {
     transform: translateY(-1px);
