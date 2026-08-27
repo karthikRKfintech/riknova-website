@@ -14,8 +14,12 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
+/** Stable section-id list for the scroll-spy (module scope so its identity
+ * never changes between renders). */
+const NAV_SECTION_IDS = ["products", "about", "industries", "contact"] as const;
+
 /** Lightweight scroll-spy: returns the id of the section currently in view. */
-function useActiveSection(ids: string[]) {
+function useActiveSection(ids: readonly string[]) {
   const [active, setActive] = useState<string | null>(null);
   useEffect(() => {
     const els = ids
@@ -44,12 +48,7 @@ export default function Navbar() {
   const router = useRouter();
   const isHomePage = location.pathname === "/";
   const { openModal: openBookDemoModal } = useBookDemoModal();
-  const activeSection = useActiveSection([
-    "products",
-    "about",
-    "industries",
-    "contact",
-  ]);
+  const activeSection = useActiveSection(NAV_SECTION_IDS);
 
   useEffect(() => {
     setIsScrolled(scrollY > 40);
@@ -193,7 +192,7 @@ export default function Navbar() {
             transition={{ duration: 0.2 }}
             className="fixed inset-0 z-40 lg:hidden"
           >
-            <div className="absolute inset-0 bg-[var(--rk-navy)]/97 backdrop-blur-xl" />
+            <div className="absolute inset-0 bg-[color:var(--rk-navy)] backdrop-blur-xl" />
             <div
               className="rk-ledger pointer-events-none absolute inset-0 opacity-40"
               style={{
