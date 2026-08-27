@@ -192,7 +192,7 @@ export default function InfrastructureDiagram() {
           className="h-2.5 w-[3px] rounded-full"
           style={{ background: "var(--rk-grad-leg)" }}
         />
-        Tech-company agility · bank-grade trust
+        Built around everyday lending operations
       </div>
     </div>
   );

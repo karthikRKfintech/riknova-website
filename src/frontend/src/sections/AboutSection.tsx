@@ -1,32 +1,28 @@
 import InfrastructureDiagram from "@/components/brand/InfrastructureDiagram";
 import SectionEyebrow from "@/components/brand/SectionEyebrow";
-import { Brain, Shield, TrendingUp, Zap } from "lucide-react";
+import { Target, TrendingUp, Users, Wrench } from "lucide-react";
 import { motion } from "motion/react";
 
-const metrics = [
+const principles = [
   {
-    icon: Shield,
-    value: "99.9%",
-    label: "Uptime",
-    description: "Enterprise-grade reliability",
+    icon: Wrench,
+    title: "Practical",
+    description: "Built for real lending workflows.",
   },
   {
-    icon: Zap,
-    value: "Enterprise",
-    label: "Grade",
-    description: "Built for scale and security",
+    icon: Target,
+    title: "Focused",
+    description: "Software for lending and finance businesses.",
   },
   {
-    icon: Brain,
-    value: "AI",
-    label: "Ready",
-    description: "Intelligent automation built-in",
+    icon: Users,
+    title: "Access",
+    description: "Admin and Collection Agent roles.",
   },
   {
     icon: TrendingUp,
-    value: "Future",
-    label: "Proof",
-    description: "Continuous innovation pipeline",
+    title: "Evolving",
+    description: "Built around the changing needs of finance businesses.",
   },
 ];
 
@@ -65,8 +61,8 @@ export default function AboutSection() {
         >
           <SectionEyebrow>About RIKNOVA</SectionEyebrow>
           <h2 className="mt-5 font-display text-3xl font-medium leading-[1.08] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-4xl lg:text-5xl lg:leading-[1.05]">
-            Transforming Traditional Finance Through{" "}
-            <span className="font-bold">Intelligent Software</span>
+            Software built around{" "}
+            <span className="font-bold">real lending work</span>
           </h2>
         </motion.div>
 
@@ -85,16 +81,14 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg leading-relaxed text-[color:var(--rk-ink-body)]">
-              We exist because traditional financial software has failed to keep
-              pace with the speed of modern business. Legacy systems are rigid,
-              expensive, and ill-equipped for the demands of digital-first
-              finance.
+              RIKNOVA is a fintech software company focused on lending and
+              finance. We build practical tools around the real, everyday work
+              of managing loans, collections, payments, and business records.
             </p>
             <p className="text-lg leading-relaxed text-[color:var(--rk-ink-body)]">
-              RIKNOVA fills this critical gap by building intelligent, adaptive
-              financial infrastructure that empowers microfinance institutions,
-              NBFCs, and lending platforms to operate with the agility of a tech
-              company and the trust of a bank.
+              Our flagship product, Finance Pro, brings these operations
+              together in software designed for microfinance institutions,
+              NBFCs, finance companies, and lending businesses.
             </p>
           </motion.div>
 
@@ -128,19 +122,18 @@ export default function AboutSection() {
             Our Vision
           </span>
           <p className="mt-3 font-display text-xl font-medium leading-snug text-[color:var(--rk-ink-strong)] sm:text-2xl">
-            To become the leading fintech platform provider, enabling every
-            financial institution to deliver seamless, intelligent, and
-            inclusive services to their customers.
+            To build financial software that lending businesses can rely on as
+            their operations grow.
           </p>
         </motion.div>
 
         {/* Metric band — horizontal, rule-separated, not a card grid */}
         <div className="mt-16 grid grid-cols-2 gap-y-9 border-t-2 border-[color:var(--rk-ink-strong)]/[0.12] pt-10 md:mt-20 md:grid-cols-4 md:gap-y-0 md:pt-12">
-          {metrics.map((m, i) => {
-            const Icon = m.icon;
+          {principles.map((p, i) => {
+            const Icon = p.icon;
             return (
               <motion.div
-                key={m.description}
+                key={p.title}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
@@ -157,14 +150,11 @@ export default function AboutSection() {
                   strokeWidth={1.75}
                   aria-hidden="true"
                 />
-                <div className="rk-tnum font-display text-2xl font-bold leading-none tracking-tight text-[color:var(--rk-ink-strong)] sm:text-3xl lg:text-[2.15rem]">
-                  {m.value}{" "}
-                  <span className="font-medium text-[color:var(--rk-ink-body)]">
-                    {m.label}
-                  </span>
+                <div className="font-display text-2xl font-bold leading-none tracking-tight text-[color:var(--rk-ink-strong)] sm:text-3xl lg:text-[2.15rem]">
+                  {p.title}
                 </div>
                 <p className="mt-2.5 text-sm leading-relaxed text-[color:var(--rk-ink-mute)]">
-                  {m.description}
+                  {p.description}
                 </p>
               </motion.div>
             );

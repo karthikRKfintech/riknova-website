@@ -9,7 +9,7 @@ const roadmap = [
     icon: Wallet,
     title: "Finance Pro NBFC",
     description:
-      "Intelligent debt collection and recovery management system with automated workflows and compliance tracking.",
+      "A planned product focused on collections and recovery workflows for NBFCs.",
     status: "Coming Soon",
     accent: "#12B9C9",
   },
@@ -64,7 +64,7 @@ export default function ProductsSection() {
             Our <span className="font-bold">Products</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--rk-slate)] md:text-lg">
-            Powerful solutions built for modern financial institutions
+            Finance Pro today, with more products on the way.
           </p>
         </motion.div>
 
@@ -101,9 +101,9 @@ export default function ProductsSection() {
               Finance Pro
             </h3>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-[var(--rk-slate)] md:text-lg">
-              Complete finance management platform for microfinance, NBFCs, and
-              financial institutions. Streamline operations, automate workflows,
-              and scale with confidence.
+              Finance management software for microfinance institutions, NBFCs,
+              finance companies, and lending businesses — bringing loans,
+              collections, receipts, and reports together in one place.
             </p>
 
             <a

@@ -1,24 +1,22 @@
 import DarkToLightTransition from "@/components/brand/DarkToLightTransition";
 import SectionEyebrow from "@/components/brand/SectionEyebrow";
 import {
-  Brain,
-  Building2,
+  Banknote,
+  BarChart3,
   Cloud,
-  Cpu,
-  Shield,
-  TrendingUp,
-  Zap,
+  Receipt,
+  UserCog,
+  Users,
 } from "lucide-react";
 import { motion } from "motion/react";
 
 const capabilities = [
-  { icon: Cpu, label: "Technology", color: "var(--rk-blue-ink)" },
-  { icon: Shield, label: "Security", color: "var(--rk-cyan-ink)" },
-  { icon: Cloud, label: "Cloud", color: "var(--rk-emerald-ink)" },
-  { icon: Zap, label: "Performance", color: "var(--rk-blue-ink)" },
-  { icon: TrendingUp, label: "Scalability", color: "var(--rk-cyan-ink)" },
-  { icon: Brain, label: "AI", color: "var(--rk-emerald-ink)" },
-  { icon: Building2, label: "Enterprise", color: "var(--rk-blue-ink)" },
+  { icon: Banknote, label: "Loan Management", color: "var(--rk-blue-ink)" },
+  { icon: Users, label: "Collections", color: "var(--rk-cyan-ink)" },
+  { icon: Receipt, label: "Payment Receipts", color: "var(--rk-emerald-ink)" },
+  { icon: BarChart3, label: "Reports & Insights", color: "var(--rk-blue-ink)" },
+  { icon: UserCog, label: "Roles & Access", color: "var(--rk-cyan-ink)" },
+  { icon: Cloud, label: "Cloud & Backups", color: "var(--rk-emerald-ink)" },
 ];
 
 const dotColors = ["#0FD6A6", "#12B9C9", "#1C82E8"];
@@ -65,9 +63,11 @@ export default function TrustedSection() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
             className="lg:col-span-7"
           >
-            <SectionEyebrow>Trusted by Industry Leaders</SectionEyebrow>
+            <SectionEyebrow>What Finance Pro Handles</SectionEyebrow>
             <h2 className="mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-5xl lg:text-[3.4rem]">
-              Built for <span className="font-bold">Enterprise Scale</span>
+              The core of your{" "}
+              <span className="font-bold">lending operation</span>, in one
+              system
             </h2>
           </motion.div>
 
@@ -84,9 +84,8 @@ export default function TrustedSection() {
           >
             <div className="border-l-2 border-[color:var(--rk-line-l-strong)] pl-5">
               <p className="text-base leading-relaxed text-[color:var(--rk-ink-body)] md:text-lg">
-                Powering the infrastructure behind the world&apos;s most
-                demanding organizations with cutting-edge technology and
-                uncompromising security.
+                From loan records to daily reporting, Finance Pro brings the
+                everyday work of a lending business into one organised system.
               </p>
             </div>
           </motion.div>
@@ -96,11 +95,11 @@ export default function TrustedSection() {
         <div className="mt-16 md:mt-20">
           <div className="mb-3 flex items-center gap-4 lg:mb-4">
             <span className="font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[color:var(--rk-ink-mute)] lg:text-xs">
-              Platform Capabilities
+              Capabilities
             </span>
             <span className="h-px flex-1 bg-[color:var(--rk-line-l)]" />
             <span className="rk-tnum font-mono text-sm font-semibold tracking-[0.12em] text-[color:var(--rk-ink-strong)]">
-              07
+              06
             </span>
           </div>
 
@@ -141,28 +140,6 @@ export default function TrustedSection() {
             })}
           </div>
         </div>
-
-        {/* Trust statement band */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
-          className="mt-14 flex flex-wrap items-center gap-x-4 gap-y-1 border-t-2 border-[color:var(--rk-ink-strong)]/[0.12] pt-7 lg:mt-16"
-        >
-          <span
-            aria-hidden="true"
-            className="h-8 w-[4px] rounded-full lg:h-9"
-            style={{ background: "var(--rk-grad-bars)" }}
-          />
-          <span className="rk-tnum font-display text-4xl font-bold leading-none text-[color:var(--rk-ink-strong)] lg:text-5xl">
-            500+
-          </span>
-          <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-[color:var(--rk-ink-mute)] lg:text-[13px]">
-            enterprise teams
-            <br className="hidden sm:block" /> worldwide
-          </span>
-        </motion.div>
       </div>
     </section>
   );

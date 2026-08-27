@@ -4,16 +4,16 @@ import { useBookDemoModal } from "@/hooks/useBookDemoModal";
 import {
   ArrowRight,
   ChevronRight,
-  ShieldCheck,
-  TrendingUp,
-  Zap,
+  Cloud,
+  Languages,
+  Users,
 } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 
 const trustItems = [
-  { icon: ShieldCheck, label: "Secure Role-Based Access" },
-  { icon: Zap, label: "99.9% Uptime" },
-  { icon: TrendingUp, label: "₹2B+ Processed" },
+  { icon: Users, label: "Admin & Collection Agent roles" },
+  { icon: Cloud, label: "Cloud-based, backed up regularly" },
+  { icon: Languages, label: "Tamil & English" },
 ];
 
 export default function HeroSection() {
@@ -90,7 +90,7 @@ export default function HeroSection() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--rk-emerald)]" />
               </span>
               <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--rk-slate)]">
-                Trusted by 500+ Financial Institutions
+                Fintech Software · Lending &amp; Finance
               </span>
             </motion.div>
 
@@ -98,22 +98,21 @@ export default function HeroSection() {
               {...stage(1)}
               className="font-display text-4xl font-medium leading-[1.08] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl sm:leading-[1.06] lg:text-[3.75rem] lg:leading-[1.02] lg:tracking-[-0.03em] xl:text-[4.25rem]"
             >
-              Transform Your{" "}
+              Software built for the way{" "}
               <span className="relative inline-block font-bold">
-                Finance Business
+                finance businesses
                 {/* abstract rising sweep — the single warm signature moment */}
                 <ArcSweep delay={0.8} />
               </span>{" "}
-              with Intelligent Software
+              work.
             </motion.h1>
 
             <motion.p
               {...stage(2)}
               className="mt-7 max-w-xl text-base leading-relaxed text-[var(--rk-slate)] sm:text-lg"
             >
-              RIKNOVA builds secure, scalable cloud applications that empower
-              financial businesses to streamline operations, reduce risk, and
-              accelerate growth.
+              RIKNOVA builds Finance Pro — practical software for managing
+              lending operations, collections, receipts, and reports.
             </motion.p>
 
             <motion.div
@@ -126,7 +125,7 @@ export default function HeroSection() {
                 className="rk-btn-arc group inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 font-display text-base font-semibold outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-orange)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]"
                 data-ocid="hero.book_demo_button"
               >
-                Book Demo
+                Book a demo
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </button>
               <button

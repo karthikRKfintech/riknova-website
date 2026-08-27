@@ -154,7 +154,7 @@ export default function Navbar() {
                 className="rk-btn-arc inline-flex items-center gap-1.5 rounded-lg px-4 py-2 font-display text-sm font-semibold outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-orange)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]"
                 data-ocid="navbar.book_demo_button"
               >
-                Book Demo
+                Book a demo
                 <ArrowRight className="h-3.5 w-3.5" />
               </button>
             </div>
@@ -250,7 +250,7 @@ export default function Navbar() {
                   className="rk-btn-arc flex w-full items-center justify-center gap-2 rounded-xl py-3.5 font-display text-base font-semibold"
                   data-ocid="navbar.mobile_book_demo_button"
                 >
-                  Book Demo
+                  Book a demo
                   <ArrowRight className="h-4 w-4" />
                 </button>
               </motion.div>
