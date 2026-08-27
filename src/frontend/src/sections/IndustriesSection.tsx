@@ -1,154 +1,151 @@
-import {
-  Briefcase,
-  Building,
-  Car,
-  Gem,
-  HandCoins,
-  Landmark,
-  Users,
-} from "lucide-react";
+import SectionEyebrow from "@/components/brand/SectionEyebrow";
 import { motion } from "motion/react";
 
-const industries = [
+/**
+ * IndustriesSection — Phase 2F "who is RIKNOVA built for".
+ *
+ * A light sector-directory: four confirmed lending/finance business types as
+ * large typographic entries with mono indices, concise context lines, and
+ * thin ledger dividers. No cards, icons, timelines, diagrams or fabricated
+ * capabilities — the composition simply makes the target customer obvious.
+ * Kept light and continuous with the WhyChooseUs section above.
+ */
+
+const sectors = [
   {
-    name: "Microfinance",
-    description:
-      "Empowering underserved communities with accessible credit solutions and digital lending platforms.",
-    icon: HandCoins,
+    index: "01",
+    color: "var(--rk-cyan-ink)",
+    name: "Microfinance Institutions",
+    context:
+      "Microfinance institutions managing borrower loans, collections, and day-to-day lending operations.",
   },
   {
-    name: "NBFC",
-    description:
-      "Comprehensive technology stack for non-banking financial companies to scale operations securely.",
-    icon: Building,
+    index: "02",
+    color: "var(--rk-blue-ink)",
+    name: "NBFCs",
+    context:
+      "Non-banking financial companies managing lending and finance operations across their day-to-day business.",
   },
   {
+    index: "03",
+    color: "var(--rk-emerald-ink)",
     name: "Finance Companies",
-    description:
-      "End-to-end digital transformation for traditional finance institutions seeking modern infrastructure.",
-    icon: Landmark,
+    context:
+      "Finance businesses managing loans, collections, and reporting as part of their everyday operations.",
   },
   {
-    name: "Collection Agencies",
-    description:
-      "AI-powered recovery tools and compliant communication channels to optimize debt collection workflows.",
-    icon: Users,
-  },
-  {
-    name: "Vehicle Finance",
-    description:
-      "Specialized loan management and asset tracking solutions for automotive financing portfolios.",
-    icon: Car,
-  },
-  {
-    name: "Gold Loan",
-    description:
-      "Streamlined appraisal, vault management, and disbursement systems for precious metal-backed lending.",
-    icon: Gem,
-  },
-  {
-    name: "Business Lending",
-    description:
-      "Flexible working capital and term loan platforms tailored for SME and enterprise credit needs.",
-    icon: Briefcase,
+    index: "04",
+    color: "var(--rk-violet-ink)",
+    name: "Lending Businesses",
+    context:
+      "Lending businesses that need practical software to manage loans, collections, and everyday operations.",
   },
 ];
 
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
+const EASE = [0.22, 1, 0.36, 1] as const;
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut" as const,
-    },
-  },
+const listV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12, delayChildren: 0.05 } },
+};
+const entryV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+};
+const ruleV = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.6, ease: EASE } },
+};
+const fadeV = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
 };
 
 export default function IndustriesSection() {
   return (
     <section
       id="industries"
-      className="relative overflow-hidden bg-muted/30 py-24 md:py-32"
+      className="relative overflow-hidden border-t border-[color:var(--rk-line-l)] bg-[color:var(--rk-canvas-2)] py-24 md:py-28 lg:py-32"
     >
-      {/* Aurora background */}
-      <div className="gradient-aurora pointer-events-none absolute inset-0 opacity-60" />
+      {/* subtle light-grid texture */}
+      <div
+        aria-hidden="true"
+        className="rk-ledger-l pointer-events-none absolute inset-0 opacity-60"
+        style={{
+          maskImage:
+            "radial-gradient(100% 90% at 15% 0%, #000 35%, transparent 82%)",
+          WebkitMaskImage:
+            "radial-gradient(100% 90% at 15% 0%, #000 35%, transparent 82%)",
+        }}
+      />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mb-16 text-center md:mb-20"
+          transition={{ duration: 0.6, ease: EASE }}
+          className="max-w-3xl"
         >
-          <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-            Industries
-          </span>
-          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-            Industries We <span className="text-gradient">Serve</span>
+          <SectionEyebrow>Industries</SectionEyebrow>
+          <h2 className="mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-5xl lg:text-[3.4rem]">
+            Built for{" "}
+            <span className="font-bold">Lending &amp; Finance Businesses</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
-            Purpose-built fintech infrastructure powering the full spectrum of
-            financial services across emerging and established markets.
+          <p className="mt-4 text-base leading-relaxed text-[color:var(--rk-ink-body)] md:text-lg">
+            RIKNOVA builds software for lending and finance businesses — the
+            institutions and companies that manage loans, collections, and
+            everyday finance operations.
           </p>
         </motion.div>
 
-        {/* Cards grid */}
-        <motion.div
-          variants={containerVariants}
+        {/* Sector directory */}
+        <motion.ol
+          variants={listV}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          className="mt-16 md:mt-20"
         >
-          {industries.map((industry, index) => {
-            const Icon = industry.icon;
-            return (
+          {sectors.map((s, i) => (
+            <motion.li
+              key={s.index}
+              variants={entryV}
+              className="relative grid gap-3 pt-7 md:pt-9 lg:grid-cols-12 lg:items-baseline lg:gap-8 [&:not(:last-child)]:pb-8 md:[&:not(:last-child)]:pb-11"
+              data-ocid={`industries.item.${i + 1}`}
+            >
+              {/* drawn ledger divider */}
+              <motion.span
+                aria-hidden="true"
+                variants={ruleV}
+                className="absolute inset-x-0 top-0 h-px origin-left bg-[color:var(--rk-line-l-strong)]"
+              />
+
               <motion.div
-                key={industry.name}
-                variants={cardVariants}
-                custom={index}
-                data-ocid={`industries.item.${index + 1}`}
-                className="group relative flex flex-col rounded-2xl glass p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-elevated hover:border-primary/30"
+                variants={fadeV}
+                className="flex items-baseline gap-4 lg:col-span-8"
               >
-                {/* Glow effect on hover */}
-                <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-                </div>
-
-                {/* Icon */}
-                <div className="relative mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary/20">
-                  <Icon className="h-6 w-6" aria-hidden="true" />
-                </div>
-
-                {/* Content */}
-                <h3 className="relative mb-2 font-display text-lg font-semibold text-foreground">
-                  {industry.name}
+                <span
+                  className="rk-tnum shrink-0 font-mono text-[13px] font-semibold tracking-[0.14em]"
+                  style={{ color: s.color }}
+                >
+                  {s.index}
+                </span>
+                <h3 className="font-display text-3xl font-bold leading-[1.05] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-4xl lg:text-[2.9rem]">
+                  {s.name}
                 </h3>
-                <p className="relative text-sm leading-relaxed text-muted-foreground">
-                  {industry.description}
-                </p>
-
-                {/* Bottom accent line */}
-                <div className="relative mt-4 h-px w-full overflow-hidden rounded-full bg-border">
-                  <div className="h-full w-0 bg-gradient-to-r from-primary to-accent transition-all duration-500 group-hover:w-full" />
-                </div>
               </motion.div>
-            );
-          })}
-        </motion.div>
+
+              <motion.p
+                variants={fadeV}
+                className="max-w-md text-[15px] leading-relaxed text-[color:var(--rk-ink-body)] lg:col-span-4 lg:pl-4"
+              >
+                {s.context}
+              </motion.p>
+            </motion.li>
+          ))}
+        </motion.ol>
       </div>
     </section>
   );
