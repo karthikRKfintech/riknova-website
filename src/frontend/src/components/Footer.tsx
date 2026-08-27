@@ -1,12 +1,19 @@
 import Logo from "@/components/Logo";
 import { Link } from "@tanstack/react-router";
-import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+
+/**
+ * Footer — Phase 2J "quiet brand close".
+ *
+ * The final settling of the navy closing zone: a near-black ground continuing
+ * from Contact, the official RIKNOVA lockup, one factual descriptor, a compact
+ * email route, lean navigation, legal routes and a dynamic copyright. No
+ * marketing blurb, no CTA, no social cluster, no glass — restraint by design.
+ */
 
 const footerLinks = {
   product: [
     { label: "Finance Pro", href: "#products" },
     { label: "Features", href: "#finance-pro" },
-    { label: "Pricing", href: "#contact" },
   ],
   company: [
     { label: "About Us", href: "#about" },
@@ -18,171 +25,118 @@ const footerLinks = {
   ],
 };
 
-const socialLinks = [
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Mail, href: "mailto:hello@riknova.com", label: "Email" },
-];
+const linkClass =
+  "text-sm text-[var(--rk-slate)] outline-none transition-colors hover:text-[var(--rk-ink)] focus-visible:text-[var(--rk-ink)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[#05080f] rounded-sm";
+
+function renderFooterLink(link: { label: string; href: string }) {
+  const ocid = `footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`;
+
+  if (link.href.startsWith("/")) {
+    return (
+      <Link to={link.href} className={linkClass} data-ocid={ocid}>
+        {link.label}
+      </Link>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        const el = document.querySelector(link.href);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }}
+      className={`${linkClass} text-left`}
+      data-ocid={ocid}
+    >
+      {link.label}
+    </button>
+  );
+}
+
+function LinkGroup({
+  heading,
+  links,
+}: {
+  heading: string;
+  links: { label: string; href: string }[];
+}) {
+  return (
+    <div>
+      <h2 className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--rk-slate)]/70">
+        {heading}
+      </h2>
+      <ul className="space-y-3">
+        {links.map((link) => (
+          <li key={link.label}>{renderFooterLink(link)}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const handleLinkClick = (href: string) => {
-    if (href.startsWith("#") && href !== "#") {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  };
 
   const handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const renderFooterLink = (link: { label: string; href: string }) => {
-    const isInternalRoute = link.href.startsWith("/");
-    const isAnchor = link.href.startsWith("#");
-
-    if (isInternalRoute) {
-      return (
-        <Link
-          to={link.href}
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-          data-ocid={`footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`}
-        >
-          {link.label}
-        </Link>
-      );
-    }
-
-    if (isAnchor) {
-      return (
-        <button
-          type="button"
-          onClick={() => handleLinkClick(link.href)}
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-          data-ocid={`footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`}
-        >
-          {link.label}
-        </button>
-      );
-    }
-
-    return (
-      <a
-        href={link.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-        data-ocid={`footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`}
-      >
-        {link.label}
-      </a>
-    );
-  };
-
   return (
-    <footer className="relative border-t border-border/50 bg-card/40 backdrop-blur-sm">
-      {/* Main Footer Content */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
-          {/* Brand Column */}
-          <div className="lg:col-span-2">
+    <footer className="relative bg-[#05080f]">
+      {/* one precise top hairline — the system settling into its final state */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px"
+        style={{ background: "var(--rk-hair)" }}
+      />
+
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
+          {/* Brand */}
+          <div className="lg:col-span-5">
             <button
               type="button"
               onClick={handleLogoClick}
-              className="flex items-center gap-2 mb-6"
+              className="inline-flex items-center gap-2 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[#05080f]"
               data-ocid="footer.logo_link"
+              aria-label="RIKNOVA — back to top"
             >
-              <Logo size={36} />
+              <Logo size={38} />
             </button>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-xs mb-6">
-              Building intelligent financial infrastructure for modern
-              enterprises. Secure, scalable, and future-ready fintech solutions.
+            <p className="mt-6 max-w-xs text-sm leading-relaxed text-[var(--rk-slate)]">
+              Finance software for lending and finance businesses.
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Mail className="h-4 w-4 text-accent" />
-                <span>hello@riknova.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 text-accent" />
-                <span>+91 9363770295</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 text-accent" />
-                <span>
-                  50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam,
-                  Chennai, Tamilnadu, India.
-                </span>
-              </div>
-            </div>
+            <a
+              href="mailto:hello@riknova.com"
+              className="mt-6 inline-block text-sm font-medium text-[var(--rk-ink)] outline-none transition-colors hover:text-[var(--rk-cyan)] focus-visible:text-[var(--rk-cyan)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[#05080f] rounded-sm"
+              data-ocid="footer.email_link"
+            >
+              hello@riknova.com
+            </a>
           </div>
 
-          {/* Link Columns */}
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
-              Product
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.label}>{renderFooterLink(link)}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
-              Company
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>{renderFooterLink(link)}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
-              Legal
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.label}>{renderFooterLink(link)}</li>
-              ))}
-            </ul>
-          </div>
+          {/* Navigation */}
+          <nav
+            aria-label="Footer"
+            className="grid grid-cols-1 gap-10 sm:grid-cols-3 lg:col-span-7 lg:gap-8"
+          >
+            <LinkGroup heading="Product" links={footerLinks.product} />
+            <LinkGroup heading="Company" links={footerLinks.company} />
+            <LinkGroup heading="Legal" links={footerLinks.legal} />
+          </nav>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-border/50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} RIKNOVA. All rights reserved.
-            </p>
-
-            <div className="flex items-center gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
-                  data-ocid={`footer.social_${social.label.toLowerCase()}_link`}
-                >
-                  <social.icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
-          </div>
+      {/* Bottom rail */}
+      <div
+        className="relative"
+        style={{ borderTop: "1px solid var(--rk-hair)" }}
+      >
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <p className="text-xs text-[var(--rk-slate)]/80">
+            &copy; {currentYear} RIKNOVA. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,21 @@
-import { Quote, Star } from "lucide-react";
-import { motion } from "motion/react";
+import LightToNavyTransition from "@/components/brand/LightToNavyTransition";
+import SectionEyebrow from "@/components/brand/SectionEyebrow";
+import { Star } from "lucide-react";
+import { motion, useReducedMotion } from "motion/react";
+
+/**
+ * TestimonialsSection — Phase 2G "customer voice / social proof".
+ *
+ * Opens the site's dark closing zone. A navy editorial testimonial sequence
+ * on the --rk-* system: four genuine customer statements carried by their
+ * quotation typography, with mono 01–04 sequencing, thin drawn ledger
+ * dividers, restrained per-voice accents and clean typographic attribution.
+ * NOT a glass-card wall, carousel or metric block.
+ *
+ * The four testimonials (names, roles, companies, cities, quotes, 5/5
+ * ratings and their order) are owner-approved and preserved verbatim; the
+ * data-ocid mapping testimonial.item.1–4 is unchanged.
+ */
 
 interface Testimonial {
   name: string;
@@ -44,128 +60,181 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-function StarRating({ rating }: { rating: number }) {
+// per-voice accents — the same 01→04 cyan/blue/emerald/violet sequence used
+// across WhyChooseUs and Industries, for cross-section continuity.
+const accents = [
+  "var(--rk-cyan)",
+  "var(--rk-blue)",
+  "var(--rk-emerald)",
+  "var(--rk-violet)",
+];
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const listV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.16, delayChildren: 0.05 } },
+};
+const entryV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+};
+const ruleV = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.7, ease: EASE } },
+};
+const quoteV = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } },
+};
+const metaV = {
+  hidden: { opacity: 0, y: 12 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
+};
+
+function Rating({ rating, color }: { rating: number; color: string }) {
   return (
-    <div className="flex gap-0.5" aria-label={`${rating} out of 5 stars`}>
-      {Array.from({ length: 5 }).map((_, i) => (
-        <Star
-          key={`star-${i}-${rating}`}
-          className={`h-4 w-4 ${
-            i < rating
-              ? "fill-[#06B6D4] text-[#06B6D4]"
-              : "text-muted-foreground"
-          }`}
-          aria-hidden="true"
-        />
-      ))}
+    <div className="flex items-center gap-1">
+      <span className="sr-only">{`Rated ${rating} out of 5`}</span>
+      <span aria-hidden="true" className="flex gap-0.5">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <Star
+            // biome-ignore lint/suspicious/noArrayIndexKey: fixed 5-star scale
+            key={i}
+            className="h-3.5 w-3.5"
+            style={{
+              color,
+              fill: i < rating ? color : "transparent",
+              opacity: i < rating ? 0.9 : 0.3,
+            }}
+            strokeWidth={1.6}
+          />
+        ))}
+      </span>
     </div>
   );
 }
 
-function TestimonialCard({
-  testimonial,
-  index,
-}: {
-  testimonial: Testimonial;
-  index: number;
-}) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{
-        duration: 0.6,
-        delay: index * 0.15,
-        ease: "easeOut",
-      }}
-      className="group relative"
-      data-ocid={`testimonial.item.${index + 1}`}
-    >
-      <div className="glass rounded-2xl p-6 md:p-8 h-full flex flex-col transition-smooth hover:shadow-glass hover:border-[oklch(0.22_0.02_260/0.7)]">
-        {/* Quote Icon */}
-        <div className="mb-4">
-          <Quote className="h-8 w-8 text-[#06B6D4]/40" aria-hidden="true" />
-        </div>
-
-        {/* Star Rating */}
-        <div className="mb-4">
-          <StarRating rating={testimonial.rating} />
-        </div>
-
-        {/* Quote Text */}
-        <blockquote className="flex-1 mb-6">
-          <p className="text-foreground/90 font-body text-sm md:text-base leading-relaxed">
-            &ldquo;{testimonial.quote}&rdquo;
-          </p>
-        </blockquote>
-
-        {/* Author Info */}
-        <div className="flex items-center gap-3 pt-4 border-t border-[oklch(0.22_0.02_260/0.5)]">
-          {/* Avatar Placeholder */}
-          <div className="h-10 w-10 rounded-full bg-gradient-to-br from-[#2563EB] to-[#7C3AED] flex items-center justify-center flex-shrink-0">
-            <span className="text-white font-display text-sm font-semibold">
-              {testimonial.name
-                .split(" ")
-                .map((n) => n[0])
-                .join("")}
-            </span>
-          </div>
-
-          <div className="min-w-0">
-            <p className="text-foreground font-display text-sm font-semibold truncate">
-              {testimonial.name}
-            </p>
-            <p className="text-muted-foreground font-body text-xs truncate">
-              {testimonial.role}, {testimonial.company}
-            </p>
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
 export default function TestimonialsSection() {
+  const reduce = useReducedMotion();
+
   return (
     <section
       id="testimonials"
-      className="relative py-20 md:py-32 bg-muted/30"
       aria-labelledby="testimonials-heading"
+      className="relative overflow-hidden bg-[var(--rk-navy)] pb-24 pt-40 sm:pt-48 md:pb-28 lg:pb-32"
     >
-      {/* Aurora Background */}
-      <div className="absolute inset-0 gradient-aurora pointer-events-none" />
+      {/* engineered light (Industries) → navy bridge */}
+      <LightToNavyTransition />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+      {/* faint ledger structure */}
+      <div
+        aria-hidden="true"
+        className="rk-ledger pointer-events-none absolute inset-0 opacity-40"
+        style={{
+          maskImage:
+            "radial-gradient(120% 90% at 82% 6%, #000 32%, transparent 84%)",
+          WebkitMaskImage:
+            "radial-gradient(120% 90% at 82% 6%, #000 32%, transparent 84%)",
+        }}
+      />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Intro — left-aligned editorial header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={reduce ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center mb-12 md:mb-16"
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: EASE }}
+          className="max-w-2xl"
         >
+          <SectionEyebrow tone="dark">In Their Words</SectionEyebrow>
           <h2
             id="testimonials-heading"
-            className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4"
+            className="mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl lg:text-[3.4rem]"
           >
-            What Our <span className="text-gradient">Clients Say</span>
+            What Our <span className="font-bold">Clients Say</span>
           </h2>
-          <p className="text-muted-foreground font-body text-base md:text-lg max-w-2xl mx-auto">
-            Trusted by finance leaders at leading companies worldwide
+          <p className="mt-4 text-base leading-relaxed text-[var(--rk-slate)] md:text-lg">
+            From finance businesses using Finance Pro every day.
           </p>
         </motion.div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={testimonial.name}
-              testimonial={testimonial}
-              index={index}
-            />
-          ))}
-        </div>
+        {/* Voice sequence — editorial, not a card grid */}
+        <motion.ol
+          variants={listV}
+          initial={reduce ? "visible" : "hidden"}
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          className="mt-16 md:mt-20"
+        >
+          {testimonials.map((t, i) => {
+            const color = accents[i % accents.length];
+            // gentle asymmetric indent alternation on wide screens
+            const contentCol =
+              i % 2 === 0 ? "lg:col-start-3" : "lg:col-start-4";
+            return (
+              <motion.li
+                key={t.name}
+                variants={entryV}
+                data-ocid={`testimonial.item.${i + 1}`}
+                className="relative pt-9 [&:not(:last-child)]:pb-10 md:pt-11 md:[&:not(:last-child)]:pb-14"
+              >
+                {/* drawn ledger divider */}
+                <motion.span
+                  aria-hidden="true"
+                  variants={ruleV}
+                  className="absolute inset-x-0 top-0 h-px origin-left"
+                  style={{ background: "var(--rk-hair-2)" }}
+                />
+
+                <figure className="lg:grid lg:grid-cols-12 lg:gap-x-8">
+                  {/* marginal index */}
+                  <motion.span
+                    aria-hidden="true"
+                    variants={metaV}
+                    className="rk-tnum mb-4 block font-mono text-lg font-semibold tracking-[0.12em] lg:col-span-2 lg:col-start-1 lg:mb-0 lg:text-xl"
+                    style={{ color }}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </motion.span>
+
+                  <div className={`${contentCol} lg:col-span-9`}>
+                    {/* the quote carries the composition */}
+                    <motion.blockquote variants={quoteV}>
+                      <p className="max-w-2xl font-display text-2xl font-medium leading-[1.32] tracking-[-0.01em] text-[var(--rk-ink)] sm:text-[1.7rem] lg:text-[1.9rem] lg:leading-[1.34]">
+                        {t.quote}
+                      </p>
+                    </motion.blockquote>
+
+                    {/* restrained rating, secondary to the quote */}
+                    <motion.div variants={metaV} className="mt-6">
+                      <Rating rating={t.rating} color={color} />
+                    </motion.div>
+
+                    {/* typographic attribution */}
+                    <motion.figcaption
+                      variants={metaV}
+                      className="mt-3 flex flex-wrap items-baseline gap-x-2.5 gap-y-1"
+                    >
+                      <cite className="font-display text-base font-semibold not-italic text-[var(--rk-ink)]">
+                        {t.name}
+                      </cite>
+                      <span
+                        aria-hidden="true"
+                        className="h-3 w-px"
+                        style={{ background: "var(--rk-hair-2)" }}
+                      />
+                      <span className="text-sm text-[var(--rk-slate)]">
+                        {t.role}, {t.company}
+                      </span>
+                    </motion.figcaption>
+                  </div>
+                </figure>
+              </motion.li>
+            );
+          })}
+        </motion.ol>
       </div>
     </section>
   );

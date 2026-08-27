@@ -1,146 +1,149 @@
-import {
-  Building2,
-  CheckCircle,
-  Cloud,
-  Layout,
-  RefreshCw,
-  ShieldCheck,
-  Zap,
-} from "lucide-react";
+import DarkToLightTransition from "@/components/brand/DarkToLightTransition";
+import SectionEyebrow from "@/components/brand/SectionEyebrow";
 import { motion } from "motion/react";
 
-const features = [
+/**
+ * WhyChooseUsSection — Phase 2E "decision / positioning" layer.
+ *
+ * The light return after the navy Finance Pro product zone. A type-led
+ * editorial argument (large reason statements + supporting copy on thin
+ * ledger rules), NOT a feature grid, diagram, register or lifecycle. Every
+ * reason is grounded in already-verified RIKNOVA facts — no enterprise
+ * jargon, no unsupported claims.
+ */
+
+const reasons = [
   {
-    icon: Building2,
-    title: "Enterprise Architecture",
+    index: "01",
+    color: "var(--rk-cyan-ink)",
+    title: "Built for lending businesses",
     description:
-      "Built for scale with microservices, event-driven design, and robust API gateways that power mission-critical operations.",
+      "RIKNOVA makes software specifically for microfinance institutions, NBFCs, and lending businesses — not a general tool adapted to fit.",
   },
   {
-    icon: ShieldCheck,
-    title: "Secure & Compliant",
+    index: "02",
+    color: "var(--rk-blue-ink)",
+    title: "Runs your everyday operations",
     description:
-      "End-to-end encryption, SOC 2 Type II certified, and GDPR-ready with automated compliance monitoring.",
+      "Finance Pro keeps loan records, collections, receipts, and reports in one place, so your team can handle daily finance work without switching between tools.",
   },
   {
-    icon: Zap,
-    title: "Lightning Fast",
+    index: "03",
+    color: "var(--rk-emerald-ink)",
+    title: "Shaped around your team",
     description:
-      "Sub-100ms response times powered by edge caching, optimized databases, and global CDN distribution.",
+      "Access is organised around the people who use it every day — Admins running the business and Collection Agents working with customers in the field.",
   },
   {
-    icon: CheckCircle,
-    title: "Highly Reliable",
+    index: "04",
+    color: "var(--rk-violet-ink)",
+    title: "In the cloud, backed up",
     description:
-      "99.99% uptime SLA with multi-region failover, automated backups, and real-time health monitoring.",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Native",
-    description:
-      "Kubernetes-native deployments with auto-scaling, container orchestration, and infrastructure-as-code.",
-  },
-  {
-    icon: Layout,
-    title: "Modern UI/UX",
-    description:
-      "Intuitive interfaces designed with accessibility-first principles, dark mode, and responsive layouts.",
-  },
-  {
-    icon: RefreshCw,
-    title: "Continuous Updates",
-    description:
-      "Weekly feature releases with zero-downtime deployments and seamless automatic updates.",
+      "Your business data is stored in the cloud and backed up regularly to support continuity of your day-to-day operations.",
   },
 ];
 
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
+const EASE = [0.22, 1, 0.36, 1] as const;
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut" as const,
-    },
-  },
+const listV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12, delayChildren: 0.05 } },
+};
+const reasonV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+};
+const ruleV = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.6, ease: EASE } },
+};
+const fadeV = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
 };
 
 export default function WhyChooseUsSection() {
   return (
     <section
       id="why-us"
-      className="relative overflow-hidden bg-muted/30 py-24 md:py-32"
+      className="relative overflow-hidden bg-[color:var(--rk-canvas)] pb-24 pt-40 sm:pt-48 md:pb-28"
     >
-      {/* Aurora background */}
-      <div className="gradient-aurora pointer-events-none absolute inset-0 opacity-60" />
+      <DarkToLightTransition />
+
+      {/* faint ledger structure */}
+      <div
+        aria-hidden="true"
+        className="rk-ledger-l pointer-events-none absolute inset-0 opacity-70"
+        style={{
+          maskImage: "linear-gradient(to bottom, transparent, #000 30%, #000)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, transparent, #000 30%, #000)",
+        }}
+      />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mb-16 text-center md:mb-20"
+          transition={{ duration: 0.6, ease: EASE }}
+          className="max-w-2xl"
         >
-          <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-            Why RIKNOVA
-          </span>
-          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-            Why Choose <span className="text-gradient">RIKNOVA</span>
+          <SectionEyebrow>Why RIKNOVA</SectionEyebrow>
+          <h2 className="mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-5xl lg:text-[3.4rem]">
+            Why Choose <span className="font-bold">RIKNOVA</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
-            The platform trusted by engineering teams who refuse to compromise
-            on performance, security, or developer experience.
+          <p className="mt-4 text-base leading-relaxed text-[color:var(--rk-ink-body)] md:text-lg">
+            Finance software built around the day-to-day operations of lending
+            businesses — practical, focused, and purpose-built for the work your
+            team actually does.
           </p>
         </motion.div>
 
-        {/* Feature grid */}
-        <motion.div
-          variants={containerVariants}
+        {/* Reasons — type-led editorial argument */}
+        <motion.ol
+          variants={listV}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          viewport={{ once: true, margin: "-80px" }}
+          className="mt-16 md:mt-20"
         >
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <motion.div
-                key={feature.title}
-                variants={cardVariants}
-                data-ocid={`whyus.item.${index + 1}`}
-                className="group relative flex flex-col rounded-2xl glass p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass"
-              >
-                {/* Icon */}
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary/20">
-                  <Icon className="h-6 w-6" strokeWidth={1.5} />
-                </div>
+          {reasons.map((r, i) => (
+            <motion.li
+              key={r.index}
+              variants={reasonV}
+              className="relative grid gap-4 pt-8 md:pt-10 lg:grid-cols-12 lg:gap-10 [&:not(:last-child)]:pb-12 md:[&:not(:last-child)]:pb-14"
+              data-ocid={`whyus.item.${i + 1}`}
+            >
+              {/* drawn ledger rule */}
+              <motion.span
+                aria-hidden="true"
+                variants={ruleV}
+                className="absolute inset-x-0 top-0 h-px origin-left bg-[color:var(--rk-line-l-strong)]"
+              />
 
-                {/* Content */}
-                <h3 className="mb-2 font-display text-lg font-semibold text-foreground">
-                  {feature.title}
+              <motion.div variants={fadeV} className="lg:col-span-7">
+                <span
+                  className="rk-tnum font-mono text-[13px] font-semibold tracking-[0.14em]"
+                  style={{ color: r.color }}
+                >
+                  {r.index}
+                </span>
+                <h3 className="mt-3 font-display text-2xl font-semibold leading-[1.12] tracking-tight text-[color:var(--rk-ink-strong)] sm:text-3xl lg:text-[2.1rem]">
+                  {r.title}
                 </h3>
-                <p className="flex-1 text-sm leading-relaxed text-muted-foreground">
-                  {feature.description}
-                </p>
-
-                {/* Hover accent line */}
-                <div className="absolute inset-x-0 bottom-0 h-0.5 scale-x-0 rounded-b-2xl bg-gradient-to-r from-primary to-accent transition-transform duration-300 group-hover:scale-x-100" />
               </motion.div>
-            );
-          })}
-        </motion.div>
+
+              <motion.p
+                variants={fadeV}
+                className="max-w-xl text-base leading-relaxed text-[color:var(--rk-ink-body)] lg:col-span-5 lg:pt-11"
+              >
+                {r.description}
+              </motion.p>
+            </motion.li>
+          ))}
+        </motion.ol>
       </div>
     </section>
   );

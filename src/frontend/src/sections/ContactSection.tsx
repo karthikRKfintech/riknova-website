@@ -1,139 +1,234 @@
-import { Button } from "@/components/ui/button";
+import SectionEyebrow from "@/components/brand/SectionEyebrow";
 import { useBookDemoModal } from "@/hooks/useBookDemoModal";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { ArrowRight, Calendar, Mail, MapPin, Phone } from "lucide-react";
-import { motion } from "motion/react";
+import { ArrowRight, ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { motion, useReducedMotion } from "motion/react";
 
-const contactDetails = [
+/**
+ * ContactSection — Phase 2I "closing conversation gateway".
+ *
+ * The final action layer of the navy closing zone opened by Testimonials and
+ * continued by FAQ. A grounded closing invitation and the verified ways to
+ * reach RIKNOVA — the working Book-a-demo modal plus direct email and phone —
+ * presented as a distinctive asymmetric contact desk, not another card grid.
+ * No hype, no fabricated channels, no invented metrics.
+ */
+
+const routes = [
   {
     icon: Mail,
-    label: "Email Us",
+    label: "Email",
+    detail: "General enquiries and support",
     value: "hello@riknova.com",
     href: "mailto:hello@riknova.com",
-    color: "primary",
+    ocid: "contact.email_us_card",
+    color: "var(--rk-cyan)",
+    actionable: true,
   },
   {
     icon: Phone,
-    label: "Call Us",
+    label: "Call",
+    detail: "Speak with the team",
     value: "+91 9363770295",
     href: "tel:+919363770295",
-    color: "accent",
+    ocid: "contact.call_us_card",
+    color: "var(--rk-blue)",
+    actionable: true,
   },
   {
     icon: MapPin,
-    label: "Visit Us",
+    label: "Visit",
+    detail: "Chennai, Tamil Nadu",
     value:
-      "50/1, Ground Floor, Narayana Maistry Street,\nPurasaiwakkam, Chennai, Tamilnadu, India.",
-    href: "#",
-    color: "secondary",
+      "50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam, Chennai, Tamil Nadu, India.",
+    href: null,
+    ocid: "contact.visit_us_card",
+    color: "var(--rk-emerald)",
+    actionable: false,
   },
 ];
 
-const colorMap: Record<string, { bg: string; text: string }> = {
-  primary: { bg: "bg-primary/10", text: "text-primary" },
-  accent: { bg: "bg-accent/10", text: "text-accent" },
-  secondary: { bg: "bg-secondary/10", text: "text-secondary" },
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const listV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
+};
+const rowV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.06 } },
+};
+const ruleV = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.6, ease: EASE } },
+};
+const fadeV = {
+  hidden: { opacity: 0, y: 14 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
 };
 
-export default function ContactSection() {
-  const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
-  const { openModal: openBookDemoModal } = useBookDemoModal();
+function RouteRow({ route }: { route: (typeof routes)[number] }) {
+  const Icon = route.icon;
 
-  const handleBookDemo = () => {
-    openBookDemoModal();
-  };
+  const inner = (
+    <>
+      <motion.span
+        aria-hidden="true"
+        variants={ruleV}
+        className="absolute inset-x-0 top-0 h-px origin-left"
+        style={{ background: "var(--rk-hair-2)" }}
+      />
+      <motion.span
+        variants={fadeV}
+        aria-hidden="true"
+        className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border"
+        style={{ borderColor: "var(--rk-hair-2)" }}
+      >
+        <Icon
+          className="h-4 w-4"
+          style={{ color: route.color }}
+          strokeWidth={1.7}
+        />
+      </motion.span>
+
+      <motion.span variants={fadeV} className="min-w-0 flex-1">
+        <span className="flex items-center gap-2">
+          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--rk-slate)]">
+            {route.label}
+          </span>
+          {route.actionable && (
+            <ArrowUpRight
+              className="h-3.5 w-3.5 text-[var(--rk-slate)] opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
+              aria-hidden="true"
+            />
+          )}
+        </span>
+        <span className="mt-1.5 block font-display text-lg font-semibold text-[var(--rk-ink)]">
+          {route.value}
+        </span>
+        <span className="mt-1 block text-sm text-[var(--rk-slate)]">
+          {route.detail}
+        </span>
+      </motion.span>
+    </>
+  );
+
+  const className =
+    "group relative flex gap-4 py-6 outline-none first:pt-0 md:py-7";
+
+  if (route.actionable && route.href) {
+    return (
+      <motion.a
+        variants={rowV}
+        href={route.href}
+        data-ocid={route.ocid}
+        className={`${className} rounded-sm focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--rk-navy)]`}
+      >
+        {inner}
+      </motion.a>
+    );
+  }
 
   return (
-    <section id="contact" ref={ref} className="relative py-24 bg-muted/20">
-      {/* Subtle aurora accent */}
-      <div className="absolute inset-0 gradient-aurora opacity-50" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_oklch(0.08_0.02_260)_0%,_transparent_70%)]" />
+    <motion.div variants={rowV} data-ocid={route.ocid} className={className}>
+      {inner}
+    </motion.div>
+  );
+}
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <Calendar className="h-3 w-3 text-primary" />
-            <span className="text-xs font-semibold text-primary uppercase tracking-wider">
-              Get In Touch
-            </span>
-          </div>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Ready to Transform Your{" "}
-            <span className="text-gradient">Business?</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Book a personalized demo with our team and discover how RIKNOVA can
-            accelerate your financial operations. We will walk you through the
-            platform tailored to your use case.
-          </p>
-        </motion.div>
+export default function ContactSection() {
+  const reduce = useReducedMotion();
+  const { openModal: openBookDemoModal } = useBookDemoModal();
 
-        {/* Contact Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {contactDetails.map((detail, index) => (
-            <motion.a
-              key={detail.label}
-              href={detail.href}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group glass rounded-2xl p-8 border border-border/20 hover:border-primary/30 hover:shadow-glass transition-all duration-300 hover:-translate-y-1 block"
-              data-ocid={`contact.${detail.label.toLowerCase().replace(/\s+/g, "_")}_card`}
-            >
-              <div
-                className={`flex h-14 w-14 items-center justify-center rounded-xl ${colorMap[detail.color]?.bg ?? "bg-muted/50"} border border-${detail.color}/20 mb-6 group-hover:scale-110 transition-transform duration-300`}
-              >
-                <detail.icon
-                  className={`h-6 w-6 ${colorMap[detail.color]?.text ?? "text-foreground"}`}
-                />
-              </div>
-              <h3 className="font-display text-lg font-semibold text-foreground mb-2">
-                {detail.label}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
-                {detail.value}
-              </p>
-            </motion.a>
-          ))}
-        </div>
+  return (
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-[var(--rk-navy)] py-24 md:py-28 lg:py-32"
+    >
+      {/* faint ledger structure — continues the closing-zone ground */}
+      <div
+        aria-hidden="true"
+        className="rk-ledger pointer-events-none absolute inset-0 opacity-40"
+        style={{
+          maskImage:
+            "radial-gradient(120% 85% at 80% 8%, #000 32%, transparent 82%)",
+          WebkitMaskImage:
+            "radial-gradient(120% 85% at 80% 8%, #000 32%, transparent 82%)",
+        }}
+      />
+      {/* deepen slightly toward the footer */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-40"
+        style={{
+          background: "linear-gradient(to bottom, transparent, #05080f)",
+        }}
+      />
 
-        {/* CTA Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="glass-strong rounded-2xl p-8 sm:p-12 border border-border/30 shadow-elevated text-center max-w-3xl mx-auto"
-        >
-          <h3 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-3">
-            Schedule Your Demo Today
-          </h3>
-          <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-            See why 500+ financial institutions trust RIKNOVA to power their
-            lending, collections, and financial operations. No commitment
-            required.
-          </p>
-
-          <Button
-            size="lg"
-            onClick={handleBookDemo}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow px-8 h-12 text-base"
-            data-ocid="contact.book_demo_button"
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
+          {/* Left — closing invitation + primary conversion */}
+          <motion.div
+            initial={reduce ? false : { opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: EASE }}
+            className="lg:col-span-6"
           >
-            Book Demo
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+            <SectionEyebrow tone="dark">Contact</SectionEyebrow>
+            <h2 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl lg:text-[3.4rem]">
+              Talk to the RIKNOVA team.
+            </h2>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--rk-slate)] md:text-lg">
+              Tell us about your business and we&apos;ll walk you through
+              Finance Pro. Book a demo, or reach us directly.
+            </p>
 
-          <p className="text-xs text-muted-foreground mt-6">
-            Typical response time: under 24 hours. Enterprise inquiries receive
-            priority support.
-          </p>
-        </motion.div>
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <button
+                type="button"
+                onClick={openBookDemoModal}
+                className="rk-btn-arc inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 font-display text-base font-semibold outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-orange)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]"
+                data-ocid="contact.book_demo_button"
+              >
+                Book a demo
+                <ArrowRight className="h-4 w-4" />
+              </button>
+              <a
+                href="mailto:hello@riknova.com"
+                className="group inline-flex items-center gap-2 font-display text-sm font-semibold text-[var(--rk-ink)] outline-none transition-colors hover:text-[var(--rk-cyan)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--rk-navy)]"
+              >
+                <span className="rk-underline pb-0.5">Or email us</span>
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+            </div>
+
+            <p className="mt-6 max-w-md text-sm leading-relaxed text-[var(--rk-slate)]/85">
+              See Finance Pro in action and discuss your requirements with the
+              RIKNOVA team.
+            </p>
+          </motion.div>
+
+          {/* Right — verified contact routes */}
+          <motion.div
+            variants={listV}
+            initial={reduce ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="lg:col-span-5 lg:col-start-8"
+          >
+            <motion.span
+              variants={fadeV}
+              className="mb-2 block font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--rk-slate)]"
+            >
+              Reach us directly
+            </motion.span>
+            <div>
+              {routes.map((route) => (
+                <RouteRow key={route.label} route={route} />
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
