@@ -17429,9 +17429,9 @@ function handleParam(segment, baseScore) {
   }
   return baseScore;
 }
-function sortRoutes(routes) {
+function sortRoutes(routes2) {
   const scoredRoutes = [];
-  routes.forEach((d2, i) => {
+  routes2.forEach((d2, i) => {
     var _a2;
     if (d2.isRoot || !d2.path) {
       return;
@@ -36399,243 +36399,11 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$M = [
-  [
-    "path",
-    {
-      d: "M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2",
-      key: "169zse"
-    }
-  ]
-];
-const Activity = createLucideIcon("activity", __iconNode$M);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$L = [
+const __iconNode$v = [
   ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
   ["path", { d: "M19 12H5", key: "x3x0zl" }]
 ];
-const ArrowLeft = createLucideIcon("arrow-left", __iconNode$L);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$K = [
-  ["path", { d: "M5 12h14", key: "1ays0h" }],
-  ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
-];
-const ArrowRight = createLucideIcon("arrow-right", __iconNode$K);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$J = [
-  ["path", { d: "M7 7h10v10", key: "1tivn9" }],
-  ["path", { d: "M7 17 17 7", key: "1vkiza" }]
-];
-const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$J);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$I = [
-  ["rect", { width: "20", height: "12", x: "2", y: "6", rx: "2", key: "9lu3g6" }],
-  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }],
-  ["path", { d: "M6 12h.01M18 12h.01", key: "113zkx" }]
-];
-const Banknote = createLucideIcon("banknote", __iconNode$I);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$H = [
-  [
-    "path",
-    {
-      d: "M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z",
-      key: "l5xja"
-    }
-  ],
-  [
-    "path",
-    {
-      d: "M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z",
-      key: "ep3f8r"
-    }
-  ],
-  ["path", { d: "M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4", key: "1p4c4q" }],
-  ["path", { d: "M17.599 6.5a3 3 0 0 0 .399-1.375", key: "tmeiqw" }],
-  ["path", { d: "M6.003 5.125A3 3 0 0 0 6.401 6.5", key: "105sqy" }],
-  ["path", { d: "M3.477 10.896a4 4 0 0 1 .585-.396", key: "ql3yin" }],
-  ["path", { d: "M19.938 10.5a4 4 0 0 1 .585.396", key: "1qfode" }],
-  ["path", { d: "M6 18a4 4 0 0 1-1.967-.516", key: "2e4loj" }],
-  ["path", { d: "M19.967 17.484A4 4 0 0 1 18 18", key: "159ez6" }]
-];
-const Brain = createLucideIcon("brain", __iconNode$H);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$G = [
-  ["path", { d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16", key: "jecpp" }],
-  ["rect", { width: "20", height: "14", x: "2", y: "6", rx: "2", key: "i6l2r4" }]
-];
-const Briefcase = createLucideIcon("briefcase", __iconNode$G);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$F = [
-  ["path", { d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z", key: "1b4qmf" }],
-  ["path", { d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2", key: "i71pzd" }],
-  ["path", { d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2", key: "10jefs" }],
-  ["path", { d: "M10 6h4", key: "1itunk" }],
-  ["path", { d: "M10 10h4", key: "tcdvrf" }],
-  ["path", { d: "M10 14h4", key: "kelpxr" }],
-  ["path", { d: "M10 18h4", key: "1ulq68" }]
-];
-const Building2 = createLucideIcon("building-2", __iconNode$F);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$E = [
-  ["rect", { width: "16", height: "20", x: "4", y: "2", rx: "2", ry: "2", key: "76otgf" }],
-  ["path", { d: "M9 22v-4h6v4", key: "r93iot" }],
-  ["path", { d: "M8 6h.01", key: "1dz90k" }],
-  ["path", { d: "M16 6h.01", key: "1x0f13" }],
-  ["path", { d: "M12 6h.01", key: "1vi96p" }],
-  ["path", { d: "M12 10h.01", key: "1nrarc" }],
-  ["path", { d: "M12 14h.01", key: "1etili" }],
-  ["path", { d: "M16 10h.01", key: "1m94wz" }],
-  ["path", { d: "M16 14h.01", key: "1gbofw" }],
-  ["path", { d: "M8 10h.01", key: "19clt8" }],
-  ["path", { d: "M8 14h.01", key: "6423bh" }]
-];
-const Building = createLucideIcon("building", __iconNode$E);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$D = [
-  ["path", { d: "M8 2v4", key: "1cmpym" }],
-  ["path", { d: "M16 2v4", key: "4m81vk" }],
-  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
-  ["path", { d: "M3 10h18", key: "8toen8" }]
-];
-const Calendar = createLucideIcon("calendar", __iconNode$D);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$C = [
-  [
-    "path",
-    {
-      d: "M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2",
-      key: "5owen"
-    }
-  ],
-  ["circle", { cx: "7", cy: "17", r: "2", key: "u2ysq9" }],
-  ["path", { d: "M9 17h6", key: "r8uit2" }],
-  ["circle", { cx: "17", cy: "17", r: "2", key: "axvx0g" }]
-];
-const Car = createLucideIcon("car", __iconNode$C);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$B = [
-  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
-  ["path", { d: "M18 17V9", key: "2bz60n" }],
-  ["path", { d: "M13 17V5", key: "1frdt8" }],
-  ["path", { d: "M8 17v-3", key: "17ska0" }]
-];
-const ChartColumn = createLucideIcon("chart-column", __iconNode$B);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$A = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$A);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$z = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$z);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$y = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
-  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
-];
-const CircleAlert = createLucideIcon("circle-alert", __iconNode$y);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$x = [
-  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
-  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
-];
-const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$x);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$w = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
-];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$w);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$v = [
-  ["path", { d: "M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z", key: "p7xjir" }]
-];
-const Cloud = createLucideIcon("cloud", __iconNode$v);
+const ArrowLeft = createLucideIcon("arrow-left", __iconNode$v);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36643,22 +36411,10 @@ const Cloud = createLucideIcon("cloud", __iconNode$v);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$u = [
-  ["path", { d: "M12 20v2", key: "1lh1kg" }],
-  ["path", { d: "M12 2v2", key: "tus03m" }],
-  ["path", { d: "M17 20v2", key: "1rnc9c" }],
-  ["path", { d: "M17 2v2", key: "11trls" }],
-  ["path", { d: "M2 12h2", key: "1t8f8n" }],
-  ["path", { d: "M2 17h2", key: "7oei6x" }],
-  ["path", { d: "M2 7h2", key: "asdhe0" }],
-  ["path", { d: "M20 12h2", key: "1q8mjw" }],
-  ["path", { d: "M20 17h2", key: "1fpfkl" }],
-  ["path", { d: "M20 7h2", key: "1o8tra" }],
-  ["path", { d: "M7 20v2", key: "4gnj0m" }],
-  ["path", { d: "M7 2v2", key: "1i4yhu" }],
-  ["rect", { x: "4", y: "4", width: "16", height: "16", rx: "2", key: "1vbyd7" }],
-  ["rect", { x: "8", y: "8", width: "8", height: "8", rx: "1", key: "z9xiuo" }]
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
 ];
-const Cpu = createLucideIcon("cpu", __iconNode$u);
+const ArrowRight = createLucideIcon("arrow-right", __iconNode$u);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36666,10 +36422,10 @@ const Cpu = createLucideIcon("cpu", __iconNode$u);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$t = [
-  ["line", { x1: "12", x2: "12", y1: "2", y2: "22", key: "7eqyqh" }],
-  ["path", { d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6", key: "1b0p4s" }]
+  ["path", { d: "M7 7h10v10", key: "1tivn9" }],
+  ["path", { d: "M7 17 17 7", key: "1vkiza" }]
 ];
-const DollarSign = createLucideIcon("dollar-sign", __iconNode$t);
+const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$t);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36677,13 +36433,11 @@ const DollarSign = createLucideIcon("dollar-sign", __iconNode$t);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$s = [
-  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
-  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
-  ["path", { d: "M10 9H8", key: "b1mrlr" }],
-  ["path", { d: "M16 13H8", key: "t4e002" }],
-  ["path", { d: "M16 17H8", key: "z1uh3a" }]
+  ["rect", { width: "20", height: "12", x: "2", y: "6", rx: "2", key: "9lu3g6" }],
+  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }],
+  ["path", { d: "M6 12h.01M18 12h.01", key: "113zkx" }]
 ];
-const FileText = createLucideIcon("file-text", __iconNode$s);
+const Banknote = createLucideIcon("banknote", __iconNode$s);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36691,28 +36445,20 @@ const FileText = createLucideIcon("file-text", __iconNode$s);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$r = [
-  ["path", { d: "M6 3h12l4 6-10 13L2 9Z", key: "1pcd5k" }],
-  ["path", { d: "M11 3 8 9l4 13 4-13-3-6", key: "1fcu3u" }],
-  ["path", { d: "M2 9h20", key: "16fsjt" }]
+  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
+  ["path", { d: "M18 17V9", key: "2bz60n" }],
+  ["path", { d: "M13 17V5", key: "1frdt8" }],
+  ["path", { d: "M8 17v-3", key: "17ska0" }]
 ];
-const Gem = createLucideIcon("gem", __iconNode$r);
+const ChartColumn = createLucideIcon("chart-column", __iconNode$r);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$q = [
-  [
-    "path",
-    {
-      d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4",
-      key: "tonef"
-    }
-  ],
-  ["path", { d: "M9 18c-4.51 2-5-2-7-2", key: "9comsn" }]
-];
-const Github = createLucideIcon("github", __iconNode$q);
+const __iconNode$q = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36720,19 +36466,11 @@ const Github = createLucideIcon("github", __iconNode$q);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$p = [
-  ["path", { d: "M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17", key: "geh8rc" }],
-  [
-    "path",
-    {
-      d: "m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9",
-      key: "1fto5m"
-    }
-  ],
-  ["path", { d: "m2 16 6 6", key: "1pfhp9" }],
-  ["circle", { cx: "16", cy: "9", r: "2.9", key: "1n0dlu" }],
-  ["circle", { cx: "6", cy: "5", r: "3", key: "151irh" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
+  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
 ];
-const HandCoins = createLucideIcon("hand-coins", __iconNode$p);
+const CircleAlert = createLucideIcon("circle-alert", __iconNode$p);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36740,20 +36478,10 @@ const HandCoins = createLucideIcon("hand-coins", __iconNode$p);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$o = [
-  ["path", { d: "M10 18v-7", key: "wt116b" }],
-  [
-    "path",
-    {
-      d: "M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z",
-      key: "1m329m"
-    }
-  ],
-  ["path", { d: "M14 18v-7", key: "vav6t3" }],
-  ["path", { d: "M18 18v-7", key: "aexdmj" }],
-  ["path", { d: "M3 22h18", key: "8prr45" }],
-  ["path", { d: "M6 18v-7", key: "1ivflk" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const Landmark = createLucideIcon("landmark", __iconNode$o);
+const CircleCheck = createLucideIcon("circle-check", __iconNode$o);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36761,25 +36489,23 @@ const Landmark = createLucideIcon("landmark", __iconNode$o);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$n = [
-  [
-    "path",
-    {
-      d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z",
-      key: "c2jq9f"
-    }
-  ],
-  ["rect", { width: "4", height: "12", x: "2", y: "9", key: "mk3on5" }],
-  ["circle", { cx: "4", cy: "4", r: "2", key: "bt5ra8" }]
+  ["path", { d: "M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z", key: "p7xjir" }]
 ];
-const Linkedin = createLucideIcon("linkedin", __iconNode$n);
+const Cloud = createLucideIcon("cloud", __iconNode$n);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$m = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
-const LoaderCircle = createLucideIcon("loader-circle", __iconNode$m);
+const __iconNode$m = [
+  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
+  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
+  ["path", { d: "M10 9H8", key: "b1mrlr" }],
+  ["path", { d: "M16 13H8", key: "t4e002" }],
+  ["path", { d: "M16 17H8", key: "z1uh3a" }]
+];
+const FileText = createLucideIcon("file-text", __iconNode$m);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36787,17 +36513,40 @@ const LoaderCircle = createLucideIcon("loader-circle", __iconNode$m);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$l = [
-  ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
-  ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
+  ["path", { d: "m5 8 6 6", key: "1wu5hv" }],
+  ["path", { d: "m4 14 6-6 2-3", key: "1k1g8d" }],
+  ["path", { d: "M2 5h12", key: "or177f" }],
+  ["path", { d: "M7 2h1", key: "1t2jsx" }],
+  ["path", { d: "m22 22-5-10-5 10", key: "don7ne" }],
+  ["path", { d: "M14 18h6", key: "1m8k6r" }]
 ];
-const Mail = createLucideIcon("mail", __iconNode$l);
+const Languages = createLucideIcon("languages", __iconNode$l);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$k = [
+const __iconNode$k = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
+const LoaderCircle = createLucideIcon("loader-circle", __iconNode$k);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$j = [
+  ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
+  ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
+];
+const Mail = createLucideIcon("mail", __iconNode$j);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$i = [
   [
     "path",
     {
@@ -36807,29 +36556,7 @@ const __iconNode$k = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$k);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$j = [
-  ["path", { d: "M4 12h16", key: "1lakjw" }],
-  ["path", { d: "M4 18h16", key: "19g7jn" }],
-  ["path", { d: "M4 6h16", key: "1o0s65" }]
-];
-const Menu = createLucideIcon("menu", __iconNode$j);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$i = [
-  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
-];
-const MessageCircle = createLucideIcon("message-circle", __iconNode$i);
+const MapPin = createLucideIcon("map-pin", __iconNode$i);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36837,11 +36564,11 @@ const MessageCircle = createLucideIcon("message-circle", __iconNode$i);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$h = [
-  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }],
-  ["path", { d: "M3 9h18", key: "1pudct" }],
-  ["path", { d: "M9 21V9", key: "1oto5p" }]
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 18h16", key: "19g7jn" }],
+  ["path", { d: "M4 6h16", key: "1o0s65" }]
 ];
-const PanelsTopLeft = createLucideIcon("panels-top-left", __iconNode$h);
+const Menu = createLucideIcon("menu", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36849,6 +36576,16 @@ const PanelsTopLeft = createLucideIcon("panels-top-left", __iconNode$h);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$g = [
+  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
+];
+const MessageCircle = createLucideIcon("message-circle", __iconNode$g);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$f = [
   [
     "path",
     {
@@ -36857,14 +36594,25 @@ const __iconNode$g = [
     }
   ]
 ];
-const Phone = createLucideIcon("phone", __iconNode$g);
+const Phone = createLucideIcon("phone", __iconNode$f);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$f = [
+const __iconNode$e = [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "M12 5v14", key: "s699le" }]
+];
+const Plus = createLucideIcon("plus", __iconNode$e);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$d = [
   ["rect", { width: "5", height: "5", x: "3", y: "3", rx: "1", key: "1tu5fj" }],
   ["rect", { width: "5", height: "5", x: "16", y: "3", rx: "1", key: "1v8r4q" }],
   ["rect", { width: "5", height: "5", x: "3", y: "16", rx: "1", key: "1x03jg" }],
@@ -36878,45 +36626,7 @@ const __iconNode$f = [
   ["path", { d: "M21 12v.01", key: "1lwtk9" }],
   ["path", { d: "M12 21v-1", key: "1880an" }]
 ];
-const QrCode = createLucideIcon("qr-code", __iconNode$f);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$e = [
-  [
-    "path",
-    {
-      d: "M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z",
-      key: "rib7q0"
-    }
-  ],
-  [
-    "path",
-    {
-      d: "M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z",
-      key: "1ymkrd"
-    }
-  ]
-];
-const Quote = createLucideIcon("quote", __iconNode$e);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$d = [
-  [
-    "path",
-    { d: "M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z", key: "q3az6g" }
-  ],
-  ["path", { d: "M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8", key: "1h4pet" }],
-  ["path", { d: "M12 17.5v-11", key: "1jc1ny" }]
-];
-const Receipt = createLucideIcon("receipt", __iconNode$d);
+const QrCode = createLucideIcon("qr-code", __iconNode$d);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -36924,12 +36634,14 @@ const Receipt = createLucideIcon("receipt", __iconNode$d);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$c = [
-  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
-  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
-  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
-  ["path", { d: "M8 16H3v5", key: "1cv678" }]
+  [
+    "path",
+    { d: "M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z", key: "q3az6g" }
+  ],
+  ["path", { d: "M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8", key: "1h4pet" }],
+  ["path", { d: "M12 17.5v-11", key: "1jc1ny" }]
 ];
-const RefreshCw = createLucideIcon("refresh-cw", __iconNode$c);
+const Receipt = createLucideIcon("receipt", __iconNode$c);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -37023,10 +36735,11 @@ const Star = createLucideIcon("star", __iconNode$7);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$6 = [
-  ["path", { d: "M16 7h6v6", key: "box55l" }],
-  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["circle", { cx: "12", cy: "12", r: "6", key: "1vlfrh" }],
+  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }]
 ];
-const TrendingUp = createLucideIcon("trending-up", __iconNode$6);
+const Target = createLucideIcon("target", __iconNode$6);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -37034,15 +36747,10 @@ const TrendingUp = createLucideIcon("trending-up", __iconNode$6);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$5 = [
-  [
-    "path",
-    {
-      d: "M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z",
-      key: "pff0z6"
-    }
-  ]
+  ["path", { d: "M16 7h6v6", key: "box55l" }],
+  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
 ];
-const Twitter = createLucideIcon("twitter", __iconNode$5);
+const TrendingUp = createLucideIcon("trending-up", __iconNode$5);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -37114,12 +36822,12 @@ const __iconNode = [
   [
     "path",
     {
-      d: "M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z",
-      key: "1xq2db"
+      d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",
+      key: "cbrjhi"
     }
   ]
 ];
-const Zap = createLucideIcon("zap", __iconNode);
+const Wrench = createLucideIcon("wrench", __iconNode);
 const LayoutGroupContext = reactExports.createContext({});
 function useConstant(init) {
   const ref = reactExports.useRef(null);
@@ -43555,12 +43263,12 @@ function getInitializedFeatureDefinitions() {
   initFeatureDefinitions();
   return getFeatureDefinitions();
 }
-function loadFeatures(features2) {
+function loadFeatures(features) {
   const featureDefinitions2 = getInitializedFeatureDefinitions();
-  for (const key in features2) {
+  for (const key in features) {
     featureDefinitions2[key] = {
       ...featureDefinitions2[key],
-      ...features2[key]
+      ...features[key]
     };
   }
   setFeatureDefinitions(featureDefinitions2);
@@ -45237,6 +44945,11 @@ const featureBundle = {
   ...layout
 };
 const motion = /* @__PURE__ */ createMotionProxy(featureBundle, createDomVisualElement);
+function useReducedMotion() {
+  !hasReducedMotionListener.current && initPrefersReducedMotion();
+  const [shouldReduceMotion] = reactExports.useState(prefersReducedMotion.current);
+  return shouldReduceMotion;
+}
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 function BookDemoModal() {
   const { isOpen, closeModal } = useBookDemoModal();
@@ -45346,7 +45059,7 @@ function BookDemoModal() {
                         children: "Demo Request Received"
                       }
                     ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed max-w-sm mb-8", children: "Thank you for your interest! Our team will contact you within 24 hours to schedule your personalized demo." }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed max-w-sm mb-8", children: "Your demo request has been received. Our team will contact you to discuss your requirements and schedule the demo." }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       Button,
                       {
@@ -45590,7 +45303,7 @@ function BookDemoModal() {
                               "data-ocid": "book_demo.error_state",
                               children: [
                                 /* @__PURE__ */ jsxRuntimeExports.jsx(CircleAlert, { className: "mt-0.5 h-4 w-4 shrink-0 text-destructive" }),
-                                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs leading-relaxed text-destructive-foreground/90", children: "Something went wrong while submitting your request. Please try again or contact us at financeprofintech@gmail.com." })
+                                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs leading-relaxed text-destructive-foreground/90", children: "Something went wrong while submitting your request. Please try again or contact us at hello@riknova.com." })
                               ]
                             }
                           ) }),
@@ -45618,10 +45331,10 @@ function BookDemoModal() {
                               /* @__PURE__ */ jsxRuntimeExports.jsx(
                                 "a",
                                 {
-                                  href: "mailto:financeprofintech@gmail.com",
+                                  href: "mailto:hello@riknova.com",
                                   className: "text-accent hover:underline",
                                   "data-ocid": "book_demo.email_link",
-                                  children: "financeprofintech@gmail.com"
+                                  children: "hello@riknova.com"
                                 }
                               )
                             ] })
@@ -45679,8 +45392,8 @@ function Logo({
 const footerLinks = {
   product: [
     { label: "Finance Pro", href: "#products" },
-    { label: "Features", href: "#finance-pro" },
-    { label: "Pricing", href: "#contact" }
+    { label: "ChitFund Pro", href: "https://chitfundpro.riknova.com" },
+    { label: "Features", href: "#finance-pro" }
   ],
   company: [
     { label: "About Us", href: "#about" },
@@ -45691,125 +45404,111 @@ const footerLinks = {
     { label: "Terms and Conditions", href: "/terms" }
   ]
 };
-const socialLinks = [
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Mail, href: "mailto:financeprofintech@gmail.com", label: "Email" }
-];
-function Footer() {
-  const currentYear = (/* @__PURE__ */ new Date()).getFullYear();
-  const handleLinkClick = (href) => {
-    if (href.startsWith("#") && href !== "#") {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  };
-  const handleLogoClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  const renderFooterLink = (link) => {
-    const isInternalRoute = link.href.startsWith("/");
-    const isAnchor = link.href.startsWith("#");
-    if (isInternalRoute) {
-      return /* @__PURE__ */ jsxRuntimeExports.jsx(
-        Link,
-        {
-          to: link.href,
-          className: "text-sm text-muted-foreground hover:text-foreground transition-colors duration-200",
-          "data-ocid": `footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`,
-          children: link.label
-        }
-      );
-    }
-    if (isAnchor) {
-      return /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "button",
-        {
-          type: "button",
-          onClick: () => handleLinkClick(link.href),
-          className: "text-sm text-muted-foreground hover:text-foreground transition-colors duration-200",
-          "data-ocid": `footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`,
-          children: link.label
-        }
-      );
-    }
+const linkClass = "text-sm text-[var(--rk-slate)] outline-none transition-colors hover:text-[var(--rk-ink)] focus-visible:text-[var(--rk-ink)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[#05080f] rounded-sm";
+function renderFooterLink(link) {
+  const ocid = `footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`;
+  if (link.href.startsWith("/")) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: link.href, className: linkClass, "data-ocid": ocid, children: link.label });
+  }
+  if (/^https?:\/\//.test(link.href)) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       "a",
       {
         href: link.href,
         target: "_blank",
         rel: "noopener noreferrer",
-        className: "text-sm text-muted-foreground hover:text-foreground transition-colors duration-200",
-        "data-ocid": `footer.link_${link.label.toLowerCase().replace(/\s+/g, "_")}`,
+        className: linkClass,
+        "data-ocid": ocid,
         children: link.label
       }
     );
+  }
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "button",
+    {
+      type: "button",
+      onClick: () => {
+        const el = document.querySelector(link.href);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      },
+      className: `${linkClass} text-left`,
+      "data-ocid": ocid,
+      children: link.label
+    }
+  );
+}
+function LinkGroup({
+  heading,
+  links
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--rk-slate)]/70", children: heading }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-3", children: links.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: renderFooterLink(link) }, link.label)) })
+  ] });
+}
+function Footer() {
+  const currentYear = (/* @__PURE__ */ new Date()).getFullYear();
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("footer", { className: "relative border-t border-border/50 bg-card/40 backdrop-blur-sm", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-2", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("footer", { className: "relative bg-[#05080f]", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "aria-hidden": "true",
+        className: "absolute inset-x-0 top-0 h-px",
+        style: { background: "var(--rk-hair)" }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid gap-12 lg:grid-cols-12 lg:gap-8", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-5", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "button",
           {
             type: "button",
             onClick: handleLogoClick,
-            className: "flex items-center gap-2 mb-6",
+            className: "inline-flex items-center gap-2 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[#05080f]",
             "data-ocid": "footer.logo_link",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { size: 36 })
+            "aria-label": "RIKNOVA — back to top",
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { size: 38 })
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed max-w-xs mb-6", children: "Building intelligent financial infrastructure for modern enterprises. Secure, scalable, and future-ready fintech solutions." }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 text-sm text-muted-foreground", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "h-4 w-4 text-accent" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "financeprofintech@gmail.com" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 text-sm text-muted-foreground", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "h-4 w-4 text-accent" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 9363770295" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 text-sm text-muted-foreground", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "h-4 w-4 text-accent" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam, Chennai, Tamilnadu, India." })
-          ] })
-        ] })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-6 max-w-xs text-sm leading-relaxed text-[var(--rk-slate)]", children: "Finance software for lending and finance businesses." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "a",
+          {
+            href: "mailto:hello@riknova.com",
+            className: "mt-6 inline-block text-sm font-medium text-[var(--rk-ink)] outline-none transition-colors hover:text-[var(--rk-cyan)] focus-visible:text-[var(--rk-cyan)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[#05080f] rounded-sm",
+            "data-ocid": "footer.email_link",
+            children: "hello@riknova.com"
+          }
+        )
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider", children: "Product" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-3", children: footerLinks.product.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: renderFooterLink(link) }, link.label)) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider", children: "Company" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-3", children: footerLinks.company.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: renderFooterLink(link) }, link.label)) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider", children: "Legal" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-3", children: footerLinks.legal.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: renderFooterLink(link) }, link.label)) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border-t border-border/50", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-center justify-between gap-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-muted-foreground", children: [
-        "© ",
-        currentYear,
-        " RIKNOVA. All rights reserved."
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-4", children: socialLinks.map((social) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "a",
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "nav",
         {
-          href: social.href,
-          target: "_blank",
-          rel: "noopener noreferrer",
-          "aria-label": social.label,
-          className: "flex h-9 w-9 items-center justify-center rounded-lg bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200",
-          "data-ocid": `footer.social_${social.label.toLowerCase()}_link`,
-          children: /* @__PURE__ */ jsxRuntimeExports.jsx(social.icon, { className: "h-4 w-4" })
-        },
-        social.label
-      )) })
-    ] }) }) })
+          "aria-label": "Footer",
+          className: "grid grid-cols-1 gap-10 sm:grid-cols-3 lg:col-span-7 lg:gap-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(LinkGroup, { heading: "Product", links: footerLinks.product }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(LinkGroup, { heading: "Company", links: footerLinks.company }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(LinkGroup, { heading: "Legal", links: footerLinks.legal })
+          ]
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "relative",
+        style: { borderTop: "1px solid var(--rk-hair)" },
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-[var(--rk-slate)]/80", children: [
+          "© ",
+          currentYear,
+          " RIKNOVA. All rights reserved."
+        ] }) })
+      }
+    )
   ] });
 }
 function LoadingScreen({ isVisible }) {
@@ -45840,36 +45539,19 @@ function LoadingScreen({ isVisible }) {
     }
   );
 }
-function useScrollReveal(options = {}) {
-  const {
-    threshold = 0.15,
-    rootMargin = "0px 0px -50px 0px",
-    triggerOnce = true
-  } = options;
-  const ref = reactExports.useRef(null);
-  const [isVisible, setIsVisible] = reactExports.useState(false);
-  reactExports.useEffect(() => {
-    const element = ref.current;
-    if (!element) return;
-    const observer2 = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          if (triggerOnce) {
-            observer2.unobserve(element);
-          }
-        } else if (!triggerOnce) {
-          setIsVisible(false);
-        }
-      },
-      { threshold, rootMargin }
-    );
-    observer2.observe(element);
-    return () => {
-      observer2.disconnect();
-    };
-  }, [threshold, rootMargin, triggerOnce]);
-  return { ref, isVisible };
+function SpectrumRail({
+  height = 2,
+  drift = false,
+  className = ""
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "div",
+    {
+      "aria-hidden": "true",
+      className: `${drift ? "rk-spectrum-drift" : "rk-spectrum"} w-full ${className}`,
+      style: { height }
+    }
+  );
 }
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = reactExports.useState(
@@ -45899,6 +45581,25 @@ const navLinks = [
   { label: "Industries", href: "#industries" },
   { label: "Contact", href: "#contact" }
 ];
+const NAV_SECTION_IDS = ["products", "about", "industries", "contact"];
+function useActiveSection(ids) {
+  const [active, setActive] = reactExports.useState(null);
+  reactExports.useEffect(() => {
+    const els = ids.map((id2) => document.getElementById(id2)).filter((el) => el !== null);
+    if (els.length === 0) return;
+    const observer2 = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        }
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+    for (const el of els) observer2.observe(el);
+    return () => observer2.disconnect();
+  }, [ids]);
+  return active;
+}
 function Navbar() {
   const [isScrolled, setIsScrolled] = reactExports.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = reactExports.useState(false);
@@ -45907,15 +45608,12 @@ function Navbar() {
   const router2 = useRouter();
   const isHomePage = location2.pathname === "/";
   const { openModal: openBookDemoModal } = useBookDemoModal();
+  const activeSection = useActiveSection(NAV_SECTION_IDS);
   reactExports.useEffect(() => {
-    setIsScrolled(scrollY > 50);
+    setIsScrolled(scrollY > 40);
   }, [scrollY]);
   reactExports.useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
@@ -45945,70 +45643,86 @@ function Navbar() {
   };
   const navbarVisible = scrollDirection !== "down" || scrollY < 200;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
       motion.header,
       {
         initial: { y: -100 },
         animate: { y: navbarVisible ? 0 : -100 },
         transition: { duration: 0.35, ease: [0.4, 0, 0.2, 1] },
-        className: `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-card/80 backdrop-blur-xl border-b border-border/50 shadow-glass" : "bg-transparent"}`,
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex h-16 items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
-            {
-              type: "button",
-              onClick: handleLogoClick,
-              className: "flex items-center gap-2 group",
-              "data-ocid": "navbar.logo_link",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { size: 36 })
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden md:flex items-center gap-1", children: navLinks.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
-            {
-              type: "button",
-              onClick: () => handleNavClick(link.href),
-              className: "relative px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 rounded-md hover:bg-muted/50",
-              "data-ocid": `navbar.nav_${link.label.toLowerCase()}_link`,
-              children: link.label
-            },
-            link.href
-          )) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "hidden md:flex items-center gap-3", children: [
+        className: `fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-[color:var(--rk-navy)] backdrop-blur-xl" : "bg-transparent"}`,
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex h-16 items-center justify-between", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Button,
+              "button",
               {
-                variant: "ghost",
-                size: "sm",
-                onClick: () => handleNavClick("#contact"),
-                className: "text-muted-foreground hover:text-foreground",
-                "data-ocid": "navbar.contact_sales_button",
-                children: "Contact Sales"
+                type: "button",
+                onClick: handleLogoClick,
+                className: "flex items-center gap-2 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]",
+                "data-ocid": "navbar.logo_link",
+                "aria-label": "RIKNOVA — back to top",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { size: 39 })
               }
             ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden items-center gap-7 lg:flex", children: navLinks.map((link) => {
+              const active = activeSection === link.href.slice(1);
+              return /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  onClick: () => handleNavClick(link.href),
+                  "data-active": active,
+                  className: `rk-underline font-mono text-[12px] uppercase tracking-[0.14em] outline-none transition-colors duration-200 focus-visible:text-[var(--rk-ink)] ${active ? "text-[var(--rk-ink)]" : "text-[var(--rk-slate)] hover:text-[var(--rk-ink)]"}`,
+                  "data-ocid": `navbar.nav_${link.label.toLowerCase()}_link`,
+                  children: link.label
+                },
+                link.href
+              );
+            }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "hidden items-center gap-2 lg:flex", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  onClick: () => handleNavClick("#contact"),
+                  className: "rounded-lg px-3.5 py-2 font-mono text-[12px] uppercase tracking-[0.12em] text-[var(--rk-slate)] outline-none transition-colors hover:text-[var(--rk-ink)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)]",
+                  "data-ocid": "navbar.contact_sales_button",
+                  children: "Contact Sales"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "button",
+                {
+                  type: "button",
+                  onClick: handleBookDemo,
+                  className: "rk-btn-arc inline-flex items-center gap-1.5 rounded-lg px-4 py-2 font-display text-sm font-semibold outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-orange)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]",
+                  "data-ocid": "navbar.book_demo_button",
+                  children: [
+                    "Book a demo",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-3.5 w-3.5" })
+                  ]
+                }
+              )
+            ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Button,
+              "button",
               {
-                size: "sm",
-                onClick: handleBookDemo,
-                className: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow",
-                "data-ocid": "navbar.book_demo_button",
-                children: "Book Demo"
+                type: "button",
+                onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
+                className: "relative z-50 rounded-lg p-2 text-[var(--rk-ink)] outline-none transition-colors hover:bg-white/5 focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] lg:hidden",
+                "aria-label": isMobileMenuOpen ? "Close menu" : "Open menu",
+                "data-ocid": "navbar.mobile_menu_toggle",
+                children: isMobileMenuOpen ? /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "h-5 w-5" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { className: "h-5 w-5" })
               }
             )
-          ] }),
+          ] }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
+            "div",
             {
-              type: "button",
-              onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
-              className: "md:hidden relative z-50 p-2 rounded-lg hover:bg-muted/50 transition-colors",
-              "aria-label": isMobileMenuOpen ? "Close menu" : "Open menu",
-              "data-ocid": "navbar.mobile_menu_toggle",
-              children: isMobileMenuOpen ? /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "h-5 w-5 text-foreground" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { className: "h-5 w-5 text-foreground" })
+              className: `transition-opacity duration-300 ${isScrolled ? "opacity-100" : "opacity-0"}`,
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(SpectrumRail, { height: 2 })
             }
           )
-        ] }) })
+        ]
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: isMobileMenuOpen && /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -46018,67 +45732,79 @@ function Navbar() {
         animate: { opacity: 1 },
         exit: { opacity: 0 },
         transition: { duration: 0.2 },
-        className: "fixed inset-0 z-40 md:hidden",
+        className: "fixed inset-0 z-40 lg:hidden",
         children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-[color:var(--rk-navy)] backdrop-blur-xl" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
+            "div",
             {
-              initial: { opacity: 0 },
-              animate: { opacity: 1 },
-              exit: { opacity: 0 },
-              className: "absolute inset-0 bg-background/95 backdrop-blur-xl",
-              onClick: () => setIsMobileMenuOpen(false)
+              className: "rk-ledger pointer-events-none absolute inset-0 opacity-40",
+              style: {
+                maskImage: "radial-gradient(90% 60% at 50% 30%, #000, transparent 85%)",
+                WebkitMaskImage: "radial-gradient(90% 60% at 50% 30%, #000, transparent 85%)"
+              }
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.div,
             {
-              initial: { opacity: 0, y: -20 },
+              initial: { opacity: 0, y: -16 },
               animate: { opacity: 1, y: 0 },
-              exit: { opacity: 0, y: -20 },
-              transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
-              className: "relative flex flex-col items-center justify-center h-full gap-8 px-6",
+              exit: { opacity: 0, y: -16 },
+              transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] },
+              className: "relative flex h-full flex-col items-start justify-center gap-8 px-8",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col items-center gap-6", children: navLinks.map((link, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex w-full flex-col gap-1", children: navLinks.map((link, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
                   motion.button,
                   {
-                    initial: { opacity: 0, y: 20 },
-                    animate: { opacity: 1, y: 0 },
-                    transition: { delay: index2 * 0.05 + 0.1 },
+                    initial: { opacity: 0, x: 18 },
+                    animate: { opacity: 1, x: 0 },
+                    transition: { delay: index2 * 0.06 + 0.08 },
                     onClick: () => handleNavClick(link.href),
-                    className: "text-2xl font-display font-semibold text-foreground hover:text-primary transition-colors",
+                    className: "flex items-center gap-3 py-2 text-left font-display text-3xl font-semibold text-[var(--rk-ink)]",
                     "data-ocid": `navbar.mobile_nav_${link.label.toLowerCase()}_link`,
-                    children: link.label
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          className: "h-6 w-1 rounded-full",
+                          style: { background: "var(--rk-grad-bars)" }
+                        }
+                      ),
+                      link.label
+                    ]
                   },
                   link.href
                 )) }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs(
                   motion.div,
                   {
-                    initial: { opacity: 0, y: 20 },
+                    initial: { opacity: 0, y: 16 },
                     animate: { opacity: 1, y: 0 },
                     transition: { delay: 0.35 },
-                    className: "flex flex-col gap-3 w-full max-w-xs",
+                    className: "flex w-full max-w-xs flex-col gap-3",
                     children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Button,
+                        "button",
                         {
-                          variant: "outline",
-                          size: "lg",
+                          type: "button",
                           onClick: () => handleNavClick("#contact"),
-                          className: "w-full",
+                          className: "w-full rounded-xl border border-[var(--rk-hair-2)] py-3.5 font-mono text-xs uppercase tracking-[0.14em] text-[var(--rk-ink)]",
                           "data-ocid": "navbar.mobile_contact_sales_button",
                           children: "Contact Sales"
                         }
                       ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Button,
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "button",
                         {
-                          size: "lg",
+                          type: "button",
                           onClick: handleBookDemo,
-                          className: "w-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow",
+                          className: "rk-btn-arc flex w-full items-center justify-center gap-2 rounded-xl py-3.5 font-display text-base font-semibold",
                           "data-ocid": "navbar.mobile_book_demo_button",
-                          children: "Book Demo"
+                          children: [
+                            "Book a demo",
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-4 w-4" })
+                          ]
                         }
                       )
                     ]
@@ -46092,398 +45818,743 @@ function Navbar() {
     ) })
   ] });
 }
-const stats = [
+const sources = [
+  { label: "MICROFINANCE", y: 70, color: "#0FD6A6" },
+  { label: "NBFCs", y: 168, color: "#12B9C9" },
+  { label: "LENDING PLATFORMS", y: 266, color: "#1C82E8" }
+];
+function InfrastructureDiagram() {
+  const reduce = useReducedMotion();
+  const CORE = { x: 274, cy: 168 };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-full", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "aria-hidden": "true",
+        className: "rk-ledger-l-fine pointer-events-none absolute inset-0 rounded-2xl",
+        style: {
+          maskImage: "radial-gradient(110% 100% at 50% 40%, #000 40%, transparent 85%)",
+          WebkitMaskImage: "radial-gradient(110% 100% at 50% 40%, #000 40%, transparent 85%)"
+        }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        viewBox: "0 0 460 336",
+        className: "relative w-full",
+        role: "img",
+        "aria-label": "Diagram: microfinance institutions, NBFCs and lending platforms connect into RIKNOVA's financial infrastructure.",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Microfinance, NBFCs and lending platforms connect into RIKNOVA financial infrastructure" }),
+          sources.map((s, i) => {
+            const startX = 196;
+            const d2 = `M${startX} ${s.y} C ${startX + 45} ${s.y}, ${CORE.x - 45} ${CORE.cy}, ${CORE.x} ${CORE.cy}`;
+            return /* @__PURE__ */ jsxRuntimeExports.jsxs("g", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                motion.path,
+                {
+                  d: d2,
+                  fill: "none",
+                  stroke: s.color,
+                  strokeWidth: "1.6",
+                  strokeLinecap: "round",
+                  initial: reduce ? false : { pathLength: 0, opacity: 0 },
+                  whileInView: { pathLength: 1, opacity: 0.75 },
+                  viewport: { once: true, margin: "-80px" },
+                  transition: {
+                    duration: 0.9,
+                    delay: reduce ? 0 : 0.3 + i * 0.15,
+                    ease: [0.22, 1, 0.36, 1]
+                  }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: CORE.x, cy: CORE.cy, r: "2.5", fill: s.color })
+            ] }, s.label);
+          }),
+          sources.map((s, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.g,
+            {
+              initial: reduce ? false : { opacity: 0, x: -14 },
+              whileInView: { opacity: 1, x: 0 },
+              viewport: { once: true, margin: "-80px" },
+              transition: {
+                duration: 0.5,
+                delay: reduce ? 0 : 0.1 + i * 0.12,
+                ease: [0.22, 1, 0.36, 1]
+              },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "rect",
+                  {
+                    x: "24",
+                    y: s.y - 20,
+                    width: "172",
+                    height: "40",
+                    rx: "9",
+                    fill: "var(--rk-surface)",
+                    stroke: "var(--rk-line-l-strong)",
+                    strokeWidth: "1"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "rect",
+                  {
+                    x: "24",
+                    y: s.y - 20,
+                    width: "3.5",
+                    height: "40",
+                    rx: "1.75",
+                    fill: s.color
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "text",
+                  {
+                    x: "44",
+                    y: s.y + 4,
+                    fill: "var(--rk-ink-strong)",
+                    style: {
+                      font: "600 12px 'Geist Mono', monospace",
+                      letterSpacing: "0.08em"
+                    },
+                    children: s.label
+                  }
+                )
+              ]
+            },
+            `node-${s.label}`
+          )),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.g,
+            {
+              initial: reduce ? false : { opacity: 0, scale: 0.94 },
+              whileInView: { opacity: 1, scale: 1 },
+              viewport: { once: true, margin: "-80px" },
+              transition: {
+                duration: 0.55,
+                delay: reduce ? 0 : 0.35,
+                ease: [0.22, 1, 0.36, 1]
+              },
+              style: { transformOrigin: "353px 168px" },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "rect",
+                  {
+                    x: "274",
+                    y: "108",
+                    width: "162",
+                    height: "120",
+                    rx: "16",
+                    fill: "var(--rk-ink-strong)"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "rect",
+                  {
+                    x: "298",
+                    y: "108",
+                    width: "114",
+                    height: "3",
+                    rx: "1.5",
+                    fill: "#7C4DFF"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("g", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "298", y: "150", width: "9", height: "18", rx: "2", fill: "#0FD6A6" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "311", y: "142", width: "9", height: "26", rx: "2", fill: "#12B9C9" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "324", y: "132", width: "9", height: "36", rx: "2", fill: "#1C82E8" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "text",
+                  {
+                    x: "298",
+                    y: "188",
+                    fill: "#ffffff",
+                    style: {
+                      font: "700 19px 'Space Grotesk', sans-serif",
+                      letterSpacing: "-0.01em"
+                    },
+                    children: "RIKNOVA"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "text",
+                  {
+                    x: "299",
+                    y: "203",
+                    fill: "var(--rk-slate)",
+                    style: {
+                      font: "500 8px 'Geist Mono', monospace",
+                      letterSpacing: "0.12em"
+                    },
+                    children: "FINANCIAL"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "text",
+                  {
+                    x: "299",
+                    y: "214",
+                    fill: "var(--rk-slate)",
+                    style: {
+                      font: "500 8px 'Geist Mono', monospace",
+                      letterSpacing: "0.12em"
+                    },
+                    children: "INFRASTRUCTURE"
+                  }
+                )
+              ]
+            }
+          )
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-4 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[color:var(--rk-ink-mute)]", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "span",
+        {
+          "aria-hidden": "true",
+          className: "h-2.5 w-[3px] rounded-full",
+          style: { background: "var(--rk-grad-leg)" }
+        }
+      ),
+      "Built around everyday lending operations"
+    ] })
+  ] });
+}
+function SectionEyebrow({
+  children,
+  tone = "light",
+  className = ""
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: `inline-flex items-center gap-2.5 ${className}`, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "span",
+      {
+        "aria-hidden": "true",
+        className: "h-3.5 w-[3px] rounded-full",
+        style: { background: "var(--rk-grad-bars)" }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "span",
+      {
+        className: "font-mono text-[11px] font-medium uppercase tracking-[0.2em]",
+        style: {
+          color: tone === "light" ? "var(--rk-cyan-ink)" : "var(--rk-slate)"
+        },
+        children
+      }
+    )
+  ] });
+}
+const principles = [
   {
-    icon: Shield,
-    label: "99.9% Uptime",
-    description: "Enterprise-grade reliability"
+    icon: Wrench,
+    title: "Practical",
+    description: "Built for real lending workflows."
   },
   {
-    icon: Zap,
-    label: "Enterprise Grade",
-    description: "Built for scale and security"
+    icon: Target,
+    title: "Focused",
+    description: "Software for lending and finance businesses."
   },
   {
-    icon: Brain,
-    label: "AI Ready",
-    description: "Intelligent automation built-in"
+    icon: Users,
+    title: "Access",
+    description: "Admin and Collection Agent roles."
   },
   {
     icon: TrendingUp,
-    label: "Future Proof",
-    description: "Continuous innovation pipeline"
+    title: "Evolving",
+    description: "Built around the changing needs of finance businesses."
   }
 ];
-const containerVariants$5 = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.2
-    }
-  }
-};
-const itemVariants$3 = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut"
-    }
-  }
-};
-const cardVariants$2 = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut"
-    }
-  }
+const fade$1 = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
 };
 function AboutSection() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "about",
-      className: "relative w-full overflow-hidden bg-muted/30 py-24 md:py-32",
+      className: "relative overflow-hidden border-t border-[color:var(--rk-line-l)] bg-[color:var(--rk-canvas-2)] py-24 md:py-32",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pointer-events-none absolute inset-0 gradient-aurora opacity-40" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          motion.div,
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
           {
-            variants: containerVariants$5,
-            initial: "hidden",
-            whileInView: "visible",
-            viewport: { once: true, margin: "-100px" },
-            className: "grid gap-12 lg:grid-cols-2 lg:gap-16",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col justify-center space-y-8", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { variants: itemVariants$3, children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary", children: "About RIKNOVA" }) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.h2,
-                  {
-                    variants: itemVariants$3,
-                    className: "font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl",
-                    children: [
-                      "Transforming Traditional Finance Through",
-                      " ",
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Intelligent Software" })
-                    ]
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { variants: itemVariants$3, className: "space-y-6", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg leading-relaxed text-muted-foreground", children: "We exist because traditional financial software has failed to keep pace with the speed of modern business. Legacy systems are rigid, expensive, and ill-equipped for the demands of digital-first finance." }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg leading-relaxed text-muted-foreground", children: "RIKNOVA fills this critical gap by building intelligent, adaptive financial infrastructure that empowers microfinance institutions, NBFCs, and lending platforms to operate with the agility of a tech company and the trust of a bank." }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl border border-border/50 bg-card/50 p-6 backdrop-blur-sm", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "mb-3 font-display text-xl font-semibold text-foreground", children: "Our Vision" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "To become the leading fintech platform provider, enabling every financial institution to deliver seamless, intelligent, and inclusive services to their customers." })
-                  ] })
-                ] })
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col justify-center space-y-8", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.div,
-                  {
-                    variants: itemVariants$3,
-                    className: "relative aspect-[4/3] overflow-hidden rounded-2xl border border-border/50 bg-card/30",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 gradient-aurora opacity-60" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
-                        /* @__PURE__ */ jsxRuntimeExports.jsx(
-                          motion.div,
-                          {
-                            animate: { rotate: 360 },
-                            transition: {
-                              duration: 20,
-                              repeat: Number.POSITIVE_INFINITY,
-                              ease: "linear"
-                            },
-                            className: "h-48 w-48 rounded-full border border-primary/20 md:h-64 md:w-64",
-                            children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-primary/60 shadow-lg shadow-primary/30" })
-                          }
-                        ),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx(
-                          motion.div,
-                          {
-                            animate: { rotate: -360 },
-                            transition: {
-                              duration: 15,
-                              repeat: Number.POSITIVE_INFINITY,
-                              ease: "linear"
-                            },
-                            className: "absolute inset-0 m-auto h-32 w-32 rounded-full border border-accent/20 md:h-44 md:w-44",
-                            children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute -bottom-2 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-accent/60 shadow-lg shadow-accent/30" })
-                          }
-                        ),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx(
-                          motion.div,
-                          {
-                            animate: { rotate: 360 },
-                            transition: {
-                              duration: 10,
-                              repeat: Number.POSITIVE_INFINITY,
-                              ease: "linear"
-                            },
-                            className: "absolute inset-0 m-auto h-16 w-16 rounded-full border border-secondary/20 md:h-24 md:w-24",
-                            children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute -right-1.5 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-secondary/60 shadow-lg shadow-secondary/30" })
-                          }
-                        ),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 m-auto h-8 w-8 rounded-full bg-primary/20 blur-xl md:h-12 md:w-12" })
-                      ] }) })
-                    ]
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  motion.div,
-                  {
-                    variants: containerVariants$5,
-                    className: "grid grid-cols-2 gap-4",
-                    children: stats.map((stat, index2) => {
-                      const Icon2 = stat.icon;
-                      return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                        motion.div,
-                        {
-                          variants: cardVariants$2,
-                          custom: index2,
-                          whileHover: { y: -4, transition: { duration: 0.2 } },
-                          className: "glass group rounded-xl p-5 transition-smooth",
-                          children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "h-5 w-5" }) }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "mb-1 font-display text-lg font-semibold text-foreground", children: stat.label }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: stat.description })
-                          ]
-                        },
-                        stat.label
-                      );
-                    })
-                  }
-                )
-              ] })
-            ]
+            "aria-hidden": "true",
+            className: "rk-ledger-l pointer-events-none absolute inset-y-0 right-0 w-2/3 opacity-60",
+            style: {
+              maskImage: "radial-gradient(80% 90% at 100% 30%, #000, transparent 75%)",
+              WebkitMaskImage: "radial-gradient(80% 90% at 100% 30%, #000, transparent 75%)"
+            }
           }
-        ) })
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              variants: fade$1,
+              initial: "hidden",
+              whileInView: "visible",
+              viewport: { once: true, margin: "-100px" },
+              transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+              className: "max-w-4xl",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { children: "About RIKNOVA" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "mt-5 font-display text-3xl font-medium leading-[1.08] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-4xl lg:text-5xl lg:leading-[1.05]", children: [
+                  "Software built around",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-bold", children: "real lending work" })
+                ] })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-12 grid items-start gap-12 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.14fr)] lg:gap-16", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              motion.div,
+              {
+                variants: fade$1,
+                initial: "hidden",
+                whileInView: "visible",
+                viewport: { once: true, margin: "-80px" },
+                transition: {
+                  duration: 0.6,
+                  delay: 0.1,
+                  ease: [0.22, 1, 0.36, 1]
+                },
+                className: "space-y-6",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg leading-relaxed text-[color:var(--rk-ink-body)]", children: "RIKNOVA is a fintech software company focused on lending and finance. We build practical tools around the real, everyday work of managing loans, collections, payments, and business records." }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg leading-relaxed text-[color:var(--rk-ink-body)]", children: "Our flagship product, Finance Pro, brings these operations together in software designed for microfinance institutions, NBFCs, finance companies, and lending businesses." })
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              motion.div,
+              {
+                variants: fade$1,
+                initial: "hidden",
+                whileInView: "visible",
+                viewport: { once: true, margin: "-80px" },
+                transition: {
+                  duration: 0.7,
+                  delay: 0.2,
+                  ease: [0.22, 1, 0.36, 1]
+                },
+                className: "w-full",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(InfrastructureDiagram, {})
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              variants: fade$1,
+              initial: "hidden",
+              whileInView: "visible",
+              viewport: { once: true, margin: "-80px" },
+              transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+              className: "mt-16 max-w-4xl border-l-2 pl-6 md:mt-20 md:pl-8",
+              style: { borderImage: "var(--rk-grad-leg) 1" },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] uppercase tracking-[0.2em] text-[color:var(--rk-violet-ink)]", children: "Our Vision" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 font-display text-xl font-medium leading-snug text-[color:var(--rk-ink-strong)] sm:text-2xl", children: "To build financial software that lending businesses can rely on as their operations grow." })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-16 grid grid-cols-2 gap-y-9 border-t-2 border-[color:var(--rk-ink-strong)]/[0.12] pt-10 md:mt-20 md:grid-cols-4 md:gap-y-0 md:pt-12", children: principles.map((p2, i) => {
+            const Icon2 = p2.icon;
+            return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              motion.div,
+              {
+                initial: { opacity: 0, y: 16 },
+                whileInView: { opacity: 1, y: 0 },
+                viewport: { once: true, margin: "-60px" },
+                transition: {
+                  duration: 0.45,
+                  delay: i * 0.08,
+                  ease: [0.22, 1, 0.36, 1]
+                },
+                className: `px-1 md:px-7 lg:px-8 ${i > 0 ? "md:border-l md:border-[color:var(--rk-line-l-strong)]" : ""}`,
+                "data-ocid": `about.metric.${i + 1}`,
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Icon2,
+                    {
+                      className: "mb-3 h-5 w-5 text-[color:var(--rk-cyan-ink)] md:mb-4 md:h-[26px] md:w-[26px]",
+                      strokeWidth: 1.75,
+                      "aria-hidden": "true"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display text-2xl font-bold leading-none tracking-tight text-[color:var(--rk-ink-strong)] sm:text-3xl lg:text-[2.15rem]", children: p2.title }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-2.5 text-sm leading-relaxed text-[color:var(--rk-ink-mute)]", children: p2.description })
+                ]
+              },
+              p2.title
+            );
+          }) })
+        ] })
       ]
     }
   );
 }
-const contactDetails = [
+const routes = [
   {
     icon: Mail,
-    label: "Email Us",
-    value: "financeprofintech@gmail.com",
-    href: "mailto:financeprofintech@gmail.com",
-    color: "primary"
+    label: "Email",
+    detail: "General enquiries and support",
+    value: "hello@riknova.com",
+    href: "mailto:hello@riknova.com",
+    ocid: "contact.email_us_card",
+    color: "var(--rk-cyan)",
+    actionable: true
   },
   {
     icon: Phone,
-    label: "Call Us",
+    label: "Call",
+    detail: "Speak with the team",
     value: "+91 9363770295",
     href: "tel:+919363770295",
-    color: "accent"
+    ocid: "contact.call_us_card",
+    color: "var(--rk-blue)",
+    actionable: true
   },
   {
     icon: MapPin,
-    label: "Visit Us",
-    value: "50/1, Ground Floor, Narayana Maistry Street,\nPurasaiwakkam, Chennai, Tamilnadu, India.",
-    href: "#",
-    color: "secondary"
+    label: "Visit",
+    detail: "Chennai, Tamil Nadu",
+    value: "50/1, Ground Floor, Narayana Maistry Street, Purasaiwakkam, Chennai, Tamil Nadu, India.",
+    href: null,
+    ocid: "contact.visit_us_card",
+    color: "var(--rk-emerald)",
+    actionable: false
   }
 ];
-const colorMap = {
-  primary: { bg: "bg-primary/10", text: "text-primary" },
-  accent: { bg: "bg-accent/10", text: "text-accent" },
-  secondary: { bg: "bg-secondary/10", text: "text-secondary" }
+const EASE$5 = [0.22, 1, 0.36, 1];
+const listV$5 = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } }
 };
-function ContactSection() {
-  const { ref, isVisible } = useScrollReveal();
-  const { openModal: openBookDemoModal } = useBookDemoModal();
-  const handleBookDemo = () => {
-    openBookDemoModal();
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "contact", ref, className: "relative py-24 bg-muted/20", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 gradient-aurora opacity-50" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-[radial-gradient(ellipse_at_center,_oklch(0.08_0.02_260)_0%,_transparent_70%)]" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        motion.div,
-        {
-          initial: { opacity: 0, y: 20 },
-          animate: isVisible ? { opacity: 1, y: 0 } : {},
-          transition: { duration: 0.6 },
-          className: "text-center mb-16",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-6", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "h-3 w-3 text-primary" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-semibold text-primary uppercase tracking-wider", children: "Get In Touch" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-4xl sm:text-5xl font-bold text-foreground mb-4", children: [
-              "Ready to Transform Your",
-              " ",
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Business?" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground max-w-2xl mx-auto leading-relaxed", children: "Book a personalized demo with our team and discover how RIKNOVA can accelerate your financial operations. We will walk you through the platform tailored to your use case." })
-          ]
-        }
-      ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-6 mb-12", children: contactDetails.map((detail, index2) => {
-        var _a2, _b2;
-        return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          motion.a,
+const rowV$1 = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.06 } }
+};
+const ruleV$4 = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.6, ease: EASE$5 } }
+};
+const fadeV$3 = {
+  hidden: { opacity: 0, y: 14 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE$5 } }
+};
+function RouteRow({ route }) {
+  const Icon2 = route.icon;
+  const inner = /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      motion.span,
+      {
+        "aria-hidden": "true",
+        variants: ruleV$4,
+        className: "absolute inset-x-0 top-0 h-px origin-left",
+        style: { background: "var(--rk-hair-2)" }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      motion.span,
+      {
+        variants: fadeV$3,
+        "aria-hidden": "true",
+        className: "mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border",
+        style: { borderColor: "var(--rk-hair-2)" },
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Icon2,
           {
-            href: detail.href,
-            initial: { opacity: 0, y: 30 },
-            animate: isVisible ? { opacity: 1, y: 0 } : {},
-            transition: { duration: 0.6, delay: index2 * 0.1 },
-            className: "group glass rounded-2xl p-8 border border-border/20 hover:border-primary/30 hover:shadow-glass transition-all duration-300 hover:-translate-y-1 block",
-            "data-ocid": `contact.${detail.label.toLowerCase().replace(/\s+/g, "_")}_card`,
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: `flex h-14 w-14 items-center justify-center rounded-xl ${((_a2 = colorMap[detail.color]) == null ? void 0 : _a2.bg) ?? "bg-muted/50"} border border-${detail.color}/20 mb-6 group-hover:scale-110 transition-transform duration-300`,
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    detail.icon,
-                    {
-                      className: `h-6 w-6 ${((_b2 = colorMap[detail.color]) == null ? void 0 : _b2.text) ?? "text-foreground"}`
-                    }
-                  )
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-lg font-semibold text-foreground mb-2", children: detail.label }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm leading-relaxed whitespace-pre-line", children: detail.value })
-            ]
-          },
-          detail.label
-        );
-      }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        motion.div,
-        {
-          initial: { opacity: 0, y: 30 },
-          animate: isVisible ? { opacity: 1, y: 0 } : {},
-          transition: { duration: 0.7, delay: 0.3 },
-          className: "glass-strong rounded-2xl p-8 sm:p-12 border border-border/30 shadow-elevated text-center max-w-3xl mx-auto",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-2xl sm:text-3xl font-bold text-foreground mb-3", children: "Schedule Your Demo Today" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed", children: "See why 500+ financial institutions trust RIKNOVA to power their lending, collections, and financial operations. No commitment required." }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              Button,
-              {
-                size: "lg",
-                onClick: handleBookDemo,
-                className: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow px-8 h-12 text-base",
-                "data-ocid": "contact.book_demo_button",
-                children: [
-                  "Book Demo",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "ml-2 h-4 w-4" })
-                ]
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-6", children: "Typical response time: under 24 hours. Enterprise inquiries receive priority support." })
-          ]
-        }
-      )
+            className: "h-4 w-4",
+            style: { color: route.color },
+            strokeWidth: 1.7
+          }
+        )
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.span, { variants: fadeV$3, className: "min-w-0 flex-1", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--rk-slate)]", children: route.label }),
+        route.actionable && /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ArrowUpRight,
+          {
+            className: "h-3.5 w-3.5 text-[var(--rk-slate)] opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100",
+            "aria-hidden": "true"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-1.5 block font-display text-lg font-semibold text-[var(--rk-ink)]", children: route.value }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-1 block text-sm text-[var(--rk-slate)]", children: route.detail })
     ] })
   ] });
+  const className = "group relative flex gap-4 py-6 outline-none first:pt-0 md:py-7";
+  if (route.actionable && route.href) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      motion.a,
+      {
+        variants: rowV$1,
+        href: route.href,
+        "data-ocid": route.ocid,
+        className: `${className} rounded-sm focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--rk-navy)]`,
+        children: inner
+      }
+    );
+  }
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { variants: rowV$1, "data-ocid": route.ocid, className, children: inner });
+}
+function ContactSection() {
+  const reduce = useReducedMotion();
+  const { openModal: openBookDemoModal } = useBookDemoModal();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "section",
+    {
+      id: "contact",
+      className: "relative overflow-hidden bg-[var(--rk-navy)] py-24 md:py-28 lg:py-32",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger pointer-events-none absolute inset-0 opacity-40",
+            style: {
+              maskImage: "radial-gradient(120% 85% at 80% 8%, #000 32%, transparent 82%)",
+              WebkitMaskImage: "radial-gradient(120% 85% at 80% 8%, #000 32%, transparent 82%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "pointer-events-none absolute inset-x-0 bottom-0 h-40",
+            style: {
+              background: "linear-gradient(to bottom, transparent, #05080f)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid gap-14 lg:grid-cols-12 lg:gap-16", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              initial: reduce ? false : { opacity: 0, y: 20 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: true, margin: "-100px" },
+              transition: { duration: 0.6, ease: EASE$5 },
+              className: "lg:col-span-6",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { tone: "dark", children: "Contact" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl lg:text-[3.4rem]", children: "Talk to the RIKNOVA team." }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-5 max-w-xl text-base leading-relaxed text-[var(--rk-slate)] md:text-lg", children: "Tell us about your business and we'll walk you through Finance Pro. Book a demo, or reach us directly." }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-9 flex flex-col gap-4 sm:flex-row sm:items-center", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "button",
+                    {
+                      type: "button",
+                      onClick: openBookDemoModal,
+                      className: "rk-btn-arc inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 font-display text-base font-semibold outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-orange)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]",
+                      "data-ocid": "contact.book_demo_button",
+                      children: [
+                        "Book a demo",
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-4 w-4" })
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "a",
+                    {
+                      href: "mailto:hello@riknova.com",
+                      className: "group inline-flex items-center gap-2 font-display text-sm font-semibold text-[var(--rk-ink)] outline-none transition-colors hover:text-[var(--rk-cyan)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--rk-navy)]",
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-underline pb-0.5", children: "Or email us" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowUpRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" })
+                      ]
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-6 max-w-md text-sm leading-relaxed text-[var(--rk-slate)]/85", children: "See Finance Pro in action and discuss your requirements with the RIKNOVA team." })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              variants: listV$5,
+              initial: reduce ? "visible" : "hidden",
+              whileInView: "visible",
+              viewport: { once: true, margin: "-80px" },
+              className: "lg:col-span-5 lg:col-start-8",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  motion.span,
+                  {
+                    variants: fadeV$3,
+                    className: "mb-2 block font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--rk-slate)]",
+                    children: "Reach us directly"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: routes.map((route) => /* @__PURE__ */ jsxRuntimeExports.jsx(RouteRow, { route }, route.label)) })
+              ]
+            }
+          )
+        ] }) })
+      ]
+    }
+  );
 }
 const faqData = [
   {
     question: "What is Finance Pro?",
-    answer: "Finance Pro is an enterprise-grade financial management platform designed for modern businesses. It combines real-time analytics, automated reporting, and intelligent forecasting into a single, powerful dashboard that helps you make data-driven decisions faster."
+    answer: "Finance Pro is finance software built for lending and finance businesses. It helps you manage customer and borrower loan records, collections, and payment receipts, and view daily and monthly reports — bringing your everyday finance operations together in one place."
   },
   {
     question: "Is my data secure?",
-    answer: "Yes. Finance Pro is built with secure login, role-based access, protected cloud storage, regular backups, and controlled user permissions. We follow practical security measures to help keep business data safe and accessible only to authorized users."
-  },
-  {
-    question: "Can I integrate with existing systems?",
-    answer: "Yes. Finance Pro offers native integrations with 200+ platforms including QuickBooks, SAP, Salesforce, Stripe, and major banking APIs. Our open REST API and webhook support allow custom integrations with your existing tech stack in hours, not weeks."
+    answer: "Finance Pro uses secure login and access based on operational roles for Admins and Collection Agents. Your business data is stored in cloud infrastructure and backed up regularly."
   },
   {
     question: "What industries do you support?",
-    answer: "We serve a diverse range of industries including fintech, healthcare, e-commerce, SaaS, manufacturing, and professional services. Our flexible data models and customizable dashboards adapt to the unique compliance and reporting requirements of each sector."
+    answer: "Finance Pro is built for lending and finance businesses — Microfinance Institutions, NBFCs, Finance Companies, and Lending Businesses that manage loans, collections, and everyday finance operations."
   },
   {
     question: "How do I get started?",
-    answer: "Getting started takes less than 10 minutes. Sign up for a free 30-day trial, connect your primary data sources through our guided onboarding wizard, and your first insights will be available immediately. No credit card required to begin."
-  },
-  {
-    question: "Do you offer custom development?",
-    answer: "Yes, our Enterprise plan includes dedicated solution architects and custom development services. Whether you need bespoke reporting modules, specialized compliance workflows, or white-label deployments, our engineering team partners with you to build exactly what you need."
+    answer: "Getting started begins with a conversation. Contact RIKNOVA or book a demo, and the team will walk through Finance Pro and your business requirements before you move ahead."
   },
   {
     question: "What is your pricing model?",
-    answer: "We offer transparent, tiered pricing: Starter (₹299 per month / ₹2,499 per year), Growth (₹599 per month / ₹4,999 per year), and Pro (₹1,299 per month / ₹9,999 per year). All plans include unlimited users, with pricing scaling based on transaction volume and API calls."
+    answer: "Pricing depends on your business requirements. Contact RIKNOVA or book a demo for current pricing details."
   },
   {
     question: "Do you provide training and support?",
-    answer: "Every plan includes 24/7 live chat and email support with sub-2-hour response times. Professional and Enterprise customers receive dedicated account managers, live training sessions, and access to our comprehensive knowledge base with video tutorials and best-practice guides."
+    answer: "Yes. RIKNOVA helps Finance Pro customers get set up and supports them with using the software. If you need assistance, contact the RIKNOVA team."
   }
 ];
-function FAQAccordionItem({
+const accents$1 = [
+  "var(--rk-cyan)",
+  "var(--rk-blue)",
+  "var(--rk-emerald)",
+  "var(--rk-violet)",
+  "var(--rk-cyan)",
+  "var(--rk-blue)"
+];
+const EASE$4 = [0.22, 1, 0.36, 1];
+const listV$4 = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.09, delayChildren: 0.05 } }
+};
+const rowV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.06 } }
+};
+const ruleV$3 = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.6, ease: EASE$4 } }
+};
+const fadeV$2 = {
+  hidden: { opacity: 0, y: 12 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE$4 } }
+};
+function FAQRow({
   item,
+  index: index2,
   isOpen,
   onToggle,
-  index: index2
+  reduce
 }) {
+  const panelId = reactExports.useId();
+  const buttonId = reactExports.useId();
+  const color2 = accents$1[index2 % accents$1.length];
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     motion.div,
     {
-      initial: { opacity: 0, y: 20 },
-      whileInView: { opacity: 1, y: 0 },
-      viewport: { once: true, margin: "-50px" },
-      transition: { duration: 0.4, delay: index2 * 0.08 },
-      className: "glass rounded-xl overflow-hidden",
+      variants: rowV,
+      className: "relative",
       "data-ocid": `faq.item.${index2 + 1}`,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "button",
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          motion.span,
           {
+            "aria-hidden": "true",
+            variants: ruleV$3,
+            className: "absolute inset-x-0 top-0 h-px origin-left",
+            style: { background: "var(--rk-hair-2)" }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.button,
+          {
+            variants: fadeV$2,
             type: "button",
+            id: buttonId,
             onClick: onToggle,
-            className: "w-full flex items-center justify-between p-6 text-left group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-xl",
             "aria-expanded": isOpen,
+            "aria-controls": panelId,
             "data-ocid": `faq.toggle.${index2 + 1}`,
+            className: "group flex w-full items-start gap-4 rounded-sm py-6 text-left outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--rk-navy)] md:gap-6 md:py-7",
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-base sm:text-lg font-medium text-foreground pr-4", children: item.question }),
               /* @__PURE__ */ jsxRuntimeExports.jsx(
-                motion.div,
+                "span",
                 {
-                  animate: { rotate: isOpen ? 180 : 0 },
-                  transition: { duration: 0.3, ease: "easeOut" },
-                  className: "flex-shrink-0",
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronDown, { className: "w-5 h-5 text-accent" })
+                  className: "rk-tnum mt-1 shrink-0 font-mono text-[13px] font-semibold tracking-[0.14em] transition-opacity",
+                  style: { color: color2, opacity: isOpen ? 1 : 0.85 },
+                  "aria-hidden": "true",
+                  children: String(index2 + 1).padStart(2, "0")
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "flex-1 font-display text-xl font-semibold leading-snug tracking-[-0.01em] text-[var(--rk-ink)] transition-colors group-hover:text-white sm:text-2xl lg:text-[1.6rem]", children: item.question }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  "aria-hidden": "true",
+                  className: "mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border transition-colors",
+                  style: { borderColor: isOpen ? color2 : "var(--rk-hair-2)" },
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    motion.span,
+                    {
+                      animate: reduce ? void 0 : { rotate: isOpen ? 45 : 0 },
+                      transition: { duration: 0.25, ease: EASE$4 },
+                      className: "flex",
+                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Plus,
+                        {
+                          className: "h-4 w-4",
+                          style: { color: isOpen ? color2 : "var(--rk-slate)" },
+                          strokeWidth: 2
+                        }
+                      )
+                    }
+                  )
                 }
               )
             ]
           }
-        ),
+        ) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { initial: false, children: isOpen && /* @__PURE__ */ jsxRuntimeExports.jsx(
-          motion.div,
+          motion.section,
           {
-            initial: { height: 0, opacity: 0 },
+            id: panelId,
+            "aria-labelledby": buttonId,
+            initial: reduce ? false : { height: 0, opacity: 0 },
             animate: { height: "auto", opacity: 1 },
-            exit: { height: 0, opacity: 0 },
-            transition: { duration: 0.35, ease: "easeOut" },
+            exit: reduce ? { opacity: 0 } : { height: 0, opacity: 0 },
+            transition: { duration: 0.32, ease: EASE$4 },
             className: "overflow-hidden",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-6 pb-6 pt-0", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px bg-border mb-4" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm sm:text-base leading-relaxed", children: item.answer })
-            ] })
-          }
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-2xl pb-7 pl-[calc(0.8125rem+1rem)] text-[15px] leading-relaxed text-[var(--rk-slate)] md:pl-[calc(0.8125rem+1.5rem)] md:text-base", children: item.answer })
+          },
+          "content"
         ) })
       ]
     }
   );
 }
 function FAQSection() {
+  const reduce = useReducedMotion();
   const [openIndex, setOpenIndex] = reactExports.useState(0);
   const handleToggle = (index2) => {
     setOpenIndex((current) => current === index2 ? null : index2);
@@ -46492,576 +46563,1507 @@ function FAQSection() {
     "section",
     {
       id: "faq",
-      className: "relative py-20 sm:py-28 lg:py-32 bg-background overflow-hidden",
+      className: "relative overflow-hidden bg-[var(--rk-navy)] py-24 md:py-28 lg:py-32",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 gradient-aurora opacity-30 pointer-events-none" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger pointer-events-none absolute inset-0 opacity-40",
+            style: {
+              maskImage: "radial-gradient(120% 90% at 15% 4%, #000 32%, transparent 84%)",
+              WebkitMaskImage: "radial-gradient(120% 90% at 15% 4%, #000 32%, transparent 84%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid gap-12 lg:grid-cols-12 lg:gap-16", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
             motion.div,
             {
-              initial: { opacity: 0, y: 30 },
+              initial: reduce ? false : { opacity: 0, y: 20 },
               whileInView: { opacity: 1, y: 0 },
               viewport: { once: true, margin: "-100px" },
-              transition: { duration: 0.6 },
-              className: "text-center mb-12 sm:mb-16",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4", children: [
-                  "Frequently Asked ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Questions" })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto", children: "Everything you need to know about Finance Pro. Can't find the answer you're looking for? Reach out to our team." })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: faqData.map((item, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-            FAQAccordionItem,
-            {
-              item,
-              isOpen: openIndex === index2,
-              onToggle: () => handleToggle(index2),
-              index: index2
-            },
-            item.question
-          )) })
-        ] })
-      ]
-    }
-  );
-}
-const features$1 = [
-  {
-    icon: ChartColumn,
-    title: "Analytics",
-    description: "Real-time financial dashboards with predictive insights and custom reporting.",
-    color: "text-primary",
-    bgGlow: "bg-primary/10"
-  },
-  {
-    icon: Users,
-    title: "Collections",
-    description: "Automated debtor tracking, payment reminders, and collection workflows.",
-    color: "text-secondary",
-    bgGlow: "bg-secondary/10"
-  },
-  {
-    icon: Banknote,
-    title: "Loans",
-    description: "End-to-end loan origination, amortization schedules, and risk scoring.",
-    color: "text-accent",
-    bgGlow: "bg-accent/10"
-  },
-  {
-    icon: FileText,
-    title: "Reports",
-    description: "Generate regulatory, tax, and management reports with one click.",
-    color: "text-primary",
-    bgGlow: "bg-primary/10"
-  },
-  {
-    icon: Receipt,
-    title: "Receipts",
-    description: "Digital receipt capture, OCR extraction, and automated bookkeeping.",
-    color: "text-secondary",
-    bgGlow: "bg-secondary/10"
-  },
-  {
-    icon: QrCode,
-    title: "QR Payments",
-    description: "Instant QR-code generation for fast, contactless customer payments.",
-    color: "text-accent",
-    bgGlow: "bg-accent/10"
-  },
-  {
-    icon: MessageCircle,
-    title: "WhatsApp Integration",
-    description: "Send invoices, reminders, and support messages directly via WhatsApp.",
-    color: "text-primary",
-    bgGlow: "bg-primary/10"
-  },
-  {
-    icon: UserCog,
-    title: "Role Management",
-    description: "Granular RBAC with audit trails for every action in your organization.",
-    color: "text-secondary",
-    bgGlow: "bg-secondary/10"
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Backup",
-    description: "Encrypted daily backups with point-in-time recovery and geo-redundancy.",
-    color: "text-accent",
-    bgGlow: "bg-accent/10"
-  }
-];
-const containerVariants$4 = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.2
-    }
-  }
-};
-const itemVariants$2 = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut"
-    }
-  }
-};
-function DashboardMockup$1() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    motion.div,
-    {
-      initial: { opacity: 0, scale: 0.95, y: 20 },
-      whileInView: { opacity: 1, scale: 1, y: 0 },
-      viewport: { once: true, margin: "-50px" },
-      transition: { duration: 0.7, ease: "easeOut" },
-      className: "glass-strong rounded-2xl p-6 shadow-elevated w-full max-w-md mx-auto lg:mx-0",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-6", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-display text-lg font-semibold text-foreground", children: "Finance Dashboard" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Live Overview" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 rounded-full bg-success animate-pulse" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Online" })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-3 gap-3 mb-6", children: [
-          { label: "Revenue", value: "₹124K", icon: DollarSign, trend: "+12%" },
-          { label: "Expenses", value: "₹89K", icon: Activity, trend: "-3%" },
-          { label: "Growth", value: "24%", icon: TrendingUp, trend: "+8%" }
-        ].map((stat) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "glass rounded-xl p-3 text-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(stat.icon, { className: "w-4 h-4 mx-auto mb-1 text-accent" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display text-sm font-bold text-foreground", children: stat.value }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: stat.label }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs text-success mt-0.5 flex items-center justify-center gap-0.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowUpRight, { className: "w-3 h-3" }),
-            stat.trend
-          ] })
-        ] }, stat.label)) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "glass rounded-xl p-4 mb-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-medium text-foreground", children: "Monthly Revenue" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Last 6 months" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-end gap-2 h-24", children: [40, 65, 45, 80, 55, 90].map((height) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
-            {
-              initial: { height: 0 },
-              whileInView: { height: `${height}%` },
-              viewport: { once: true },
-              transition: { duration: 0.6, delay: 0.3 + height * 0.01 },
-              className: "flex-1 rounded-t-md bg-gradient-to-t from-primary/60 to-accent/60"
-            },
-            `chart-${height}`
-          )) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-between mt-2 text-xs text-muted-foreground", children: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"].map((m2) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: m2 }, m2)) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "glass rounded-xl p-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h5", { className: "text-sm font-medium text-foreground mb-3", children: "Recent Transactions" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-2", children: [
-            { name: "Stripe Payout", amount: "₹12,450", type: "income" },
-            { name: "AWS Invoice", amount: "₹2,340", type: "expense" },
-            { name: "Client Payment", amount: "₹8,900", type: "income" }
-          ].map((tx) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "div",
-            {
-              className: "flex items-center justify-between text-sm",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: tx.name }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "span",
+              transition: { duration: 0.6, ease: EASE$4 },
+              className: "lg:col-span-4",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:sticky lg:top-28", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { tone: "dark", children: "FAQ" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl lg:text-[3.1rem]", children: "Frequently Asked Questions" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 max-w-md text-base leading-relaxed text-[var(--rk-slate)]", children: "Straight answers about Finance Pro and how to get started with RIKNOVA." }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
                   {
-                    className: tx.type === "income" ? "text-success" : "text-destructive",
-                    children: tx.amount
+                    href: "#contact",
+                    className: "group mt-7 inline-flex items-center gap-2 font-display text-sm font-semibold text-[var(--rk-ink)] outline-none transition-colors hover:text-[var(--rk-cyan)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--rk-navy)]",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-underline pb-0.5", children: "Contact the team" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-1" })
+                    ]
                   }
                 )
-              ]
-            },
-            tx.name
-          )) })
-        ] })
+              ] })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            motion.div,
+            {
+              variants: listV$4,
+              initial: reduce ? "visible" : "hidden",
+              whileInView: "visible",
+              viewport: { once: true, margin: "-80px" },
+              className: "lg:col-span-8",
+              children: faqData.map((item, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                FAQRow,
+                {
+                  item,
+                  index: index2,
+                  isOpen: openIndex === index2,
+                  onToggle: () => handleToggle(index2),
+                  reduce
+                },
+                item.question
+              ))
+            }
+          )
+        ] }) })
       ]
     }
   );
 }
+const analytics = {
+  icon: ChartColumn,
+  title: "Analytics",
+  description: "View key financial and operational insights through clear business dashboards.",
+  ocid: 1
+};
+const collections = {
+  icon: Users,
+  title: "Collections",
+  description: "Track collections, record customer payments, and manage due and payment follow-up.",
+  ocid: 2
+};
+const loans = {
+  icon: Banknote,
+  title: "Loans",
+  description: "Enter, create, and manage borrower loan records with the required loan details.",
+  ocid: 3
+};
+const reports = {
+  icon: FileText,
+  title: "Reports",
+  description: "View daily and monthly reports, profit analysis, and cumulative collection, lending, and expense values.",
+  ocid: 4
+};
+const receipts = {
+  icon: Receipt,
+  title: "Receipts",
+  description: "Generate and access a receipt for each recorded customer payment.",
+  ocid: 5
+};
+const qrPayments = {
+  icon: QrCode,
+  title: "QR Payments",
+  description: "Upload a company payment QR code that authorized collection agents can show customers when receiving payments.",
+  ocid: 6
+};
+const whatsapp = {
+  icon: MessageCircle,
+  title: "WhatsApp Integration",
+  description: "Share customer payment receipts directly through WhatsApp.",
+  ocid: 7
+};
+const roles = {
+  icon: UserCog,
+  title: "Role Management",
+  description: "Manage access for Admin and Collection Agent users based on their operational roles.",
+  ocid: 8
+};
+const backup = {
+  icon: Cloud,
+  title: "Cloud Backup",
+  description: "Keep your business data securely stored in the cloud with regular backups.",
+  ocid: 9
+};
+const stages = [
+  { n: "01", label: "Originate", color: "#0FD6A6", items: [loans] },
+  {
+    n: "02",
+    label: "Collect",
+    color: "#12B9C9",
+    items: [collections, qrPayments, whatsapp]
+  },
+  {
+    n: "03",
+    label: "Operate",
+    color: "#1C82E8",
+    items: [receipts, roles, backup]
+  },
+  {
+    n: "04",
+    label: "Report & Analyse",
+    color: "#7C4DFF",
+    items: [reports, analytics]
+  }
+];
+const EASE$3 = [0.22, 1, 0.36, 1];
+const listV$3 = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.14, delayChildren: 0.1 } }
+};
+const spineHV = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.8, ease: EASE$3 } }
+};
+const spineVV = {
+  hidden: { scaleY: 0 },
+  visible: { scaleY: 1, transition: { duration: 0.7, ease: EASE$3 } }
+};
+const stageV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.06 } }
+};
+const nodeV = {
+  hidden: { opacity: 0, scale: 0.6 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.4, ease: EASE$3 } }
+};
+const itemV = {
+  hidden: { opacity: 0, y: 14 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: EASE$3 } }
+};
 function FinanceProSection() {
+  const reduce = useReducedMotion();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "finance-pro",
-      className: "relative py-24 lg:py-32 overflow-hidden",
+      className: "relative overflow-hidden bg-[#070b15] py-24 md:py-28 lg:py-32",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 gradient-aurora opacity-50 pointer-events-none" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "absolute inset-x-0 top-0 h-px",
+            style: {
+              background: "linear-gradient(90deg, transparent, var(--rk-hair-2), transparent)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger pointer-events-none absolute inset-0 opacity-40",
+            style: {
+              maskImage: "radial-gradient(120% 100% at 20% 10%, #000 30%, transparent 82%)",
+              WebkitMaskImage: "radial-gradient(120% 100% at 20% 10%, #000 30%, transparent 82%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.div,
             {
-              initial: { opacity: 0, y: 20 },
+              initial: reduce ? false : { opacity: 0, y: 20 },
               whileInView: { opacity: 1, y: 0 },
               viewport: { once: true, margin: "-100px" },
-              transition: { duration: 0.6, ease: "easeOut" },
-              className: "text-center mb-16",
+              transition: { duration: 0.6, ease: EASE$3 },
+              className: "max-w-2xl",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "inline-block px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 mb-4", children: "Finance Pro" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4", children: "Everything You Need" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg text-muted-foreground max-w-2xl mx-auto", children: "A comprehensive suite of financial tools designed to streamline your operations, from analytics to cloud backup." })
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { tone: "dark", children: "Inside Finance Pro" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "mt-5 font-display text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl lg:text-[3.4rem]", children: "The System Behind Every Loan" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-base leading-relaxed text-[var(--rk-slate)] md:text-lg", children: "A comprehensive suite of financial tools designed to streamline your operations, from analytics to cloud backup." })
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lg:col-span-4 order-2 lg:order-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(DashboardMockup$1, {}) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              motion.div,
-              {
-                variants: containerVariants$4,
-                initial: "hidden",
-                whileInView: "visible",
-                viewport: { once: true, margin: "-50px" },
-                className: "lg:col-span-8 order-1 lg:order-2",
-                children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-5", children: features$1.map((feature, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.div,
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.ol,
+            {
+              variants: listV$3,
+              initial: reduce ? "visible" : "hidden",
+              whileInView: "visible",
+              viewport: { once: true, margin: "-80px" },
+              className: "relative mt-14 md:mt-20 md:grid md:grid-cols-4 md:gap-x-8",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  motion.span,
                   {
-                    variants: itemVariants$2,
-                    whileHover: {
-                      y: -4,
-                      transition: { duration: 0.2 }
-                    },
-                    className: "group glass rounded-xl p-5 transition-smooth hover:shadow-glass hover:border-primary/30 cursor-default",
-                    "data-ocid": `finance.feature.item.${index2 + 1}`,
+                    "aria-hidden": "true",
+                    variants: spineHV,
+                    className: "absolute left-4 right-10 top-4 hidden h-px origin-left md:block",
+                    style: { background: "var(--rk-hair-2)" }
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  motion.span,
+                  {
+                    "aria-hidden": "true",
+                    variants: spineVV,
+                    className: "absolute bottom-3 left-[15px] top-2 w-px origin-top md:hidden",
+                    style: { background: "var(--rk-hair-2)" }
+                  }
+                ),
+                stages.map((stage) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  motion.li,
+                  {
+                    variants: stageV,
+                    className: "relative pb-11 pl-12 last:pb-0 md:pb-0 md:pl-0",
                     children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
+                        motion.span,
                         {
-                          className: `w-10 h-10 rounded-lg ${feature.bgGlow} flex items-center justify-center mb-3 transition-smooth group-hover:scale-110`,
+                          variants: nodeV,
+                          className: "absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full border-2 bg-[#070b15] md:static md:mb-6",
+                          style: { borderColor: stage.color },
                           children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                            feature.icon,
+                            "span",
                             {
-                              className: `w-5 h-5 ${feature.color}`,
-                              "aria-hidden": "true"
+                              className: "rk-tnum font-mono text-[11px] font-semibold",
+                              style: { color: stage.color },
+                              children: stage.n
                             }
                           )
                         }
                       ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-base font-semibold text-foreground mb-1.5", children: feature.title }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: feature.description })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { variants: itemV, className: "mb-4 md:mb-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          className: "font-mono text-[11px] font-medium uppercase tracking-[0.2em]",
+                          style: { color: stage.color },
+                          children: stage.label
+                        }
+                      ) }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-5", children: stage.items.map((cap) => {
+                        const Icon2 = cap.icon;
+                        return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                          motion.div,
+                          {
+                            variants: itemV,
+                            className: "flex gap-3",
+                            "data-ocid": `finance.feature.item.${cap.ocid}`,
+                            children: [
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                Icon2,
+                                {
+                                  className: "mt-0.5 h-5 w-5 shrink-0",
+                                  style: { color: stage.color },
+                                  strokeWidth: 1.6,
+                                  "aria-hidden": "true"
+                                }
+                              ),
+                              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-[15px] font-semibold text-[var(--rk-ink)]", children: cap.title }),
+                                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-1 text-[13px] leading-relaxed text-[var(--rk-slate)]", children: cap.description })
+                              ] })
+                            ]
+                          },
+                          cap.title
+                        );
+                      }) })
                     ]
                   },
-                  feature.title
-                )) })
-              }
-            )
-          ] })
+                  stage.label
+                ))
+              ]
+            }
+          )
         ] })
       ]
     }
   );
 }
-function AuroraBackground() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pointer-events-none absolute inset-0 overflow-hidden", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gradient-aurora absolute inset-0 opacity-60" }),
+function ArcSweep({
+  delay: delay2 = 0.8,
+  className = ""
+}) {
+  const reduce = useReducedMotion();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "svg",
+    {
+      "aria-hidden": "true",
+      viewBox: "0 0 300 22",
+      preserveAspectRatio: "none",
+      className: `pointer-events-none absolute -bottom-[0.24em] left-0 h-[0.42em] w-full overflow-visible ${className}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("defs", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "rk-sweep", x1: "0", y1: "0", x2: "1", y2: "0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0", stopColor: "#FF7A18" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0.55", stopColor: "#F5391C" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "1", stopColor: "#E4145A" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          motion.path,
+          {
+            d: "M3 17 C 78 17, 150 15, 208 9 S 288 3, 297 3",
+            fill: "none",
+            stroke: "url(#rk-sweep)",
+            strokeWidth: "3",
+            strokeLinecap: "round",
+            vectorEffect: "non-scaling-stroke",
+            initial: reduce ? false : { pathLength: 0, opacity: 0 },
+            animate: { pathLength: 1, opacity: 1 },
+            transition: {
+              duration: 0.8,
+              delay: reduce ? 0 : delay2,
+              ease: [0.22, 1, 0.36, 1]
+            }
+          }
+        )
+      ]
+    }
+  );
+}
+function CountUp({
+  value,
+  decimals = 0,
+  prefix: prefix2 = "",
+  suffix: suffix2 = "",
+  duration = 1200,
+  delay: delay2 = 0,
+  separator = false,
+  className = ""
+}) {
+  const reduce = useReducedMotion();
+  const [display, setDisplay] = reactExports.useState(0);
+  const ref = reactExports.useRef(null);
+  const started = reactExports.useRef(false);
+  reactExports.useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (reduce) {
+      setDisplay(value);
+      return;
+    }
+    let raf = 0;
+    let timeout2 = 0;
+    const run = () => {
+      const start = performance.now();
+      const tick = (now2) => {
+        const t = Math.min(1, (now2 - start) / duration);
+        const eased = 1 - (1 - t) ** 3;
+        setDisplay(value * eased);
+        if (t < 1) raf = requestAnimationFrame(tick);
+      };
+      raf = requestAnimationFrame(tick);
+    };
+    const observer2 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+          timeout2 = window.setTimeout(run, delay2);
+          observer2.disconnect();
+        }
+      },
+      { threshold: 0.4 }
+    );
+    observer2.observe(el);
+    return () => {
+      observer2.disconnect();
+      cancelAnimationFrame(raf);
+      clearTimeout(timeout2);
+    };
+  }, [value, duration, delay2, reduce]);
+  const formatted = (() => {
+    const fixed = display.toFixed(decimals);
+    if (!separator) return fixed;
+    const [intPart, decPart] = fixed.split(".");
+    const grouped = intPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return decPart ? `${grouped}.${decPart}` : grouped;
+  })();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { ref, className: `rk-tnum ${className}`, children: [
+    prefix2,
+    formatted,
+    suffix2
+  ] });
+}
+const bars = [38, 52, 46, 63, 58, 74, 69, 88];
+const linePath = "M4 96 L44 84 L84 90 L124 66 L164 72 L204 48 L244 40 L284 26 L316 20";
+const areaPath = `${linePath} L316 120 L4 120 Z`;
+const ledger = [
+  {
+    id: "#RK-4821",
+    label: "Disbursement · Chennai",
+    amt: "+₹45,000",
+    ok: true
+  },
+  {
+    id: "#RK-4820",
+    label: "Collection · KRS Finance",
+    amt: "+₹12,450",
+    ok: true
+  },
+  { id: "#RK-4817", label: "EMI due · Coimbatore", amt: "₹8,900", ok: false }
+];
+function HeroConsole() {
+  const reduce = useReducedMotion();
+  const rise = (delay2) => reduce ? { initial: false } : {
+    initial: { opacity: 0, y: 16 },
+    animate: { opacity: 1, y: 0 },
+    transition: {
+      duration: 0.6,
+      delay: delay2,
+      ease: [0.22, 1, 0.36, 1]
+    }
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-full max-w-[560px]", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
-      motion.div,
+      "div",
       {
-        className: "absolute -left-[10%] top-[10%] h-[500px] w-[500px] rounded-full opacity-20 blur-[120px]",
-        style: { background: "oklch(0.55 0.22 300 / 0.3)" },
-        animate: {
-          x: [0, 40, -20, 0],
-          y: [0, -30, 20, 0],
-          scale: [1, 1.1, 0.95, 1]
-        },
-        transition: {
-          duration: 20,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut"
+        "aria-hidden": "true",
+        className: "pointer-events-none absolute -inset-6 -z-10 opacity-70",
+        style: {
+          background: "radial-gradient(60% 55% at 70% 30%, rgba(28,130,232,.28), transparent 70%), radial-gradient(45% 45% at 20% 90%, rgba(106,44,224,.22), transparent 70%)",
+          filter: "blur(30px)"
         }
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       motion.div,
       {
-        className: "absolute -right-[10%] top-[20%] h-[400px] w-[400px] rounded-full opacity-20 blur-[100px]",
-        style: { background: "oklch(0.72 0.15 195 / 0.3)" },
-        animate: {
-          x: [0, -30, 20, 0],
-          y: [0, 40, -20, 0],
-          scale: [1, 0.95, 1.05, 1]
-        },
-        transition: {
-          duration: 18,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-          delay: 2
-        }
-      }
-    ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      motion.div,
-      {
-        className: "absolute bottom-[10%] left-[30%] h-[350px] w-[350px] rounded-full opacity-15 blur-[90px]",
-        style: { background: "oklch(0.55 0.2 265 / 0.25)" },
-        animate: {
-          x: [0, 20, -30, 0],
-          y: [0, -20, 30, 0],
-          scale: [1, 1.05, 0.9, 1]
-        },
-        transition: {
-          duration: 22,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-          delay: 4
-        }
+        ...rise(0.15),
+        className: "relative rounded-2xl p-[1.5px]",
+        style: { background: "var(--rk-grad-leg)" },
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: "relative overflow-hidden rounded-2xl bg-[var(--rk-navy-2)]",
+            style: { boxShadow: "var(--rk-shadow-panel)" },
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  "aria-hidden": "true",
+                  className: "pointer-events-none absolute inset-x-0 top-0 h-px",
+                  style: {
+                    background: "linear-gradient(90deg, transparent, rgba(147,179,224,.35), transparent)"
+                  }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  "aria-hidden": "true",
+                  className: "rk-ledger-fine pointer-events-none absolute inset-0 opacity-40",
+                  style: {
+                    maskImage: "radial-gradient(120% 120% at 80% 0%, #000 30%, transparent 80%)",
+                    WebkitMaskImage: "radial-gradient(120% 120% at 80% 0%, #000 30%, transparent 80%)"
+                  }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative p-5 sm:p-6", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-5 flex items-center justify-between", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "flex h-8 w-8 items-center justify-center rounded-lg",
+                        style: { background: "var(--rk-grad-bars)" },
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(ShieldCheck, { className: "h-4 w-4 text-[#04202a]" })
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "leading-tight", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display text-sm font-semibold text-[var(--rk-ink)]", children: "Finance Pro" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--rk-slate)]", children: "Operations Console" })
+                    ] })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "relative flex h-2 w-2", children: [
+                      !reduce && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--rk-emerald)] opacity-60" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "relative inline-flex h-2 w-2 rounded-full bg-[var(--rk-emerald)]" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--rk-slate)]", children: "Live" })
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-5 grid grid-cols-3 gap-2.5", children: [
+                  {
+                    label: "Portfolio",
+                    node: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      CountUp,
+                      {
+                        value: 2.4,
+                        decimals: 1,
+                        prefix: "₹",
+                        suffix: "M",
+                        delay: 350
+                      }
+                    ),
+                    accent: "var(--rk-cyan)",
+                    trend: "+12.5%"
+                  },
+                  {
+                    label: "Active Loans",
+                    node: /* @__PURE__ */ jsxRuntimeExports.jsx(CountUp, { value: 1847, separator: true, delay: 450 }),
+                    accent: "var(--rk-emerald)",
+                    trend: "+8.2%"
+                  },
+                  {
+                    label: "Collection",
+                    node: /* @__PURE__ */ jsxRuntimeExports.jsx(CountUp, { value: 98.2, decimals: 1, suffix: "%", delay: 550 }),
+                    accent: "var(--rk-blue)",
+                    trend: "Stable"
+                  }
+                ].map((k2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    className: "relative overflow-hidden rounded-xl border border-[var(--rk-hair)] bg-[var(--rk-navy)]/45 p-3 pt-3.5",
+                    style: { boxShadow: "inset 0 1px 0 rgba(147,179,224,.08)" },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          "aria-hidden": "true",
+                          className: "absolute left-0 top-0 h-[2px] w-8 rounded-r-full",
+                          style: { background: k2.accent }
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-2 font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--rk-slate)]", children: k2.label }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "font-display text-[1.35rem] font-bold leading-none tracking-tight",
+                          style: { color: k2.accent },
+                          children: k2.node
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-1.5 flex items-center gap-0.5 text-[10px] text-[var(--rk-slate)]", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowUpRight, { className: "h-3 w-3 text-[var(--rk-emerald)]" }),
+                        k2.trend
+                      ] })
+                    ]
+                  },
+                  k2.label
+                )) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    className: "mb-4 rounded-xl border border-[var(--rk-hair)] bg-[var(--rk-navy)]/80 p-4",
+                    style: { boxShadow: "inset 0 2px 10px rgba(3,8,20,.5)" },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-3 flex items-center justify-between", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--rk-slate)]", children: "Disbursements · 8w" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-tnum font-display text-xs font-semibold text-[var(--rk-ink)]", children: "₹18.6M" })
+                      ] }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative h-28", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "div",
+                          {
+                            "aria-hidden": "true",
+                            className: "pointer-events-none absolute inset-0",
+                            style: {
+                              backgroundImage: "repeating-linear-gradient(to top, transparent 0, transparent 27px, var(--rk-hair) 27px, var(--rk-hair) 28px)"
+                            }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 flex items-end gap-1.5", children: bars.map((h2, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          motion.div,
+                          {
+                            className: "flex-1 rounded-[3px]",
+                            style: {
+                              background: "var(--rk-grad-bars)",
+                              opacity: 0.28,
+                              transformOrigin: "bottom"
+                            },
+                            initial: reduce ? false : { scaleY: 0 },
+                            animate: { scaleY: 1, height: `${h2}%` },
+                            transition: {
+                              duration: 0.5,
+                              delay: reduce ? 0 : 0.5 + i * 0.05,
+                              ease: [0.22, 1, 0.36, 1]
+                            }
+                          },
+                          `bar-${h2}`
+                        )) }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                          "svg",
+                          {
+                            viewBox: "0 0 320 120",
+                            preserveAspectRatio: "none",
+                            className: "absolute inset-0 h-full w-full",
+                            "aria-hidden": "true",
+                            children: [
+                              /* @__PURE__ */ jsxRuntimeExports.jsxs("defs", { children: [
+                                /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "rk-line", x1: "0", y1: "0", x2: "1", y2: "0", children: [
+                                  /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0", stopColor: "#0FD6A6" }),
+                                  /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0.5", stopColor: "#12B9C9" }),
+                                  /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "1", stopColor: "#1C82E8" })
+                                ] }),
+                                /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "rk-area", x1: "0", y1: "0", x2: "0", y2: "1", children: [
+                                  /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0", stopColor: "#1C82E8", stopOpacity: "0.28" }),
+                                  /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "1", stopColor: "#1C82E8", stopOpacity: "0" })
+                                ] })
+                              ] }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                motion.path,
+                                {
+                                  d: areaPath,
+                                  fill: "url(#rk-area)",
+                                  initial: reduce ? false : { opacity: 0 },
+                                  animate: { opacity: 1 },
+                                  transition: { duration: 0.6, delay: reduce ? 0 : 1.1 }
+                                }
+                              ),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                motion.path,
+                                {
+                                  d: linePath,
+                                  fill: "none",
+                                  stroke: "url(#rk-line)",
+                                  strokeWidth: "2.5",
+                                  strokeLinecap: "round",
+                                  strokeLinejoin: "round",
+                                  vectorEffect: "non-scaling-stroke",
+                                  initial: reduce ? false : { pathLength: 0 },
+                                  animate: { pathLength: 1 },
+                                  transition: {
+                                    duration: 1.1,
+                                    delay: reduce ? 0 : 0.6,
+                                    ease: "easeInOut"
+                                  }
+                                }
+                              )
+                            ]
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          motion.span,
+                          {
+                            "aria-hidden": "true",
+                            className: "absolute left-[98.75%] top-[16.67%] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full",
+                            style: {
+                              background: "#1C82E8",
+                              boxShadow: "0 0 0 3px rgba(28,130,232,.22)"
+                            },
+                            initial: reduce ? false : { scale: 0, opacity: 0 },
+                            animate: { scale: 1, opacity: 1 },
+                            transition: {
+                              duration: 0.35,
+                              delay: reduce ? 0 : 1.65,
+                              ease: [0.22, 1, 0.36, 1]
+                            }
+                          }
+                        )
+                      ] })
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-1.5", children: ledger.map((row, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  motion.div,
+                  {
+                    ...reduce ? { initial: false } : {
+                      initial: { opacity: 0, x: 12 },
+                      animate: { opacity: 1, x: 0 },
+                      transition: {
+                        duration: 0.4,
+                        delay: 1.2 + i * 0.12,
+                        ease: [0.22, 1, 0.36, 1]
+                      }
+                    },
+                    className: "relative flex items-center justify-between overflow-hidden rounded-lg border border-[var(--rk-hair)] bg-[var(--rk-navy)]/40 py-2 pl-3.5 pr-3",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          "aria-hidden": "true",
+                          className: "absolute left-0 top-0 h-full w-[2.5px]",
+                          style: {
+                            background: row.ok ? "var(--rk-emerald)" : "var(--rk-orange)",
+                            opacity: 0.7
+                          }
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2.5 min-w-0", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "shrink-0 whitespace-nowrap font-mono text-[10px] text-[var(--rk-slate)]", children: row.id }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "truncate text-xs text-[var(--rk-ink)]/80", children: row.label })
+                      ] }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex shrink-0 items-center gap-2.5 pl-2", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: "rounded-full px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider",
+                            style: {
+                              color: row.ok ? "#04202a" : "#3a0e08",
+                              background: row.ok ? "var(--rk-emerald)" : "var(--rk-orange)"
+                            },
+                            children: row.ok ? "Paid" : "Due"
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-tnum whitespace-nowrap text-xs font-semibold text-[var(--rk-ink)]", children: row.amt })
+                      ] })
+                    ]
+                  },
+                  row.id
+                )) })
+              ] })
+            ]
+          }
+        )
       }
     )
   ] });
 }
-function FloatingParticles() {
-  const particles = Array.from({ length: 20 }, (_2, i) => ({
-    id: i,
-    size: Math.random() * 3 + 1,
-    left: `${Math.random() * 100}%`,
-    top: `${Math.random() * 100}%`,
-    duration: Math.random() * 15 + 10,
-    delay: Math.random() * 5
-  }));
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pointer-events-none absolute inset-0 overflow-hidden", children: particles.map((p2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-    motion.div,
-    {
-      className: "absolute rounded-full bg-accent/30",
-      style: {
-        width: p2.size,
-        height: p2.size,
-        left: p2.left,
-        top: p2.top
-      },
-      animate: {
-        y: [0, -30, 0],
-        opacity: [0.2, 0.6, 0.2]
-      },
-      transition: {
-        duration: p2.duration,
-        repeat: Number.POSITIVE_INFINITY,
-        delay: p2.delay,
-        ease: "easeInOut"
-      }
-    },
-    p2.id
-  )) });
-}
-function DashboardMockup() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    motion.div,
-    {
-      className: "glass relative w-full max-w-2xl overflow-hidden rounded-2xl p-6 shadow-elevated",
-      initial: { opacity: 0, y: 40 },
-      animate: { opacity: 1, y: 0 },
-      transition: { duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] },
-      style: { animation: "float 6s ease-in-out infinite" },
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6 flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex h-8 w-8 items-center justify-center rounded-lg bg-primary/20", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChartColumn, { className: "h-4 w-4 text-primary" }) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-sm font-semibold text-foreground", children: "Finance Pro" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: "Dashboard Overview" })
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-2 w-2 rounded-full bg-success" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Live" })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-6 grid grid-cols-3 gap-4", children: [
-          {
-            label: "Total Revenue",
-            value: "₹2.4M",
-            change: "+12.5%",
-            icon: TrendingUp,
-            positive: true
-          },
-          {
-            label: "Active Loans",
-            value: "1,847",
-            change: "+8.2%",
-            icon: Zap,
-            positive: true
-          },
-          {
-            label: "Risk Score",
-            value: "A+",
-            change: "Stable",
-            icon: Shield,
-            positive: true
-          }
-        ].map((stat) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl bg-muted/50 p-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-2 flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(stat.icon, { className: "h-3.5 w-3.5 text-accent" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: stat.label })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-lg font-bold text-foreground", children: stat.value }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: `text-xs ${stat.positive ? "text-success" : "text-destructive"}`,
-              children: stat.change
-            }
-          )
-        ] }, stat.label)) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl bg-muted/30 p-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-4 flex items-center justify-between", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-medium text-foreground", children: "Revenue Trend" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-2", children: ["1W", "1M", "3M", "1Y"].map((period) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "button",
-              {
-                type: "button",
-                className: `rounded-md px-2 py-1 text-xs transition-colors ${period === "1M" ? "bg-primary/20 text-primary" : "text-muted-foreground hover:text-foreground"}`,
-                children: period
-              },
-              period
-            )) })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex h-32 items-end gap-1", children: [40, 55, 45, 70, 60, 80, 75, 90, 85, 95, 88, 92].map((height) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
-            {
-              className: "flex-1 rounded-t-sm bg-gradient-to-t from-primary/60 to-accent/40",
-              initial: { height: 0 },
-              animate: { height: `${height}%` },
-              transition: { duration: 0.5, delay: 0.8 + height * 5e-3 }
-            },
-            `bar-${height}`
-          )) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-2 flex justify-between text-xs text-muted-foreground", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Jan" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Jun" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Dec" })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-4 flex items-center justify-between rounded-xl bg-muted/30 p-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-8 w-8 rounded-full bg-secondary/20" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-sm font-medium text-foreground", children: "Recent Transaction" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: "Loan disbursement #2847" })
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-semibold text-success", children: "+₹45,000" })
-        ] })
-      ]
-    }
-  );
-}
+const trustItems = [
+  { icon: Users, label: "Admin & Collection Agent roles" },
+  { icon: Cloud, label: "Cloud-based, backed up regularly" },
+  { icon: Languages, label: "Tamil & English" }
+];
 function HeroSection() {
   const { openModal: openBookDemoModal } = useBookDemoModal();
+  const reduce = useReducedMotion();
   const scrollToSection = (id2) => {
-    const element = document.getElementById(id2);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    var _a2;
+    (_a2 = document.getElementById(id2)) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
+  };
+  const stage = (i) => reduce ? { initial: false } : {
+    initial: { opacity: 0, y: 22 },
+    animate: { opacity: 1, y: 0 },
+    transition: {
+      duration: 0.6,
+      delay: 0.1 + i * 0.09,
+      ease: [0.22, 1, 0.36, 1]
     }
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "hero",
-      className: "relative flex min-h-screen items-center justify-center overflow-hidden bg-background py-20",
+      className: "relative flex min-h-screen items-center overflow-hidden bg-[var(--rk-navy)] pb-20 pt-28 sm:pb-24 lg:py-24",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(AuroraBackground, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingParticles, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid items-center gap-12 lg:grid-cols-2 lg:gap-16", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center lg:items-start lg:text-left", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger pointer-events-none absolute inset-0 opacity-60",
+            style: {
+              maskImage: "radial-gradient(115% 90% at 72% 8%, #000 35%, transparent 82%)",
+              WebkitMaskImage: "radial-gradient(115% 90% at 72% 8%, #000 35%, transparent 82%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "pointer-events-none absolute -right-[12%] top-[6%] h-[520px] w-[520px] rounded-full opacity-45",
+            style: {
+              background: "radial-gradient(circle, rgba(28,130,232,.30), transparent 66%)",
+              filter: "blur(90px)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "pointer-events-none absolute -left-[10%] bottom-[2%] h-[420px] w-[420px] rounded-full opacity-35",
+            style: {
+              background: "radial-gradient(circle, rgba(106,44,224,.28), transparent 68%)",
+              filter: "blur(100px)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid items-center gap-12 lg:grid-cols-[1.02fr_1fr] lg:gap-14", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-start text-left", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               motion.div,
               {
-                initial: { opacity: 0, y: 20 },
-                animate: { opacity: 1, y: 0 },
-                transition: { duration: 0.5, delay: 0.1 },
-                className: "mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-1.5 backdrop-blur-sm",
+                ...stage(0),
+                className: "mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--rk-hair-2)] bg-white/[0.03] px-3.5 py-1.5 backdrop-blur-sm",
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "relative flex h-2 w-2", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "relative inline-flex h-2 w-2 rounded-full bg-success" })
+                    !reduce && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--rk-emerald)] opacity-60" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "relative inline-flex h-2 w-2 rounded-full bg-[var(--rk-emerald)]" })
                   ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-medium text-muted-foreground", children: "Trusted by 500+ Financial Institutions" })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--rk-slate)]", children: "Fintech Software · Lending & Finance" })
                 ]
               }
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               motion.h1,
               {
-                initial: { opacity: 0, y: 30 },
-                animate: { opacity: 1, y: 0 },
-                transition: {
-                  duration: 0.6,
-                  delay: 0.2,
-                  ease: [0.22, 1, 0.36, 1]
-                },
-                className: "mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl",
+                ...stage(1),
+                className: "font-display text-4xl font-medium leading-[1.08] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl sm:leading-[1.06] lg:text-[3.75rem] lg:leading-[1.02] lg:tracking-[-0.03em] xl:text-[4.25rem]",
                 children: [
-                  "Transform Your",
+                  "Software built for the way",
                   " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Finance Business" }),
-                  " with Intelligent Software"
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "relative inline-block font-bold", children: [
+                    "finance businesses",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(ArcSweep, { delay: 0.8 })
+                  ] }),
+                  " ",
+                  "work."
                 ]
               }
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               motion.p,
               {
-                initial: { opacity: 0, y: 30 },
-                animate: { opacity: 1, y: 0 },
-                transition: {
-                  duration: 0.6,
-                  delay: 0.35,
-                  ease: [0.22, 1, 0.36, 1]
-                },
-                className: "mb-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg",
-                children: "RIKNOVA builds secure, scalable cloud applications that empower financial businesses to streamline operations, reduce risk, and accelerate growth."
+                ...stage(2),
+                className: "mt-7 max-w-xl text-base leading-relaxed text-[var(--rk-slate)] sm:text-lg",
+                children: "RIKNOVA builds Finance Pro — practical software for managing lending operations, collections, receipts, and reports."
               }
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               motion.div,
               {
-                initial: { opacity: 0, y: 30 },
-                animate: { opacity: 1, y: 0 },
-                transition: {
-                  duration: 0.6,
-                  delay: 0.5,
-                  ease: [0.22, 1, 0.36, 1]
-                },
-                className: "flex flex-col gap-4 sm:flex-row",
+                ...stage(3),
+                className: "mt-9 flex flex-col gap-3 sm:flex-row",
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                    Button,
+                    "button",
                     {
-                      size: "lg",
-                      className: "group bg-primary text-primary-foreground shadow-glow hover:bg-primary/90",
+                      type: "button",
                       onClick: openBookDemoModal,
+                      className: "rk-btn-arc group inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 font-display text-base font-semibold outline-none focus-visible:ring-2 focus-visible:ring-[var(--rk-orange)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]",
                       "data-ocid": "hero.book_demo_button",
                       children: [
-                        "Book Demo",
-                        /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" })
+                        "Book a demo",
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-1" })
                       ]
                     }
                   ),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                    Button,
+                    "button",
                     {
-                      size: "lg",
-                      variant: "outline",
-                      className: "group border-border bg-card/50 backdrop-blur-sm hover:bg-card/80",
+                      type: "button",
                       onClick: () => scrollToSection("products"),
+                      className: "group inline-flex items-center justify-center gap-1.5 rounded-xl border border-[var(--rk-hair-2)] bg-white/[0.02] px-6 py-3.5 font-display text-base font-semibold text-[var(--rk-ink)] outline-none transition-colors hover:border-[var(--rk-cyan)]/50 hover:bg-white/[0.05] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)]",
                       "data-ocid": "hero.explore_products_button",
                       children: [
                         "Explore Products",
-                        /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" })
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-1" })
                       ]
+                    }
+                  )
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              motion.div,
+              {
+                ...stage(4),
+                className: "mt-11 flex flex-wrap items-center gap-x-7 gap-y-3",
+                children: trustItems.map((item) => {
+                  const Icon2 = item.icon;
+                  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "h-3.5 w-[3px] rounded-full",
+                        style: { background: "var(--rk-grad-bars)" }
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "h-4 w-4 text-[var(--rk-cyan)]" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--rk-slate)]", children: item.label })
+                  ] }, item.label);
+                })
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center lg:items-end", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(HeroConsole, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 w-full max-w-[560px] text-right text-[11px] italic text-[var(--rk-slate)]/70", children: "*For illustrative purpose only. Actual UI may differ.*" })
+          ] })
+        ] }) })
+      ]
+    }
+  );
+}
+const sectors = [
+  {
+    index: "01",
+    color: "var(--rk-cyan-ink)",
+    name: "Microfinance Institutions",
+    context: "Microfinance institutions managing borrower loans, collections, and day-to-day lending operations."
+  },
+  {
+    index: "02",
+    color: "var(--rk-blue-ink)",
+    name: "NBFCs",
+    context: "Non-banking financial companies managing lending and finance operations across their day-to-day business."
+  },
+  {
+    index: "03",
+    color: "var(--rk-emerald-ink)",
+    name: "Finance Companies",
+    context: "Finance businesses managing loans, collections, and reporting as part of their everyday operations."
+  },
+  {
+    index: "04",
+    color: "var(--rk-violet-ink)",
+    name: "Lending Businesses",
+    context: "Lending businesses that need practical software to manage loans, collections, and everyday operations."
+  }
+];
+const EASE$2 = [0.22, 1, 0.36, 1];
+const listV$2 = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12, delayChildren: 0.05 } }
+};
+const entryV$1 = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } }
+};
+const ruleV$2 = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.6, ease: EASE$2 } }
+};
+const fadeV$1 = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE$2 } }
+};
+function IndustriesSection() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "section",
+    {
+      id: "industries",
+      className: "relative overflow-hidden border-t border-[color:var(--rk-line-l)] bg-[color:var(--rk-canvas-2)] py-24 md:py-28 lg:py-32",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger-l pointer-events-none absolute inset-0 opacity-60",
+            style: {
+              maskImage: "radial-gradient(100% 90% at 15% 0%, #000 35%, transparent 82%)",
+              WebkitMaskImage: "radial-gradient(100% 90% at 15% 0%, #000 35%, transparent 82%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              initial: { opacity: 0, y: 20 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: true, margin: "-100px" },
+              transition: { duration: 0.6, ease: EASE$2 },
+              className: "max-w-3xl",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { children: "Industries" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-5xl lg:text-[3.4rem]", children: [
+                  "Built for",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-bold", children: "Lending & Finance Businesses" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-base leading-relaxed text-[color:var(--rk-ink-body)] md:text-lg", children: "RIKNOVA builds software for lending and finance businesses — the institutions and companies that manage loans, collections, and everyday finance operations." })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            motion.ol,
+            {
+              variants: listV$2,
+              initial: "hidden",
+              whileInView: "visible",
+              viewport: { once: true, margin: "-80px" },
+              className: "mt-16 md:mt-20",
+              children: sectors.map((s, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                motion.li,
+                {
+                  variants: entryV$1,
+                  className: "relative grid gap-3 pt-7 md:pt-9 lg:grid-cols-12 lg:items-baseline lg:gap-8 [&:not(:last-child)]:pb-8 md:[&:not(:last-child)]:pb-11",
+                  "data-ocid": `industries.item.${i + 1}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      motion.span,
+                      {
+                        "aria-hidden": "true",
+                        variants: ruleV$2,
+                        className: "absolute inset-x-0 top-0 h-px origin-left bg-[color:var(--rk-line-l-strong)]"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      motion.div,
+                      {
+                        variants: fadeV$1,
+                        className: "flex items-baseline gap-4 lg:col-span-8",
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "span",
+                            {
+                              className: "rk-tnum shrink-0 font-mono text-[13px] font-semibold tracking-[0.14em]",
+                              style: { color: s.color },
+                              children: s.index
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-3xl font-bold leading-[1.05] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-4xl lg:text-[2.9rem]", children: s.name })
+                        ]
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      motion.p,
+                      {
+                        variants: fadeV$1,
+                        className: "max-w-md text-[15px] leading-relaxed text-[color:var(--rk-ink-body)] lg:col-span-4 lg:pl-4",
+                        children: s.context
+                      }
+                    )
+                  ]
+                },
+                s.index
+              ))
+            }
+          )
+        ] })
+      ]
+    }
+  );
+}
+function LightToNavyTransition() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "aria-hidden": "true",
+      className: "pointer-events-none absolute inset-x-0 top-0 h-28 overflow-hidden sm:h-36",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute inset-0",
+            style: {
+              background: "linear-gradient(to bottom, var(--rk-canvas-2) 0%, var(--rk-canvas) 14%, var(--rk-navy) 100%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "rk-ledger-l absolute inset-0",
+            style: {
+              maskImage: "linear-gradient(to bottom, #000 0%, transparent 55%)",
+              WebkitMaskImage: "linear-gradient(to bottom, #000 0%, transparent 55%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "rk-ledger absolute inset-0",
+            style: {
+              maskImage: "linear-gradient(to bottom, transparent 45%, #000 100%)",
+              WebkitMaskImage: "linear-gradient(to bottom, transparent 45%, #000 100%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute -inset-x-10 top-1/2 h-px origin-center -translate-y-1/2 rotate-[7deg]",
+            style: {
+              background: "linear-gradient(90deg, transparent, rgba(18,185,201,.32), rgba(28,130,232,.30), transparent)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-x-0 bottom-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SpectrumRail, { height: 2 }) })
+      ]
+    }
+  );
+}
+const modules = [
+  { x: 34, y: 40, accent: "#0FD6A6" },
+  // top-left
+  { x: 326, y: 40, accent: "#12B9C9" },
+  // top-right
+  { x: 34, y: 214, accent: "#1C82E8" },
+  // bottom-left
+  { x: 326, y: 214, accent: "#7C4DFF" }
+  // bottom-right
+];
+const connectors = [
+  { d: "M154 72 C 168 72, 168 120, 182 122", c: "#0FD6A6" },
+  { d: "M326 72 C 312 72, 312 120, 298 122", c: "#12B9C9" },
+  { d: "M154 246 C 168 246, 168 198, 182 198", c: "#1C82E8" },
+  { d: "M326 246 C 312 246, 312 198, 298 198", c: "#7C4DFF" }
+];
+function ProductArchitecture() {
+  const reduce = useReducedMotion();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-full max-w-[560px]", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "aria-hidden": "true",
+        className: "pointer-events-none absolute -inset-6 -z-10 opacity-60",
+        style: {
+          background: "radial-gradient(55% 55% at 65% 35%, rgba(28,130,232,.24), transparent 70%), radial-gradient(45% 45% at 25% 85%, rgba(124,77,255,.20), transparent 70%)",
+          filter: "blur(30px)"
+        }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      motion.div,
+      {
+        initial: reduce ? false : { opacity: 0, y: 16 },
+        whileInView: { opacity: 1, y: 0 },
+        viewport: { once: true, margin: "-80px" },
+        transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+        className: "relative rounded-2xl p-[1.5px]",
+        style: { background: "var(--rk-grad-leg)" },
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: "relative overflow-hidden rounded-2xl bg-[var(--rk-navy-2)]",
+            style: { boxShadow: "var(--rk-shadow-panel)" },
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  "aria-hidden": "true",
+                  className: "pointer-events-none absolute inset-x-0 top-0 h-px",
+                  style: {
+                    background: "linear-gradient(90deg, transparent, rgba(147,179,224,.35), transparent)"
+                  }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between border-b border-[var(--rk-hair)] px-5 py-3.5", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "span",
+                    {
+                      "aria-hidden": "true",
+                      className: "flex h-6 items-end gap-[3px]",
+                      title: "RIKNOVA ascending motif",
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: "w-[3px] rounded-sm",
+                            style: { height: 9, background: "#0FD6A6" }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: "w-[3px] rounded-sm",
+                            style: { height: 14, background: "#12B9C9" }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: "w-[3px] rounded-sm",
+                            style: { height: 19, background: "#1C82E8" }
+                          }
+                        )
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-sm font-semibold text-[var(--rk-ink)]", children: "Finance Pro" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--rk-slate)]", children: "Platform Architecture" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative p-5 sm:p-6", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "svg",
+                  {
+                    viewBox: "0 0 480 318",
+                    className: "w-full",
+                    role: "img",
+                    "aria-label": "Abstract schematic: a Finance Pro core platform composed of four connected modules.",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Finance Pro platform core composed of connected modules (illustrative)" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("defs", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "pattern",
+                        {
+                          id: "pa-grid",
+                          width: "26",
+                          height: "26",
+                          patternUnits: "userSpaceOnUse",
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "path",
+                            {
+                              d: "M26 0H0V26",
+                              fill: "none",
+                              stroke: "rgba(147,179,224,.10)",
+                              strokeWidth: "1"
+                            }
+                          )
+                        }
+                      ) }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { width: "480", height: "318", fill: "url(#pa-grid)" }),
+                      connectors.map((cn2, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        motion.path,
+                        {
+                          d: cn2.d,
+                          fill: "none",
+                          stroke: cn2.c,
+                          strokeWidth: "1.5",
+                          strokeLinecap: "round",
+                          initial: reduce ? false : { pathLength: 0, opacity: 0 },
+                          whileInView: { pathLength: 1, opacity: 0.7 },
+                          viewport: { once: true, margin: "-80px" },
+                          transition: {
+                            duration: 0.7,
+                            delay: reduce ? 0 : 0.5 + i * 0.1,
+                            ease: [0.22, 1, 0.36, 1]
+                          }
+                        },
+                        cn2.d
+                      )),
+                      modules.map((m2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        motion.g,
+                        {
+                          initial: reduce ? false : { opacity: 0, scale: 0.92 },
+                          whileInView: { opacity: 1, scale: 1 },
+                          viewport: { once: true, margin: "-80px" },
+                          transition: {
+                            duration: 0.5,
+                            delay: reduce ? 0 : 0.15 + i * 0.09,
+                            ease: [0.22, 1, 0.36, 1]
+                          },
+                          style: { transformOrigin: `${m2.x + 60}px ${m2.y + 32}px` },
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "rect",
+                              {
+                                x: m2.x,
+                                y: m2.y,
+                                width: "120",
+                                height: "64",
+                                rx: "11",
+                                fill: "var(--rk-navy-3)",
+                                stroke: "var(--rk-hair)",
+                                strokeWidth: "1"
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "rect",
+                              {
+                                x: m2.x + 16,
+                                y: m2.y + 14,
+                                width: "30",
+                                height: "3",
+                                rx: "1.5",
+                                fill: m2.accent
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "circle",
+                              {
+                                cx: m2.x + 20,
+                                cy: m2.y + 42,
+                                r: "6",
+                                fill: "none",
+                                stroke: m2.accent,
+                                strokeWidth: "1.6",
+                                opacity: "0.8"
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "rect",
+                              {
+                                x: m2.x + 36,
+                                y: m2.y + 38,
+                                width: "60",
+                                height: "3",
+                                rx: "1.5",
+                                fill: "rgba(147,179,224,.28)"
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "rect",
+                              {
+                                x: m2.x + 36,
+                                y: m2.y + 46,
+                                width: "40",
+                                height: "3",
+                                rx: "1.5",
+                                fill: "rgba(147,179,224,.18)"
+                              }
+                            )
+                          ]
+                        },
+                        `${m2.x}-${m2.y}`
+                      )),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        motion.g,
+                        {
+                          initial: reduce ? false : { opacity: 0, scale: 0.9 },
+                          whileInView: { opacity: 1, scale: 1 },
+                          viewport: { once: true, margin: "-80px" },
+                          transition: {
+                            duration: 0.55,
+                            delay: reduce ? 0 : 0.3,
+                            ease: [0.22, 1, 0.36, 1]
+                          },
+                          style: { transformOrigin: "240px 160px" },
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "rect",
+                              {
+                                x: "180",
+                                y: "110",
+                                width: "120",
+                                height: "100",
+                                rx: "14",
+                                fill: "var(--rk-navy)",
+                                stroke: "rgba(124,77,255,.5)",
+                                strokeWidth: "1.25"
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "rect",
+                              {
+                                x: "204",
+                                y: "110",
+                                width: "72",
+                                height: "3",
+                                rx: "1.5",
+                                fill: "#7C4DFF"
+                              }
+                            )
+                          ]
+                        }
+                      )
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "img",
+                  {
+                    src: "/assets/images/logo/riknova-symbol-dark.png",
+                    alt: "",
+                    "aria-hidden": "true",
+                    className: "pointer-events-none absolute",
+                    style: {
+                      left: "50%",
+                      top: "50.3%",
+                      width: "14.5%",
+                      transform: "translate(-50%, -50%)",
+                      mixBlendMode: "lighten"
+                    }
+                  }
+                )
+              ] })
+            ]
+          }
+        )
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-right text-[11px] italic text-[var(--rk-slate)]/70", children: "*Illustrative architecture. Not an actual product screen.*" })
+  ] });
+}
+const roadmap = [
+  {
+    icon: Wallet,
+    title: "Finance Pro NBFC",
+    description: "A planned product focused on collections and recovery workflows for NBFCs.",
+    status: "Coming Soon",
+    accent: "#12B9C9"
+  }
+];
+const fade = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+function LiveBadge() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "inline-flex items-center gap-1.5", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "relative flex h-2 w-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--rk-emerald)] opacity-60 motion-reduce:hidden" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "relative inline-flex h-2 w-2 rounded-full bg-[var(--rk-emerald)]" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--rk-emerald)]", children: "Live" })
+  ] });
+}
+function ProductsSection() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "section",
+    {
+      id: "products",
+      className: "relative overflow-hidden bg-[var(--rk-navy)] pb-24 pt-40 sm:pt-48 md:pb-28",
+      "data-ocid": "products.section",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(LightToNavyTransition, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger pointer-events-none absolute inset-0 opacity-50",
+            style: {
+              maskImage: "radial-gradient(120% 100% at 80% 12%, #000 30%, transparent 82%)",
+              WebkitMaskImage: "radial-gradient(120% 100% at 80% 12%, #000 30%, transparent 82%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              variants: fade,
+              initial: "hidden",
+              whileInView: "visible",
+              viewport: { once: true, margin: "-100px" },
+              transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+              className: "max-w-2xl",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { tone: "dark", children: "Product Portfolio" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl lg:text-[3.4rem]", children: [
+                  "Our ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-bold", children: "Products" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-base leading-relaxed text-[var(--rk-slate)] md:text-lg", children: "Finance Pro and ChitFund Pro, built for specialised financial operations." })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-14 md:mt-16", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-8 flex items-center gap-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--rk-slate)]", children: "Available Now" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "h-px flex-1 bg-[var(--rk-hair)]" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-tnum font-mono text-sm font-semibold tracking-[0.12em] text-[var(--rk-ink)]", children: "02" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                className: "grid items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14",
+                "data-ocid": "products.item.1",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    motion.div,
+                    {
+                      variants: fade,
+                      initial: "hidden",
+                      whileInView: "visible",
+                      viewport: { once: true, margin: "-80px" },
+                      transition: {
+                        duration: 0.6,
+                        delay: 0.1,
+                        ease: [0.22, 1, 0.36, 1]
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-5 flex items-center gap-3", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--rk-slate)]", children: "Flagship" }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "h-3 w-px bg-[var(--rk-hair-2)]" }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(LiveBadge, {})
+                        ] }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-3xl font-bold tracking-tight text-[var(--rk-ink)] sm:text-4xl", children: "Finance Pro" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 max-w-xl text-base leading-relaxed text-[var(--rk-slate)] md:text-lg", children: "Finance management software for microfinance institutions, NBFCs, finance companies, and lending businesses — bringing loans, collections, receipts, and reports together in one place." }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                          "a",
+                          {
+                            href: "https://www.appfinpro.com/about",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "group mt-7 inline-flex items-center gap-2 rounded-lg font-display text-sm font-semibold text-[var(--rk-ink)] outline-none transition-colors hover:text-[var(--rk-cyan)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]",
+                            "data-ocid": "products.learn_more_link",
+                            children: [
+                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-underline pb-0.5", children: "Learn more" }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-1" })
+                            ]
+                          }
+                        )
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    motion.div,
+                    {
+                      variants: fade,
+                      initial: "hidden",
+                      whileInView: "visible",
+                      viewport: { once: true, margin: "-80px" },
+                      transition: {
+                        duration: 0.7,
+                        delay: 0.2,
+                        ease: [0.22, 1, 0.36, 1]
+                      },
+                      className: "flex justify-center lg:justify-end",
+                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(ProductArchitecture, {})
                     }
                   )
                 ]
@@ -47070,351 +48072,120 @@ function HeroSection() {
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               motion.div,
               {
-                initial: { opacity: 0 },
-                animate: { opacity: 1 },
-                transition: { duration: 0.6, delay: 0.7 },
-                className: "mt-10 flex flex-wrap items-center gap-6 text-muted-foreground",
+                variants: fade,
+                initial: "hidden",
+                whileInView: "visible",
+                viewport: { once: true, margin: "-80px" },
+                transition: { duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] },
+                className: "mt-16 border-t border-[var(--rk-hair)] pt-14 md:mt-20 md:pt-16",
+                "data-ocid": "products.item.2",
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(Shield, { className: "h-4 w-4 text-accent" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs", children: "Secure Role-Based Access" })
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-5 flex items-center gap-3", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--rk-slate)]", children: "Product" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "h-3 w-px bg-[var(--rk-hair-2)]" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(LiveBadge, {})
                   ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { className: "h-4 w-4 text-accent" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs", children: "99.9% Uptime" })
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Users,
+                      {
+                        className: "h-6 w-6 shrink-0 text-[var(--rk-cyan)]",
+                        strokeWidth: 1.6,
+                        "aria-hidden": "true"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-2xl font-bold tracking-tight text-[var(--rk-ink)] sm:text-3xl", children: "ChitFund Pro" })
                   ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { className: "h-4 w-4 text-accent" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs", children: "₹2B+ Processed" })
-                  ] })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 max-w-xl text-base leading-relaxed text-[var(--rk-slate)] md:text-lg", children: "Chit fund management software for managing members, groups, collections, auctions, and payouts across day-to-day chit operations." }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "a",
+                    {
+                      href: "https://chitfundpro.riknova.com",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "group mt-7 inline-flex items-center gap-2 rounded-lg font-display text-sm font-semibold text-[var(--rk-ink)] outline-none transition-colors hover:text-[var(--rk-cyan)] focus-visible:ring-2 focus-visible:ring-[var(--rk-cyan)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--rk-navy)]",
+                      "data-ocid": "products.chitfund_pro_link",
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-underline pb-0.5", children: "Visit ChitFund Pro" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowUpRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" })
+                      ]
+                    }
+                  )
                 ]
               }
             )
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center lg:items-end", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(DashboardMockup, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-xs italic text-muted-foreground/60", children: "*For illustrative purpose only. Actual UI may differ.*" })
-          ] })
-        ] }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" })
-      ]
-    }
-  );
-}
-const industries = [
-  {
-    name: "Microfinance",
-    description: "Empowering underserved communities with accessible credit solutions and digital lending platforms.",
-    icon: HandCoins
-  },
-  {
-    name: "NBFC",
-    description: "Comprehensive technology stack for non-banking financial companies to scale operations securely.",
-    icon: Building
-  },
-  {
-    name: "Finance Companies",
-    description: "End-to-end digital transformation for traditional finance institutions seeking modern infrastructure.",
-    icon: Landmark
-  },
-  {
-    name: "Collection Agencies",
-    description: "AI-powered recovery tools and compliant communication channels to optimize debt collection workflows.",
-    icon: Users
-  },
-  {
-    name: "Vehicle Finance",
-    description: "Specialized loan management and asset tracking solutions for automotive financing portfolios.",
-    icon: Car
-  },
-  {
-    name: "Gold Loan",
-    description: "Streamlined appraisal, vault management, and disbursement systems for precious metal-backed lending.",
-    icon: Gem
-  },
-  {
-    name: "Business Lending",
-    description: "Flexible working capital and term loan platforms tailored for SME and enterprise credit needs.",
-    icon: Briefcase
-  }
-];
-const containerVariants$3 = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-const cardVariants$1 = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut"
-    }
-  }
-};
-function IndustriesSection() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "section",
-    {
-      id: "industries",
-      className: "relative overflow-hidden bg-muted/30 py-24 md:py-32",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gradient-aurora pointer-events-none absolute inset-0 opacity-60" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.div,
-            {
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              viewport: { once: true, margin: "-100px" },
-              transition: { duration: 0.6, ease: "easeOut" },
-              className: "mb-16 text-center md:mb-20",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary", children: "Industries" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "mt-4 font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl", children: [
-                  "Industries We ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Serve" })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg", children: "Purpose-built fintech infrastructure powering the full spectrum of financial services across emerging and established markets." })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
-            {
-              variants: containerVariants$3,
-              initial: "hidden",
-              whileInView: "visible",
-              viewport: { once: true, margin: "-80px" },
-              className: "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
-              children: industries.map((industry, index2) => {
-                const Icon2 = industry.icon;
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-20 md:mt-28", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-8 flex items-center gap-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--rk-slate)]", children: "On the Roadmap" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "h-px flex-1 bg-[var(--rk-hair)]" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-tnum font-mono text-sm font-semibold tracking-[0.12em] text-[var(--rk-ink)]", children: "01" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("ol", { className: "relative", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  "aria-hidden": "true",
+                  className: "absolute bottom-3 left-[7px] top-3 w-px",
+                  style: { background: "var(--rk-hair-2)" }
+                }
+              ),
+              roadmap.map((p2, i) => {
+                const Icon2 = p2.icon;
                 return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.div,
+                  motion.li,
                   {
-                    variants: cardVariants$1,
-                    custom: index2,
-                    "data-ocid": `industries.item.${index2 + 1}`,
-                    className: "group relative flex flex-col rounded-2xl glass p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-elevated hover:border-primary/30",
+                    initial: { opacity: 0, x: 14 },
+                    whileInView: { opacity: 1, x: 0 },
+                    viewport: { once: true, margin: "-60px" },
+                    transition: {
+                      duration: 0.5,
+                      delay: i * 0.12,
+                      ease: [0.22, 1, 0.36, 1]
+                    },
+                    className: "relative grid grid-cols-[auto_1fr] gap-x-5 pb-12 last:pb-0 md:gap-x-8",
+                    "data-ocid": `products.item.${i + 3}`,
                     children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 via-transparent to-accent/5" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary/20", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "h-6 w-6", "aria-hidden": "true" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "relative mb-2 font-display text-lg font-semibold text-foreground", children: industry.name }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "relative text-sm leading-relaxed text-muted-foreground", children: industry.description }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mt-4 h-px w-full overflow-hidden rounded-full bg-border", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-full w-0 bg-gradient-to-r from-primary to-accent transition-all duration-500 group-hover:w-full" }) })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          "aria-hidden": "true",
+                          className: "relative mt-1 flex h-4 w-4 items-center justify-center rounded-full border-2 bg-[var(--rk-navy)]",
+                          style: { borderColor: p2.accent },
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "span",
+                            {
+                              className: "h-1.5 w-1.5 rounded-full",
+                              style: { background: p2.accent }
+                            }
+                          )
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "md:grid md:grid-cols-[minmax(0,290px)_1fr] md:items-start md:gap-x-8", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mb-2 inline-flex items-center rounded-full border border-[var(--rk-hair-2)] px-2.5 py-0.5 font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--rk-slate)]", children: p2.status }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2.5", children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              Icon2,
+                              {
+                                className: "h-5 w-5 shrink-0",
+                                style: { color: p2.accent },
+                                strokeWidth: 1.6,
+                                "aria-hidden": "true"
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-display text-xl font-semibold text-[var(--rk-ink)]", children: p2.title })
+                          ] })
+                        ] }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 max-w-xl text-sm leading-relaxed text-[var(--rk-slate)] md:mt-8 md:text-[15px]", children: p2.description })
+                      ] })
                     ]
                   },
-                  industry.name
+                  p2.title
                 );
               })
-            }
-          )
-        ] })
-      ]
-    }
-  );
-}
-const badgeVariants = cva(
-  "inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
-  {
-    variants: {
-      variant: {
-        default: "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
-        secondary: "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
-        destructive: "border-transparent bg-destructive text-destructive-foreground [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
-        outline: "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground"
-      }
-    },
-    defaultVariants: {
-      variant: "default"
-    }
-  }
-);
-function Badge({
-  className,
-  variant,
-  asChild = false,
-  ...props
-}) {
-  const Comp = asChild ? Slot : "span";
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Comp,
-    {
-      "data-slot": "badge",
-      className: cn(badgeVariants({ variant }), className),
-      ...props
-    }
-  );
-}
-const containerVariants$2 = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.1
-    }
-  }
-};
-const itemVariants$1 = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut"
-    }
-  }
-};
-function ProductCard({
-  icon,
-  title,
-  description,
-  badge,
-  featured,
-  index: index2
-}) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    motion.div,
-    {
-      variants: itemVariants$1,
-      className: `
-        group relative rounded-2xl p-8
-        glass transition-smooth
-        hover:shadow-elevated hover:-translate-y-2
-        ${featured ? "md:col-span-2 lg:col-span-1" : ""}
-      `,
-      "data-ocid": `products.item.${index2 + 1}`,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10" }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between mb-6", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary", children: icon }),
-            badge && /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Badge,
-              {
-                variant: "outline",
-                className: "bg-accent/10 text-accent border-accent/30 text-xs font-medium",
-                children: badge
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-display font-semibold text-foreground mb-3", children: title }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed text-sm", children: description }),
-          featured && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "a",
-            {
-              href: "https://www.appfinpro.com/about",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "mt-6 inline-flex items-center gap-2 text-primary text-sm font-medium group-hover:text-accent transition-colors duration-300",
-              "data-ocid": "products.learn_more_link",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Learn more" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "svg",
-                  {
-                    className: "w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300",
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    stroke: "currentColor",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Arrow right" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "path",
-                        {
-                          strokeLinecap: "round",
-                          strokeLinejoin: "round",
-                          strokeWidth: 2,
-                          d: "M17 8l4 4m0 0l-4 4m4-4H3"
-                        }
-                      )
-                    ]
-                  }
-                )
-              ]
-            }
-          )
-        ] })
-      ]
-    }
-  );
-}
-function ProductsSection() {
-  const products = [
-    {
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Landmark, { className: "w-6 h-6" }),
-      title: "Finance Pro",
-      description: "Complete finance management platform for microfinance, NBFCs, and financial institutions. Streamline operations, automate workflows, and scale with confidence.",
-      featured: true
-    },
-    {
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Wallet, { className: "w-6 h-6" }),
-      title: "Finance Pro NBFC",
-      description: "Intelligent debt collection and recovery management system with automated workflows and compliance tracking.",
-      badge: "Coming Soon"
-    },
-    {
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(ChartColumn, { className: "w-6 h-6" }),
-      title: "ChitFund Pro",
-      description: "A dedicated platform for managing chit fund operations, subscriber records, auctions, and payouts with ease.",
-      badge: "Coming Soon"
-    }
-  ];
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "section",
-    {
-      id: "products",
-      className: "relative py-24 md:py-32 bg-muted/30 overflow-hidden",
-      "data-ocid": "products.section",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 gradient-aurora opacity-50 pointer-events-none" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.div,
-            {
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              viewport: { once: true, margin: "-100px" },
-              transition: { duration: 0.6, ease: "easeOut" },
-              className: "text-center mb-16",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4", children: [
-                  "Our ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Products" })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-lg max-w-2xl mx-auto", children: "Powerful solutions built for modern financial institutions" })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
-            {
-              variants: containerVariants$2,
-              initial: "hidden",
-              whileInView: "visible",
-              viewport: { once: true, margin: "-50px" },
-              className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8",
-              children: products.map((product, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                ProductCard,
-                {
-                  icon: product.icon,
-                  title: product.title,
-                  description: product.description,
-                  badge: product.badge,
-                  featured: product.featured,
-                  index: index2
-                },
-                product.title
-              ))
-            }
-          )
+            ] })
+          ] })
         ] })
       ]
     }
@@ -47450,219 +48221,169 @@ const testimonials = [
     rating: 5
   }
 ];
-function StarRating({ rating }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-0.5", "aria-label": `${rating} out of 5 stars`, children: Array.from({ length: 5 }).map((_2, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Star,
-    {
-      className: `h-4 w-4 ${i < rating ? "fill-[#06B6D4] text-[#06B6D4]" : "text-muted-foreground"}`,
-      "aria-hidden": "true"
-    },
-    `star-${i}-${rating}`
-  )) });
-}
-function TestimonialCard({
-  testimonial,
-  index: index2
-}) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    motion.div,
-    {
-      initial: { opacity: 0, y: 40 },
-      whileInView: { opacity: 1, y: 0 },
-      viewport: { once: true, margin: "-50px" },
-      transition: {
-        duration: 0.6,
-        delay: index2 * 0.15,
-        ease: "easeOut"
+const accents = [
+  "var(--rk-cyan)",
+  "var(--rk-blue)",
+  "var(--rk-emerald)",
+  "var(--rk-violet)"
+];
+const EASE$1 = [0.22, 1, 0.36, 1];
+const listV$1 = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.16, delayChildren: 0.05 } }
+};
+const entryV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } }
+};
+const ruleV$1 = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.7, ease: EASE$1 } }
+};
+const quoteV = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE$1 } }
+};
+const metaV = {
+  hidden: { opacity: 0, y: 12 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE$1 } }
+};
+function Rating({ rating, color: color2 }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "sr-only", children: `Rated ${rating} out of 5` }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { "aria-hidden": "true", className: "flex gap-0.5", children: Array.from({ length: 5 }).map((_2, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Star,
+      {
+        className: "h-3.5 w-3.5",
+        style: {
+          color: color2,
+          fill: i < rating ? color2 : "transparent",
+          opacity: i < rating ? 0.9 : 0.3
+        },
+        strokeWidth: 1.6
       },
-      className: "group relative",
-      "data-ocid": `testimonial.item.${index2 + 1}`,
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "glass rounded-2xl p-6 md:p-8 h-full flex flex-col transition-smooth hover:shadow-glass hover:border-[oklch(0.22_0.02_260/0.7)]", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Quote, { className: "h-8 w-8 text-[#06B6D4]/40", "aria-hidden": "true" }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(StarRating, { rating: testimonial.rating }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("blockquote", { className: "flex-1 mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-foreground/90 font-body text-sm md:text-base leading-relaxed", children: [
-          "“",
-          testimonial.quote,
-          "”"
-        ] }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 pt-4 border-t border-[oklch(0.22_0.02_260/0.5)]", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-10 w-10 rounded-full bg-gradient-to-br from-[#2563EB] to-[#7C3AED] flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white font-display text-sm font-semibold", children: testimonial.name.split(" ").map((n) => n[0]).join("") }) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground font-display text-sm font-semibold truncate", children: testimonial.name }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-muted-foreground font-body text-xs truncate", children: [
-              testimonial.role,
-              ", ",
-              testimonial.company
-            ] })
-          ] })
-        ] })
-      ] })
-    }
-  );
+      i
+    )) })
+  ] });
 }
 function TestimonialsSection() {
+  const reduce = useReducedMotion();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "testimonials",
-      className: "relative py-20 md:py-32 bg-muted/30",
       "aria-labelledby": "testimonials-heading",
+      className: "relative overflow-hidden bg-[var(--rk-navy)] pb-24 pt-40 sm:pt-48 md:pb-28 lg:pb-32",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 gradient-aurora pointer-events-none" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(LightToNavyTransition, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger pointer-events-none absolute inset-0 opacity-40",
+            style: {
+              maskImage: "radial-gradient(120% 90% at 82% 6%, #000 32%, transparent 84%)",
+              WebkitMaskImage: "radial-gradient(120% 90% at 82% 6%, #000 32%, transparent 84%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.div,
             {
-              initial: { opacity: 0, y: 20 },
+              initial: reduce ? false : { opacity: 0, y: 20 },
               whileInView: { opacity: 1, y: 0 },
-              viewport: { once: true },
-              transition: { duration: 0.6, ease: "easeOut" },
-              className: "text-center mb-12 md:mb-16",
+              viewport: { once: true, margin: "-100px" },
+              transition: { duration: 0.6, ease: EASE$1 },
+              className: "max-w-2xl",
               children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { tone: "dark", children: "In Their Words" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs(
                   "h2",
                   {
                     id: "testimonials-heading",
-                    className: "font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4",
+                    className: "mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[var(--rk-ink)] sm:text-5xl lg:text-[3.4rem]",
                     children: [
                       "What Our ",
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Clients Say" })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-bold", children: "Clients Say" })
                     ]
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-base md:text-lg max-w-2xl mx-auto", children: "Trusted by finance leaders at leading companies worldwide" })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6", children: testimonials.map((testimonial, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-            TestimonialCard,
-            {
-              testimonial,
-              index: index2
-            },
-            testimonial.name
-          )) })
-        ] })
-      ]
-    }
-  );
-}
-const trustBadges = [
-  { icon: Cpu, label: "Technology" },
-  { icon: Shield, label: "Security" },
-  { icon: Cloud, label: "Cloud" },
-  { icon: Zap, label: "Performance" },
-  { icon: TrendingUp, label: "Scalability" },
-  { icon: Brain, label: "AI" },
-  { icon: Building2, label: "Enterprise" }
-];
-const containerVariants$1 = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2
-    }
-  }
-};
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut"
-    }
-  }
-};
-function TrustedSection() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "section",
-    {
-      id: "trusted",
-      className: "relative w-full py-24 md:py-32 bg-muted/40 overflow-hidden",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 gradient-aurora opacity-30 pointer-events-none" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.div,
-            {
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              viewport: { once: true, margin: "-100px" },
-              transition: { duration: 0.6, ease: "easeOut" },
-              className: "text-center mb-16",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-mono uppercase tracking-widest text-accent mb-4", children: "Trusted By Industry Leaders" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground", children: [
-                  "Built for ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Enterprise Scale" })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-muted-foreground max-w-2xl mx-auto text-base md:text-lg font-body", children: "Powering the infrastructure behind the world's most demanding organizations with cutting-edge technology and uncompromising security." })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-base leading-relaxed text-[var(--rk-slate)] md:text-lg", children: "From finance businesses using Finance Pro every day." })
               ]
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
+            motion.ol,
             {
-              variants: containerVariants$1,
-              initial: "hidden",
+              variants: listV$1,
+              initial: reduce ? "visible" : "hidden",
               whileInView: "visible",
-              viewport: { once: true, margin: "-50px" },
-              className: "grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6",
-              children: trustBadges.map((badge, index2) => {
-                const Icon2 = badge.icon;
-                return /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  motion.div,
+              viewport: { once: true, margin: "-80px" },
+              className: "mt-16 md:mt-20",
+              children: testimonials.map((t, i) => {
+                const color2 = accents[i % accents.length];
+                const contentCol = i % 2 === 0 ? "lg:col-start-3" : "lg:col-start-4";
+                return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  motion.li,
                   {
-                    variants: itemVariants,
-                    className: "group",
-                    "data-ocid": `trusted.item.${index2 + 1}`,
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "glass rounded-2xl p-6 md:p-8 flex flex-col items-center justify-center gap-4 h-full min-h-[140px] transition-smooth hover:shadow-elevated hover:scale-105 hover:border-accent/30 cursor-default", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-accent/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-smooth" }),
+                    variants: entryV,
+                    "data-ocid": `testimonial.item.${i + 1}`,
+                    className: "relative pt-9 [&:not(:last-child)]:pb-10 md:pt-11 md:[&:not(:last-child)]:pb-14",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        motion.span,
+                        {
+                          "aria-hidden": "true",
+                          variants: ruleV$1,
+                          className: "absolute inset-x-0 top-0 h-px origin-left",
+                          style: { background: "var(--rk-hair-2)" }
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("figure", { className: "lg:grid lg:grid-cols-12 lg:gap-x-8", children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx(
-                          Icon2,
+                          motion.span,
                           {
-                            className: "relative w-8 h-8 md:w-10 md:h-10 text-accent transition-smooth group-hover:text-primary",
-                            strokeWidth: 1.5
+                            "aria-hidden": "true",
+                            variants: metaV,
+                            className: "rk-tnum mb-4 block font-mono text-lg font-semibold tracking-[0.12em] lg:col-span-2 lg:col-start-1 lg:mb-0 lg:text-xl",
+                            style: { color: color2 },
+                            children: String(i + 1).padStart(2, "0")
                           }
-                        )
-                      ] }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-body text-sm md:text-base font-medium text-foreground/90 text-center", children: badge.label })
-                    ] })
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: `${contentCol} lg:col-span-9`, children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(motion.blockquote, { variants: quoteV, children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-2xl font-display text-2xl font-medium leading-[1.32] tracking-[-0.01em] text-[var(--rk-ink)] sm:text-[1.7rem] lg:text-[1.9rem] lg:leading-[1.34]", children: t.quote }) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { variants: metaV, className: "mt-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Rating, { rating: t.rating, color: color2 }) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                            motion.figcaption,
+                            {
+                              variants: metaV,
+                              className: "mt-3 flex flex-wrap items-baseline gap-x-2.5 gap-y-1",
+                              children: [
+                                /* @__PURE__ */ jsxRuntimeExports.jsx("cite", { className: "font-display text-base font-semibold not-italic text-[var(--rk-ink)]", children: t.name }),
+                                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                  "span",
+                                  {
+                                    "aria-hidden": "true",
+                                    className: "h-3 w-px",
+                                    style: { background: "var(--rk-hair-2)" }
+                                  }
+                                ),
+                                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-[var(--rk-slate)]", children: [
+                                  t.role,
+                                  ", ",
+                                  t.company
+                                ] })
+                              ]
+                            }
+                          )
+                        ] })
+                      ] })
+                    ]
                   },
-                  badge.label
+                  t.name
                 );
               })
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
-            {
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              viewport: { once: true, margin: "-50px" },
-              transition: { duration: 0.6, delay: 0.8, ease: "easeOut" },
-              className: "mt-16 text-center",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-2 glass rounded-full px-6 py-3", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex -space-x-2", children: [1, 2, 3, 4].map((i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
-                  {
-                    className: "w-8 h-8 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center",
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] font-bold text-primary-foreground", children: String.fromCharCode(64 + i) })
-                  },
-                  i
-                )) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-muted-foreground font-body ml-2", children: [
-                  "Trusted by ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground", children: "500+" }),
-                  " ",
-                  "enterprise teams worldwide"
-                ] })
-              ] })
             }
           )
         ] })
@@ -47670,70 +48391,237 @@ function TrustedSection() {
     }
   );
 }
-const features = [
-  {
-    icon: Building2,
-    title: "Enterprise Architecture",
-    description: "Built for scale with microservices, event-driven design, and robust API gateways that power mission-critical operations."
-  },
-  {
-    icon: ShieldCheck,
-    title: "Secure & Compliant",
-    description: "End-to-end encryption, SOC 2 Type II certified, and GDPR-ready with automated compliance monitoring."
-  },
-  {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Sub-100ms response times powered by edge caching, optimized databases, and global CDN distribution."
-  },
-  {
-    icon: CircleCheckBig,
-    title: "Highly Reliable",
-    description: "99.99% uptime SLA with multi-region failover, automated backups, and real-time health monitoring."
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Native",
-    description: "Kubernetes-native deployments with auto-scaling, container orchestration, and infrastructure-as-code."
-  },
-  {
-    icon: PanelsTopLeft,
-    title: "Modern UI/UX",
-    description: "Intuitive interfaces designed with accessibility-first principles, dark mode, and responsive layouts."
-  },
-  {
-    icon: RefreshCw,
-    title: "Continuous Updates",
-    description: "Weekly feature releases with zero-downtime deployments and seamless automatic updates."
-  }
-];
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1
+function DarkToLightTransition() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "aria-hidden": "true",
+      className: "pointer-events-none absolute inset-x-0 top-0 h-28 overflow-hidden sm:h-36",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(SpectrumRail, { height: 2 }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute inset-0",
+            style: {
+              background: "linear-gradient(to bottom, var(--rk-navy) 0%, var(--rk-navy) 10%, var(--rk-canvas) 100%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "rk-ledger absolute inset-0",
+            style: {
+              maskImage: "linear-gradient(to bottom, #000 0%, transparent 70%)",
+              WebkitMaskImage: "linear-gradient(to bottom, #000 0%, transparent 70%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute -inset-x-10 top-1/2 h-px origin-center -translate-y-1/2 -rotate-[6deg]",
+            style: {
+              background: "linear-gradient(90deg, transparent, rgba(28,130,232,.35), rgba(106,44,224,.28), transparent)"
+            }
+          }
+        )
+      ]
     }
-  }
-};
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
+  );
+}
+const capabilities = [
+  { icon: Banknote, label: "Loan Management", color: "var(--rk-blue-ink)" },
+  { icon: Users, label: "Collections", color: "var(--rk-cyan-ink)" },
+  { icon: Receipt, label: "Payment Receipts", color: "var(--rk-emerald-ink)" },
+  { icon: ChartColumn, label: "Reports & Insights", color: "var(--rk-blue-ink)" },
+  { icon: UserCog, label: "Roles & Access", color: "var(--rk-cyan-ink)" },
+  { icon: Cloud, label: "Cloud & Backups", color: "var(--rk-emerald-ink)" }
+];
+const dotColors = ["#0FD6A6", "#12B9C9", "#1C82E8"];
+const rowVariants = {
+  hidden: { opacity: 0, y: 14 },
+  visible: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
-      ease: "easeOut"
+      duration: 0.45,
+      delay: i * 0.06,
+      ease: [0.22, 1, 0.36, 1]
     }
+  })
+};
+function TrustedSection() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "section",
+    {
+      id: "trusted",
+      className: "relative overflow-hidden bg-[var(--rk-canvas)] pb-24 pt-40 sm:pt-48 md:pb-28",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(DarkToLightTransition, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger-l pointer-events-none absolute inset-0 opacity-70",
+            style: {
+              maskImage: "linear-gradient(to bottom, transparent, #000 30%, #000)",
+              WebkitMaskImage: "linear-gradient(to bottom, transparent, #000 30%, #000)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid gap-8 lg:grid-cols-12 lg:gap-12", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              motion.div,
+              {
+                initial: { opacity: 0, y: 20 },
+                whileInView: { opacity: 1, y: 0 },
+                viewport: { once: true, margin: "-100px" },
+                transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+                className: "lg:col-span-7",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { children: "What Finance Pro Handles" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-5xl lg:text-[3.4rem]", children: [
+                    "The core of your",
+                    " ",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-bold", children: "lending operation" }),
+                    ", in one system"
+                  ] })
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              motion.div,
+              {
+                initial: { opacity: 0, y: 20 },
+                whileInView: { opacity: 1, y: 0 },
+                viewport: { once: true, margin: "-100px" },
+                transition: {
+                  duration: 0.6,
+                  delay: 0.12,
+                  ease: [0.22, 1, 0.36, 1]
+                },
+                className: "flex items-end lg:col-span-5",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border-l-2 border-[color:var(--rk-line-l-strong)] pl-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base leading-relaxed text-[color:var(--rk-ink-body)] md:text-lg", children: "From loan records to daily reporting, Finance Pro brings the everyday work of a lending business into one organised system." }) })
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-16 md:mt-20", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-3 flex items-center gap-4 lg:mb-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[color:var(--rk-ink-mute)] lg:text-xs", children: "Capabilities" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "h-px flex-1 bg-[color:var(--rk-line-l)]" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-tnum font-mono text-sm font-semibold tracking-[0.12em] text-[color:var(--rk-ink-strong)]", children: "06" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid gap-x-16 md:grid-cols-2", children: capabilities.map((cap, i) => {
+              const Icon2 = cap.icon;
+              return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                motion.div,
+                {
+                  custom: i,
+                  variants: rowVariants,
+                  initial: "hidden",
+                  whileInView: "visible",
+                  viewport: { once: true, margin: "-60px" },
+                  className: "group flex items-center gap-4 border-t border-[color:var(--rk-line-l)] py-5 lg:gap-5 lg:py-7",
+                  "data-ocid": `trusted.item.${i + 1}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Icon2,
+                      {
+                        className: "h-5 w-5 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5 lg:h-[26px] lg:w-[26px]",
+                        style: { color: cap.color },
+                        strokeWidth: 1.75,
+                        "aria-hidden": "true"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-lg font-semibold tracking-tight text-[color:var(--rk-ink-strong)] lg:text-[1.35rem]", children: cap.label }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rk-leader h-px flex-1 opacity-70" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        "aria-hidden": "true",
+                        className: "h-2 w-2 rounded-full",
+                        style: {
+                          background: dotColors[i % dotColors.length],
+                          boxShadow: `0 0 0 3px ${dotColors[i % dotColors.length]}26`
+                        }
+                      }
+                    )
+                  ]
+                },
+                cap.label
+              );
+            }) })
+          ] })
+        ] })
+      ]
+    }
+  );
+}
+const reasons = [
+  {
+    index: "01",
+    color: "var(--rk-cyan-ink)",
+    title: "Built for lending businesses",
+    description: "RIKNOVA makes software specifically for microfinance institutions, NBFCs, and lending businesses — not a general tool adapted to fit."
+  },
+  {
+    index: "02",
+    color: "var(--rk-blue-ink)",
+    title: "Runs your everyday operations",
+    description: "Finance Pro keeps loan records, collections, receipts, and reports in one place, so your team can handle daily finance work without switching between tools."
+  },
+  {
+    index: "03",
+    color: "var(--rk-emerald-ink)",
+    title: "Shaped around your team",
+    description: "Access is organised around the people who use it every day — Admins running the business and Collection Agents working with customers in the field."
+  },
+  {
+    index: "04",
+    color: "var(--rk-violet-ink)",
+    title: "In the cloud, backed up",
+    description: "Your business data is stored in the cloud and backed up regularly to support continuity of your day-to-day operations."
   }
+];
+const EASE = [0.22, 1, 0.36, 1];
+const listV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12, delayChildren: 0.05 } }
+};
+const reasonV = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } }
+};
+const ruleV = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1, transition: { duration: 0.6, ease: EASE } }
+};
+const fadeV = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } }
 };
 function WhyChooseUsSection() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "why-us",
-      className: "relative overflow-hidden bg-muted/30 py-24 md:py-32",
+      className: "relative overflow-hidden bg-[color:var(--rk-canvas)] pb-24 pt-40 sm:pt-48 md:pb-28",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gradient-aurora pointer-events-none absolute inset-0 opacity-60" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(DarkToLightTransition, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "rk-ledger-l pointer-events-none absolute inset-0 opacity-70",
+            style: {
+              maskImage: "linear-gradient(to bottom, transparent, #000 30%, #000)",
+              WebkitMaskImage: "linear-gradient(to bottom, transparent, #000 30%, #000)"
+            }
+          }
+        ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.div,
@@ -47741,44 +48629,64 @@ function WhyChooseUsSection() {
               initial: { opacity: 0, y: 20 },
               whileInView: { opacity: 1, y: 0 },
               viewport: { once: true, margin: "-100px" },
-              transition: { duration: 0.6, ease: "easeOut" },
-              className: "mb-16 text-center md:mb-20",
+              transition: { duration: 0.6, ease: EASE },
+              className: "max-w-2xl",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary", children: "Why RIKNOVA" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "mt-4 font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SectionEyebrow, { children: "Why RIKNOVA" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "mt-5 font-display text-4xl font-medium leading-[1.04] tracking-[-0.02em] text-[color:var(--rk-ink-strong)] sm:text-5xl lg:text-[3.4rem]", children: [
                   "Why Choose ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "RIKNOVA" })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-bold", children: "RIKNOVA" })
                 ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg", children: "The platform trusted by engineering teams who refuse to compromise on performance, security, or developer experience." })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-base leading-relaxed text-[color:var(--rk-ink-body)] md:text-lg", children: "Finance software built around the day-to-day operations of lending businesses — practical, focused, and purpose-built for the work your team actually does." })
               ]
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
+            motion.ol,
             {
-              variants: containerVariants,
+              variants: listV,
               initial: "hidden",
               whileInView: "visible",
-              viewport: { once: true, margin: "-50px" },
-              className: "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
-              children: features.map((feature, index2) => {
-                const Icon2 = feature.icon;
-                return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.div,
-                  {
-                    variants: cardVariants,
-                    "data-ocid": `whyus.item.${index2 + 1}`,
-                    className: "group relative flex flex-col rounded-2xl glass p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary/20", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "h-6 w-6", strokeWidth: 1.5 }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "mb-2 font-display text-lg font-semibold text-foreground", children: feature.title }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "flex-1 text-sm leading-relaxed text-muted-foreground", children: feature.description }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-x-0 bottom-0 h-0.5 scale-x-0 rounded-b-2xl bg-gradient-to-r from-primary to-accent transition-transform duration-300 group-hover:scale-x-100" })
-                    ]
-                  },
-                  feature.title
-                );
-              })
+              viewport: { once: true, margin: "-80px" },
+              className: "mt-16 md:mt-20",
+              children: reasons.map((r2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                motion.li,
+                {
+                  variants: reasonV,
+                  className: "relative grid gap-4 pt-8 md:pt-10 lg:grid-cols-12 lg:gap-10 [&:not(:last-child)]:pb-12 md:[&:not(:last-child)]:pb-14",
+                  "data-ocid": `whyus.item.${i + 1}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      motion.span,
+                      {
+                        "aria-hidden": "true",
+                        variants: ruleV,
+                        className: "absolute inset-x-0 top-0 h-px origin-left bg-[color:var(--rk-line-l-strong)]"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { variants: fadeV, className: "lg:col-span-7", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          className: "rk-tnum font-mono text-[13px] font-semibold tracking-[0.14em]",
+                          style: { color: r2.color },
+                          children: r2.index
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "mt-3 font-display text-2xl font-semibold leading-[1.12] tracking-tight text-[color:var(--rk-ink-strong)] sm:text-3xl lg:text-[2.1rem]", children: r2.title })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      motion.p,
+                      {
+                        variants: fadeV,
+                        className: "max-w-xl text-base leading-relaxed text-[color:var(--rk-ink-body)] lg:col-span-5 lg:pt-11",
+                        children: r2.description
+                      }
+                    )
+                  ]
+                },
+                r2.index
+              ))
             }
           )
         ] })
@@ -48189,9 +49097,9 @@ function PrivacyPolicyPage() {
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "a",
                     {
-                      href: "mailto:financeprofintech@gmail.com",
+                      href: "mailto:hello@riknova.com",
                       className: "text-primary hover:underline",
-                      children: "financeprofintech@gmail.com"
+                      children: "hello@riknova.com"
                     }
                   )
                 ] }),
@@ -48776,9 +49684,9 @@ function TermsAndConditionsPage() {
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "a",
                       {
-                        href: "mailto:financeprofintech@gmail.com",
+                        href: "mailto:hello@riknova.com",
                         className: "text-primary hover:underline",
-                        children: "financeprofintech@gmail.com"
+                        children: "hello@riknova.com"
                       }
                     )
                   ] }),

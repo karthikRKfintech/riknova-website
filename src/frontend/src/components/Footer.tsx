@@ -13,6 +13,7 @@ import { Link } from "@tanstack/react-router";
 const footerLinks = {
   product: [
     { label: "Finance Pro", href: "#products" },
+    { label: "ChitFund Pro", href: "https://chitfundpro.riknova.com" },
     { label: "Features", href: "#finance-pro" },
   ],
   company: [
@@ -36,6 +37,20 @@ function renderFooterLink(link: { label: string; href: string }) {
       <Link to={link.href} className={linkClass} data-ocid={ocid}>
         {link.label}
       </Link>
+    );
+  }
+
+  if (/^https?:\/\//.test(link.href)) {
+    return (
+      <a
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass}
+        data-ocid={ocid}
+      >
+        {link.label}
+      </a>
     );
   }
 
