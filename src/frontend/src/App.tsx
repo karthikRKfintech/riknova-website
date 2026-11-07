@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
+import DiwaliGate from "@/components/diwali/DiwaliGate";
 import AboutSection from "@/sections/AboutSection";
 import ContactSection from "@/sections/ContactSection";
 import FAQSection from "@/sections/FAQSection";
@@ -24,6 +25,7 @@ export default function LandingPage() {
   return (
     <div className="relative min-h-screen bg-background">
       <LoadingScreen isVisible={isLoading} />
+      <DiwaliGate ready={!isLoading} />
       <Navbar />
       <main>
         <HeroSection />
