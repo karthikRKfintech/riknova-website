@@ -62,19 +62,25 @@ function safeStores(): KeyValueStore[] {
   return stores;
 }
 
-/** Reads the last IST date the animation started. Never throws. */
+/**
+ * Reads the last IST date the animation started. Never throws.
+ * Returns the most recent date across all stores and the in-memory fallback,
+ * so a stale value in one store cannot hide a newer fallback write.
+ * (`YYYY-MM-DD` strings sort chronologically.)
+ */
 export function readLastShown(
   stores: KeyValueStore[] = safeStores(),
 ): string | null {
+  let latest = memoryLastShown;
   for (const store of stores) {
     try {
       const value = store.getItem(DIWALI_STORAGE_KEY);
-      if (value) return value;
+      if (value && (latest === null || value > latest)) latest = value;
     } catch {
       // Try the next store.
     }
   }
-  return memoryLastShown;
+  return latest;
 }
 
 /** Records that the animation started on `istDate`. Never throws. */
