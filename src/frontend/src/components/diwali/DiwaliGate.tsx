@@ -2,11 +2,8 @@ import { Component, type ReactNode, Suspense, lazy, useEffect } from "react";
 import { useState } from "react";
 import {
   getDevPreview,
-  getIstDateKey,
   isEligible,
   isWithinFestivalWindow,
-  readLastShown,
-  writeLastShown,
 } from "./diwaliConfig";
 
 // Separate chunk: only fetched when the visitor is eligible.
@@ -58,7 +55,7 @@ function decide(): Decision {
     const now = preview.nowMs ?? Date.now();
     // Date check first: outside the window, storage is never touched.
     return {
-      show: isWithinFestivalWindow(now) && isEligible(now, readLastShown()),
+      show: isEligible(now, null),
       forced: false,
       reduced,
       simulatedNow: preview.nowMs,
@@ -95,7 +92,7 @@ export default function DiwaliGate({ ready }: { ready: boolean }) {
         if (document.visibilityState !== "visible") return;
         // Re-check at real start time (e.g. page opened just before midnight).
         const now = decision.simulatedNow ?? Date.now();
-        if (decision.forced || isEligible(now, readLastShown())) {
+        if (decision.forced || isEligible(now, null)) {
           setPhase("playing");
         } else {
           setPhase("done");
@@ -112,10 +109,8 @@ export default function DiwaliGate({ ready }: { ready: boolean }) {
 
   if (!decision.show || phase !== "playing") return null;
 
-  const markShown = () => {
-    if (decision.forced) return; // Preview never consumes the daily showing.
-    writeLastShown(getIstDateKey(decision.simulatedNow ?? Date.now()));
-  };
+  // Every fresh homepage mount may play during the festival; no daily storage gate.
+  const markShown = () => {};
   const end = () => setPhase("done");
 
   return (
