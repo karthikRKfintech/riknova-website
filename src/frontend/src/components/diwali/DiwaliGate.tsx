@@ -87,9 +87,12 @@ export default function DiwaliGate({ ready }: { ready: boolean }) {
     if (!decision.show || !ready || phase !== "waiting") return;
     let timer = 0;
     const tryStart = () => {
-      if (document.visibilityState !== "visible") return;
+      // Always cancel a pending start: hiding the tab during the delay must
+      // not let an unseen show consume the visitor's daily showing.
       window.clearTimeout(timer);
+      if (document.visibilityState !== "visible") return;
       timer = window.setTimeout(() => {
+        if (document.visibilityState !== "visible") return;
         // Re-check at real start time (e.g. page opened just before midnight).
         const now = decision.simulatedNow ?? Date.now();
         if (decision.forced || isEligible(now, readLastShown())) {
